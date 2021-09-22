@@ -37,7 +37,7 @@
 * [WP plugin 🔌: Advanced Custom Fields](wordpress-als-back-end/advanced-custom-fields/README.md)
   * [Installatie en gebruik van ACF](wordpress-als-back-end/advanced-custom-fields/installatie-en-gebruik-van-acf.md)
   * [Opdracht ACF - Artist Fields](wordpress-als-back-end/advanced-custom-fields/opdracht-acf.md)
-  * [Opdracht ACF - Pages](wordpress-als-back-end/advanced-custom-fields/opdracht-acf-pages.md)
+  * [Opdracht ACF - Page Fields](wordpress-als-back-end/advanced-custom-fields/opdracht-acf-pages.md)
 
 ## API - GraphQL
 

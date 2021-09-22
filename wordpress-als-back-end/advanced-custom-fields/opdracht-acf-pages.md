@@ -5,7 +5,7 @@ description: >-
   onze API kunnen opvragen in onze front-end!
 ---
 
-# Opdracht ACF - Pages
+# Opdracht ACF - Page Fields
 
 ## Aanmaken van de nieuwe pagina's
 
@@ -24,7 +24,9 @@ Navigeer naar Pages in je WordPress werkbalk en voeg 4 nieuwe pagina's toe en ve
 
 We hebben de Sample Page verwijderd terwijl er nog een field group aanhing. Navigeer terug naar Custom fields en zet de Sample Page Fields op inactive.
 
-_Je mag de Sample Page Fields ook verwijderen maar het kan handig zijn als referentie voor later._
+{% hint style="info" %}
+Je mag de Sample Page Fields ook verwijderen maar het kan handig zijn als referentie voor later.
+{% endhint %}
 
 ![](../../.gitbook/assets/image%20%28117%29.png)
 
