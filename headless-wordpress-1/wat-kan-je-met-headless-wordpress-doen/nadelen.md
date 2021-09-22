@@ -13,7 +13,7 @@ Deze techniek biedt een grote flexibiliteit maar is niet per se geschikt voor el
 
 ### 1\) Complexer onderhoud
 
-Ten eerste betekent het hebben van een ontkoppelde WordPress het onderhouden van twee afzonderlijke instanties: de WordPress als de backend en een aparte website als de front-end. M.a.w. het onderhoud wordt verdubbeld. Je hebt meer dan één server waar je nu mee moet rekening houden. 
+Ten eerste betekent het hebben van een ontkoppelde WordPress het onderhouden van twee afzonderlijke instanties: de WordPress als de backend en een aparte website als de front-end. M.a.w. het onderhoud wordt verdubbeld. Je hebt meer dan één server waar je nu mee moet rekening houden.
 
 Je zal nu ook zelf de verbintenis tussen beide instanties moeten leggen en onderhouden. Het werken met een API heeft heel veel voordelen maar de initiële opzet er van is niet zo voor de hand liggend.
 
@@ -27,7 +27,7 @@ Navigeren en werken in de gesplitste omgeving vergt enige aanpassing. De traditi
 
 Kiezen om te ontkoppelen betekent een gescheiden front-end en back-end. Door WordPress te ontkoppelen, blijft het niet 100% intact. De WYSIWYG-editor en live preview werken bijvoorbeeld niet. Andere gebieden kunnen fouten bevatten of moeten worden geoptimaliseerd voor je specifieke configuratie. Denk maar aan Custom Post types en Taxonomies.
 
-Later zal dit duidelijker worden eenmaal als we beginnen met de opzet van onze Headless WordPress. 
+Later zal dit duidelijker worden eenmaal als we beginnen met de opzet van onze Headless WordPress.
 
 ### 4\) Prijskaartje
 
@@ -47,7 +47,7 @@ Plugins die functionaliteit toevoegen aan een WordPress-website worden over het 
 
 Alle plugins die te maken hebben met het aanpassen van de front-end, denk maar aan SEO, contact formulieren, editors, etc. zullen niet worden overgedragen naar je externe front-end. Je zal de tools van je gekozen front-end moeten gebruiken om bijvoorbeeld SEO toe te voegen.
 
-Toch kunnen plugins nog steeds voor andere dingen worden gebruikt. De externe app of website waarnaar je content pusht, heeft mogelijk een plugin nodig die communicatie met de WordPress back-end mogelijk maakt. 
+Toch kunnen plugins nog steeds voor andere dingen worden gebruikt. De externe app of website waarnaar je content pusht, heeft mogelijk een plugin nodig die communicatie met de WordPress back-end mogelijk maakt.
 
 Bovendien kunnen sommige plugins die worden gebruikt om de WordPress-backend te verbeteren, nog steeds nuttig zijn voor het maken van inhoud of de workflow. Denk maar aan [Advanced Custom Fields](https://www.advancedcustomfields.com/).
 

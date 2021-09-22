@@ -105,11 +105,11 @@ Als je nu naar [localhost:8000/artists](http://localhost:8000/artists) gaat in j
 
 ![Skelet Artists page](../../.gitbook/assets/image%20%28107%29.png)
 
-### Taak: Connect je Headless WordPress met behulp van een source plugin 
+### Taak: Connect je Headless WordPress met behulp van een source plugin
 
 Nu je een Artists page hebt, is het tijd om je data vanuit Headless WP op te vragen en toe te voegen aan de **Data Layer** van Gatsby! **Om dat te doen, gebruik je een plugin genaamd** `gatsby-source-wordpress`.
 
-Installeer de `gatsby-source-wordpress` plugin. Navigeer naar je terminal en type de volgende lijn code. 
+Installeer de `gatsby-source-wordpress` plugin. Navigeer naar je terminal en type de volgende lijn code.
 
 {% hint style="info" %}
 **Let er op dat je in de root map van je project zit!**
@@ -123,10 +123,10 @@ npm install gatsby-source-wordpress
 Zie het [README-bestand](https://www.gatsbyjs.org/packages/gatsby-source-wordpress) van de `gatsby-source-wordpress` plugin voor meer informatie over de functies en features van de plugin.
 {% endhint %}
 
-Voeg de `gatsby-source-wordpress` ****plugin toe aan `gatsby-config.js` met behulp van de volgende code:
+Voeg de `gatsby-source-wordpress` _\*\*_plugin toe aan `gatsby-config.js` met behulp van de volgende code:
 
 {% hint style="info" %}
-Omdat `gatsby-source-wordpress` enkele aanvullende configuratie-opties vereist, gebruik je een `object` in plaats van een `string`. 
+Omdat `gatsby-source-wordpress` enkele aanvullende configuratie-opties vereist, gebruik je een `object` in plaats van een `string`.
 
 * Je geeft een **key** `resolve` mee waaraan je de naam van je plugin geeft: `gatsby-source-wordpress`
 * Een object genaamd `options` waarin je extra configuratie kan meegeven. In het geval van `gatsby-source-wordpress` moet je een `url` key meegeven met **als waarde de url van je graphql endpoint in je Headless Wordpress.**
@@ -161,7 +161,7 @@ Het bovenstaande codevoorbeeld laat zien hoe je je Headless WP koppelt aan je Ga
 
 ![http://artist-agency-2021.local/graphql](../../.gitbook/assets/image%20%2851%29.png)
 
-Met m.b.v. deze URL zal Gatsby je data vanuit Headless WP doorsluizen naar de Data Layer en beschikbaar stellen in je gehele project. 
+Met m.b.v. deze URL zal Gatsby je data vanuit Headless WP doorsluizen naar de Data Layer en beschikbaar stellen in je gehele project.
 
 {% hint style="info" %}
 **Opmerking** 📣**:** Je Headless WordPress applicatie runt hoogstwaarschijnlijk lokaal op je computer. **Het is belangrijk dat je WP applicatie runt in Local by Flywheel**. Indien dit niet het geval is zal Gatsby het endpoint niet terugvinden en de data niet kunnen gebruiken in haar Data Layer.
@@ -192,7 +192,7 @@ query MyQuery {
   allWpArtist {
     edges {
       node {
-      	id
+          id
         artistMeta {
           firstName
           lastName
@@ -265,11 +265,11 @@ Nu je een GraphQL-query hebt gemaakt die een lijst met je artiesten retourneert,
 Het gebruik van GraphQL-query's in Page component gebruikt een iets andere syntax dan query's in Building Block components. In Page component gebruik je page query's.
 
 {% hint style="info" %}
-#### Key Gatsby concept: gegevens in page componenten trekken met page query's 
+#### Key Gatsby concept: gegevens in page componenten trekken met page query's
 
 Het proces voor het maken van een query in een page component ziet er iets anders uit dan `useStaticQuery`:
 
-Importeer de `graphql`-tag uit de Gatsby-package. Exporteer een variabele die een string opslaat met de GraphQL-query die je wilt uitvoeren. **Wanneer je site wordt gebouwd, voert Gatsby je page query uit en geeft de resulterende gegevens door aan je page component als een** `prop` **die** `data` **wordt genoemd.** Je page query moet buiten je page component worden gedefinieerd. \(Met `useStaticQuery` is je query gedefinieerd in je component.\) Je kan de  `data` prop in je page component gebruiken om je page query gegevens op te halen en te gebruiken. Je kan de Javascript punt-operator \(`.`\) gebruiken om velden binnen de `data` prop te kiezen. 
+Importeer de `graphql`-tag uit de Gatsby-package. Exporteer een variabele die een string opslaat met de GraphQL-query die je wilt uitvoeren. **Wanneer je site wordt gebouwd, voert Gatsby je page query uit en geeft de resulterende gegevens door aan je page component als een** `prop` **die** `data` **wordt genoemd.** Je page query moet buiten je page component worden gedefinieerd. \(Met `useStaticQuery` is je query gedefinieerd in je component.\) Je kan de `data` prop in je page component gebruiken om je page query gegevens op te halen en te gebruiken. Je kan de Javascript punt-operator \(`.`\) gebruiken om velden binnen de `data` prop te kiezen.
 
 **Hier is een klein voorbeeld om te laten zien hoe dit proces er in de praktijk uitziet:**
 {% endhint %}
@@ -320,7 +320,7 @@ export default ArtistsPage
 ```
 {% endcode %}
 
-#### 2\) Definieer en exporteer je page query. 
+#### 2\) Definieer en exporteer je page query.
 
 Kopieer de query die je in GraphiQL hebt gebouwd. Opmerking: de query die jee in GraphiQL bouwt, heeft standaard een query name, zoals `MyQuery`. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je best de query name** \(zoals in het onderstaande codevoorbeeld\).
 
@@ -364,9 +364,9 @@ export default ArtistsPage
 ```
 {% endcode %}
 
-#### 3\) Voeg de **`data`** prop toe aan de functie definitie. 
+#### 3\) Voeg de **`data`** prop toe aan de functie definitie.
 
-Vervang vervolgens het placeholder-element  door een lijst met artiesten. Gebruik de Javascript-array `.map()`-methode om de `edges`-array te doorlopen en de `firstName` en `lastName` voor elke artist weer te geven. 
+Vervang vervolgens het placeholder-element door een lijst met artiesten. Gebruik de Javascript-array `.map()`-methode om de `edges`-array te doorlopen en de `firstName` en `lastName` voor elke artist weer te geven.
 
 {% hint style="info" %}
 **Syntax tip**: in JavaScript hebben arrays een ingebouwde `.map()`-methode, die je kan gebruiken om over elementen in een array te itereren. Je kan vervolgens elk element manipuleren zonder de originele waarde van de array aan te tasten.

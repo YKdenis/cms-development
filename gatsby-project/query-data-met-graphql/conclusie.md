@@ -26,7 +26,7 @@ git commit -m "Query data met GraphQL finished"
 git push origin main
 ```
 
-### Belangrijkste leerpunten 
+### Belangrijkste leerpunten
 
 * `source` **plugins** halen gegevens van hun oorspronkelijke locatie naar de Gatsby GraphQL Data Layer.
 * Je kan het **GraphiQL eindpunt** \([localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)\) gebruiken om de gegevens in de Data Layer te verkennen en GraphQL-query's te ontwerpen. 

@@ -10,7 +10,7 @@ Er zijn twee hoofdtypen componenten op een Gatsby-site. Het eerste type dat je g
 
 In deze sectie maakt je twee nieuwe page components: **één voor de home page en één voor de about pagina**.
 
-### Taak: update de inhoud van de startpagina 
+### Taak: update de inhoud van de startpagina
 
 Nu je een introductie tot React hebt gekregen, is het tijd om te proberen een aantal React-componenten te schrijven. Om te beginnen werk je de inhoud voor de home page bij.
 
@@ -23,7 +23,7 @@ Als je dit nog niet hebt gedaan, open je Gatsby-site in Visual Studio Code en st
 3. Run **gatsby develop**. 
 4. Open [localhost:8000](http://localhost:8000) in je webbrowser.
 
-Open je `src/pages/index.js-file`. Vervang de inhoud door het volgende. 
+Open je `src/pages/index.js-file`. Vervang de inhoud door het volgende.
 
 {% hint style="info" %}
 Merk op hoe de structuur van de component overeenkomt met de drie stappen voor het schrijven van React-componenten?
@@ -66,7 +66,7 @@ Als een gebruiker de URL probeert te bezoeken voor een pagina die niet bestaat, 
 
 Nu je de bestaande home page hebt bijgewerkt, kan je proberen een geheel nieuwe pagina te maken. Maak een about pagina, zodat je mensen iets over je agency kunt vertellen.
 
-Maak een nieuw bestand: `src/pages/about.js`. Gebruik de onderstaande code als startpunt voor je About pagina. 
+Maak een nieuw bestand: `src/pages/about.js`. Gebruik de onderstaande code als startpunt voor je About pagina.
 
 {% code title="/src/pages/about.js" %}
 ```jsx

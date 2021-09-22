@@ -16,7 +16,7 @@ Maak een nieuwe map in je `src/pages`-map en noem het artists.
 
 ![](../../.gitbook/assets/image%20%28130%29.png)
 
-Verplaats het bestand `src/pages/{wpArtist.slug}.js` naar de nieuwe artists-submap. 
+Verplaats het bestand `src/pages/{wpArtist.slug}.js` naar de nieuwe artists-submap.
 
 Werk de import voor je `Layout` component bij om de nieuwe mapstructuur weer te geven:
 

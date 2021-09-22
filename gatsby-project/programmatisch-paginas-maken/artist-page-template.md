@@ -6,7 +6,7 @@ description: >-
 
 # Artist Page Template aanmaken
 
-## Taak: Pagina template voor artiesten maken 
+## Taak: Pagina template voor artiesten maken
 
 Nu je weet welk node-type en veld je moet gebruiken, kan je ze aan een sluiten met behulp van de naamgevingsconventie voor [File System Routes](https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/). Om nieuwe pagina's te maken van het `slug`-veld van je `wpArtist`-node, moet je een nieuw bestand maken op `src/pages/{wpArtist.slug}.js`.
 

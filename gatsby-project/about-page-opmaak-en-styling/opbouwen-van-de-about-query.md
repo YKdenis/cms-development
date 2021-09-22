@@ -6,7 +6,7 @@ description: >-
 
 # Opbouwen van de About query
 
-### Taak: Maak een query aan in GraphiQL voor je About page
+## Taak: Maak een query aan in GraphiQL voor je About page
 
 In je About page heb je nog geen query gedefinieerd voor de data van WP op te vragen. Open je GraphiQL in je browser en gebruik de Explorer om je query vorm te geven.
 
@@ -50,7 +50,7 @@ query {
 Voor je `wpPage` query heb je een **query parameter** nodig. Je mag deze hardcoded op `wpPage(slug: {eq: "about-us"})` zetten.
 
 {% hint style="info" %}
-**Opmerking** 📣: Je hebt de slug '**about-us**' gedefinieerd in je WP applicatie onder je About us page. 
+**Opmerking** 📣: Je hebt de slug '**about-us**' gedefinieerd in je WP applicatie onder je About us page.
 
 De slug van je About us pagina op je Gatsby website is niet hetzelfde als de slug van je About page op je WP applicatie!
 {% endhint %}

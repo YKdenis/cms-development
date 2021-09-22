@@ -4,7 +4,7 @@ description: Bouw je artist template page query op met behulp van je GraphiQL ID
 
 # Opbouwen van de Artist query
 
-### Taak: Maak een query aan in GraphiQL voor je artist template page
+## Taak: Maak een query aan in GraphiQL voor je artist template page
 
 In je template page heb je al een query gedefinieerd voor één specifieke artist op te vragen met behulp van `wpArtist`. Kopieer deze query terug in je GraphiQL IDE zodat je het verder kan aanpassen.
 
@@ -111,7 +111,6 @@ query ($id: String) {
     }
   }
 }
-
 ```
 
 {% hint style="info" %}

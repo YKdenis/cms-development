@@ -41,7 +41,7 @@ De editor wordt opnieuw geladen en je kan het paneel met custom fields onder de 
 
 Custom fields kunnen worden gebruikt om informatie toe te voegen met betrekking tot de post, de pagina of elk ander soort inhoudstype.
 
-In plaats van dit manueel toe te voegen gaan wij hiervoor een plugin gebruiken, namelijk **Advanced Custom Fields**. Je mag terug navigeren naar Preferences en de custom fields uitzetten! 
+In plaats van dit manueel toe te voegen gaan wij hiervoor een plugin gebruiken, namelijk **Advanced Custom Fields**. Je mag terug navigeren naar Preferences en de custom fields uitzetten!
 
 {% hint style="info" %}
 Vergeet dit zeker niet te doen, **eenmaal als je ACF installeert en gebruikt zouden de native custom fields van WP problemen kunnen veroorzaken**.

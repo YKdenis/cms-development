@@ -4,7 +4,7 @@ description: "Gefeliciteerd, je hebt het einde van het deel React in Gatsby geha
 
 # Conclusie
 
-### Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden:
+## Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden:
 
 * Wat is het verschil tussen een page component en een Building block component?
 * Hoe voeg je een nieuwe pagina toe aan je Gatsby-site?
@@ -13,7 +13,7 @@ description: "Gefeliciteerd, je hebt het einde van het deel React in Gatsby geha
 * Wat is de `children` prop en waarom is het nuttig?
 
 {% hint style="info" %}
-#### Commit it! 🚀
+### Commit it! 🚀
 
 Implementeer voordat je verder gaat je wijzigingen op je GitHub-repo, zodat je je voortgang niet kwijtspeelt!
 
@@ -26,7 +26,7 @@ git commit -m "Finished React in Gatsby"
 git push origin main
 ```
 
-### Belangrijkste leerpunten 
+## Belangrijkste leerpunten
 
 * **React is een bibliotheek** die je helpt je ​​gebruikersinterface op te splitsen in kleinere stukjes die componenten worden genoemd. **Een component is een functie die een React-element retourneert**. React-elementen kunnen in **JSX** worden geschreven.
 * **Page componenten** bevatten alle UI-elementen voor een specifieke pagina van je site. Gatsby maakt automatisch pagina's aan voor componenten die de standaard export zijn van bestanden in de `src/pages` directory. **De naam van het bestand wordt gebruikt als de route voor de pagina.** 

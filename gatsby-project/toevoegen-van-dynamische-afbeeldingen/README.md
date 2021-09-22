@@ -6,7 +6,7 @@ description: >-
 
 # Toevoegen van dynamische afbeeldingen
 
-## Introductie 
+## Introductie
 
 In het deel Gatsby Plugins heb je `gatsby-plugin-image` gebruikt om statische afbeeldingen aan je home page toe te voegen. Nu je wat meer met de Data Layer van Gatsby hebt gewerkt, is het tijd om `gatsby-plugin-image` opnieuw te bekijken. Deze keer leer je hoe je dynamische afbeeldingen aan je site kan toevoegen.
 
@@ -26,7 +26,7 @@ Met andere woorden `StaticImage` kan niet worden gebruikt in een page query voor
 **Belangrijk:** Externe afbeeldingen worden tijdens het bouwen gedownload en vergroot of verkleind. Als de afbeelding op je WP applicatie wordt gewijzigd, wordt deze pas op je site bijgewerkt nadat je deze opnieuw hebt opgebouwd.
 {% endhint %}
 
-### Wat is het verschil tussen `GatsbyImage` en `StaticImage`? 
+### Wat is het verschil tussen `GatsbyImage` en `StaticImage`?
 
 In het deel Gatsby Plugins heb je geleerd hoe je de `StaticImage`-component van `gatsby-plugin-image` kunt gebruiken.
 

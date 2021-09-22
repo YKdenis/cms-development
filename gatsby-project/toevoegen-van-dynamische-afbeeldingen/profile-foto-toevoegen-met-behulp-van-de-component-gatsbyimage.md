@@ -6,7 +6,7 @@ description: >-
 
 # Profile foto toevoegen met behulp van de component GatsbyImage
 
-## Taak: Profile foto toevoegen met behulp van de component GatsbyImage 
+## Taak: Profile foto toevoegen met behulp van de component GatsbyImage
 
 Zodra je je GraphQL-query hebt ingesteld, kan je deze toevoegen aan je artist page template, `{wpArtist.slug}.js`.
 
@@ -70,7 +70,6 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 
@@ -182,7 +181,6 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 

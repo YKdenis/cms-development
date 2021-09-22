@@ -16,7 +16,7 @@ Na de activatie van ACF zal er een nieuwe menu item in je WP werkbalk verschijne
 
 Een Field Group is als een container van een set custom fields. Hiermee kan je meerdere groeperingen van custom fields toevoegen en deze vervolgens koppelen aan één of meerdere posts of pagina's.
 
-Klik op '**Custom Fields**' in je werkbalk. Je krijgt onderstaand scherm te zien. 
+Klik op '**Custom Fields**' in je werkbalk. Je krijgt onderstaand scherm te zien.
 
 ![](../../.gitbook/assets/image%20%2893%29.png)
 
@@ -34,11 +34,11 @@ Vervolgens zie je een tabel met rechtsonder een knop '**Add Field**'. In deze ta
 
 In de Tabel er onder, met als titel **Location**, kan je de field group koppelen aan de hand van één of meerdere conditionele regels. Je kan hier opgeven en bepalen op wat voor soort bericht, pagina, gebruiker of form de field group van toepassing is.
 
-We willen dat deze field group van toepassing is op het type '**Page**' en dat deze pagina de naam '**Sample Page**' moet hebben. 
+We willen dat deze field group van toepassing is op het type '**Page**' en dat deze pagina de naam '**Sample Page**' moet hebben.
 
 ![](../../.gitbook/assets/image%20%2827%29.png)
 
-Indien je wilt dat deze field group ook van toepassing is op bijvoorbeeld alle artiesten dan kan je dat verwezenlijken door een extra conditionele regel toe te voegen. 
+Indien je wilt dat deze field group ook van toepassing is op bijvoorbeeld alle artiesten dan kan je dat verwezenlijken door een extra conditionele regel toe te voegen.
 
 De werking is exact hetzelfde als de **&&** \(AND\) en **\|\|** \(OR\) operatoren in programmeren. In het geval van ons voorbeeld willen we een OR. We drukken op de knop '**add rule group**' en voegen een conditionele regel toe waarvan de **Post Type** gelijk moet zijn aan **Artist**.
 
@@ -97,13 +97,13 @@ Met Allowed file types geef je op welke file types er toegelaten zijn.
 
 Voor elke field group zijn er een paar eenvoudige opties om het bewerkingsscherm waar deze field group verschijnt aan te passen. Als er meerdere field groups op een pagina verschijnen, worden de opties van de eerste field group gebruikt. Daarom kan je een order no. instellen. Field groups worden geladen en weergegeven in volgorde van hun '**order no.**', waarbij 0 de eerste is.
 
-De optie '**Active**' moet je aantikken om de field group te activeren. Hiermee kan je de field group aan- en uitschakelen zonder de field group volledig te moeten verwijderen of je conditionele regels aan te passen. 
+De optie '**Active**' moet je aantikken om de field group te activeren. Hiermee kan je de field group aan- en uitschakelen zonder de field group volledig te moeten verwijderen of je conditionele regels aan te passen.
 
 De meeste opties spreken voor zich en hebben geen extra uitleg nodig. Met de laatste optie, '**Hide on screen**', kan je standaard metadata die out of the box wordt meegegeven door WP zoals comments, author, etc. uitschakelen.
 
 ![](../../.gitbook/assets/image%20%28125%29.png)
 
-### Publishen van de field group 
+### Publishen van de field group
 
 Eenmaal als je beide custom fields hebt toegevoegd mag je rechtsboven op '**Publish**' klikken.
 
@@ -113,7 +113,7 @@ Als je field group is gepubliceerd en je hebt Active op true staan in je field g
 
 ![](../../.gitbook/assets/image%20%2876%29.png)
 
-op deze manier kan je gemakkelijk custom fields toevoegen aan eender welke soort post of pagina in WP. Het bespaart je een hele hoop tijd dan als je dit met de native functionaliteit van WP zou moeten oplossen. 
+op deze manier kan je gemakkelijk custom fields toevoegen aan eender welke soort post of pagina in WP. Het bespaart je een hele hoop tijd dan als je dit met de native functionaliteit van WP zou moeten oplossen.
 
 Tijdens het voorbeeld project en het project dat op punten staat zal je field groups moeten aanmaken met verschillende custom field types op zowel pages als custom post types. Als er iets niet duidelijk is bekijk dan zeker eerst eens de [documentatie](https://www.advancedcustomfields.com/resources/) van ACF. **Indien je geen antwoord vindt op je vraag stel deze dan op het studentenforum op Digitap**.
 

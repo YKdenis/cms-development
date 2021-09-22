@@ -10,7 +10,7 @@ description: >-
 
 Het schrijven en uittesten van queries is super gemakkelijk aan de hand van de GraphiQL. Samen zullen we de GraphQL IDE gebruiken om de basis kennis van GraphQL te overlopen en een gevoel voor het schrijven van GraphQL-syntax te ontwikkelen.
 
-Vooraleer je kan beginnen met het uittesten van queries moet je GraphQL endpoint correct zijn ingesteld. Navigeer naar [https://yourdomain.com/graphql](https://yourdomain.com/graphql). 
+Vooraleer je kan beginnen met het uittesten van queries moet je GraphQL endpoint correct zijn ingesteld. Navigeer naar [https://yourdomain.com/graphql](https://yourdomain.com/graphql).
 
 {% hint style="info" %}
 Verander "**yourdomain.com**" met de de domeinnaam van je lokale WP installatie.
@@ -38,7 +38,7 @@ De grafische user interface van Graphiql bestaat uit **5 belangrijke componenten
 
 ### Query Operations
 
-Als we gegevens van onze API willen opvragen, gebruiken we een query. Als voorbeeld zullen we alle pagina's van onze WP installatie opvragen met hun `title` en `uri`. 
+Als we gegevens van onze API willen opvragen, gebruiken we een query. Als voorbeeld zullen we alle pagina's van onze WP installatie opvragen met hun `title` en `uri`.
 
 ![](../../.gitbook/assets/image%20%28149%29.png)
 
@@ -54,7 +54,7 @@ Wat edges en nodes zijn wordt verduidelijkt in [het hoofdstuk over de **Applicat
 
 ### Query Document
 
-Een "**Query**" ****wordt de **Operation Name** genoemd. Dit beschrijft welk type query of bewerking er naar de GraphQL-service wordt verzonden. 
+Een "**Query**" **\*\*wordt de** Operation Name\*\* genoemd. Dit beschrijft welk type query of bewerking er naar de GraphQL-service wordt verzonden.
 
 {% hint style="info" %}
 Bekijk de GraphQL documentatie, [Queries and Mutations](https://graphql.org/learn/queries/).
@@ -64,9 +64,9 @@ Je kan meerdere query's aan een **query document** toevoegen. Je kan bijvoorbeel
 
 ![](../../.gitbook/assets/image%20%2821%29.png)
 
- Als je meer dan één query in een query document hebt, moet je de query een operation name geven. **Denk aan een operation name als een function name**. In dit geval "`OtherQuery`" en "`MyQuery`".
+Als je meer dan één query in een query document hebt, moet je de query een operation name geven. **Denk aan een operation name als een function name**. In dit geval "`OtherQuery`" en "`MyQuery`".
 
- Als je op de afspeelknop klikt, verschijnt er een vervolgkeuzelijst waarin je wordt gevraagd een van deze twee bewerkingen te selecteren. 
+Als je op de afspeelknop klikt, verschijnt er een vervolgkeuzelijst waarin je wordt gevraagd een van deze twee bewerkingen te selecteren.
 
 ![](../../.gitbook/assets/image%20%2816%29.png)
 
@@ -76,9 +76,9 @@ Als je voor al deze gegevens één verzoek wilt verzenden, kan je ze allemaal in
 
 ### GraphiQL Explorer
 
-Je kan de Explorer raadplegen in de kolom helemaal links. In de Explorer staan alle queries vermeld die WPGraphQL out of the box voor ons voorziet. 
+Je kan de Explorer raadplegen in de kolom helemaal links. In de Explorer staan alle queries vermeld die WPGraphQL out of the box voor ons voorziet.
 
-Je kan op de dropdownmenu's doorklikken en je zal zien dat er automatisch een query gegenereerd wordt in het query document. **Je kan gemakkelijk het GraphQL schema dat WPGraphQL voor ons heeft opgezet verkennen.** Per niveau dat je dieper gaat in de Explorer zal er een geneste query gegenereerd worden. De query hieronder is volledig opgesteld doormiddel van de Explorer: 
+Je kan op de dropdownmenu's doorklikken en je zal zien dat er automatisch een query gegenereerd wordt in het query document. **Je kan gemakkelijk het GraphQL schema dat WPGraphQL voor ons heeft opgezet verkennen.** Per niveau dat je dieper gaat in de Explorer zal er een geneste query gegenereerd worden. De query hieronder is volledig opgesteld doormiddel van de Explorer:
 
 ![](../../.gitbook/assets/image%20%28141%29.png)
 
@@ -86,11 +86,11 @@ Je kan op de dropdownmenu's doorklikken en je zal zien dat er automatisch een qu
 
 In de GraphiQL IDE kan je **query variabelen** meegeven om je queries generiek te maken. Variabelen moeten gedefinieerd worden van boven bij de operatie naam a.d.h.v. van **een dollar-teken**. Je definieert wat voor soort type je variabele is. In het voorbeeld hieronder is dat "`ID`" wat voor identifier staat. Het **uitroepteken\(!\)** laat weten aan GraphQL dat we strikt een integer verwachten een geen ander type zoals bv. een string.
 
-Onderstaande query zal een artist ophalen a.d.h.v. een slug. Een slug is het laatste deel van een URL. 
+Onderstaande query zal een artist ophalen a.d.h.v. een slug. Een slug is het laatste deel van een URL.
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
-Bij de **operation name "**`MyQuery`**"** geef je een variabele mee genaamd `$slug` ****en laat je graphQL weten dat het een `ID` verwacht. Vervolgens gebruik je de slug in de artist query als `id` argument \(`id: $slug`\). Het argument `idType` zetten we op `SLUG`, zo weet GraphQL dat we een artist willen opvragen m.b.v. een slug.
+Bij de **operation name "**`MyQuery`**"** geef je een variabele mee genaamd `$slug` _\*\*_en laat je graphQL weten dat het een `ID` verwacht. Vervolgens gebruik je de slug in de artist query als `id` argument \(`id: $slug`\). Het argument `idType` zetten we op `SLUG`, zo weet GraphQL dat we een artist willen opvragen m.b.v. een slug.
 
 ![](../../.gitbook/assets/image%20%2854%29.png)
 
@@ -116,7 +116,5 @@ Dit is interessant als je meer wilt weten over de verschillende argumenten en ty
 
 ## Resources
 
-{% embed url="https://www.wpgraphql.com/docs/quick-start/" %}
-
-
+{% embed url="https://www.wpgraphql.com/docs/quick-start/" caption="" %}
 

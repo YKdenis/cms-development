@@ -12,7 +12,7 @@ In het belang van deze zelfstudie gebruiken we **Twenty Twenty-One**, een van de
 Eerst moet je `/app/public/wp-content/themes/` openen in je WordPress directory en een nieuwe map maken voor je child-thema. De directory heeft een naam nodig. Het is een goede gewoonte om een ​​child-thema dezelfde naam te geven als de ouder, maar met -child aan het einde. In ons geval is dat `twentytwentyone-child`.
 
 {% hint style="info" %}
-Je kan gemakkelijk navigeren naar je WordPress directory via het pijltje aangeduid in onderstaande foto! 
+Je kan gemakkelijk navigeren naar je WordPress directory via het pijltje aangeduid in onderstaande foto!
 {% endhint %}
 
 ![](../../.gitbook/assets/image%20%28138%29.png)
@@ -65,15 +65,15 @@ Dit zijn de minimumvereiste voor het maken van een child-thema. Je kunt nu naar 
 
 ![](../../.gitbook/assets/image%20%28126%29.png)
 
-### style.css
+## style.css
 
-Je hoofdthema heeft ook een `style.css`. Deze wordt overgeërfd door het child-thema en met de `style.css` van je child-thema kan je de styling van je hoofdthema overschrijven. 
+Je hoofdthema heeft ook een `style.css`. Deze wordt overgeërfd door het child-thema en met de `style.css` van je child-thema kan je de styling van je hoofdthema overschrijven.
 
 {% hint style="info" %}
 **Let op** 👀: In ons geval gaan we voor onze child-thema geen custom CSS schrijven. We gebruiken niet de front-end van WordPress m.a.w. wijzigingen aan de front-end hebben geen effect!
 {% endhint %}
 
-### functions.php
+## functions.php
 
 In tegenstelling tot `style.css`, overschrijft de `functions.php` van een child-thema de `functions.php` van het hoofdthema niet. In plaats daarvan wordt de `functions.php` van het child-thema file toegevoegd aan die van het hoofdthema. \(Het wordt net voor het bestand van de ouder ingeladen.\)
 

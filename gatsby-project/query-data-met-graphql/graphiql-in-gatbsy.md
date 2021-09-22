@@ -6,13 +6,13 @@ description: >-
 
 # GraphiQL in Gatbsy
 
-Hoe weet je welke gegevens zich in de GraphQL Data Layer van je site bevinden? Wanneer je de lokale ontwikkelingsserver voor je site start, maakt Gatsby automatisch een speciaal eindpunt aan waarmee je een in-browser tool genaamd **GraphiQL** kan gebruiken. 
+Hoe weet je welke gegevens zich in de GraphQL Data Layer van je site bevinden? Wanneer je de lokale ontwikkelingsserver voor je site start, maakt Gatsby automatisch een speciaal eindpunt aan waarmee je een in-browser tool genaamd **GraphiQL** kan gebruiken.
 
 {% hint style="info" %}
 Net zoals met de GraphiQL interface in je WordPress Applicatie kan je de gegevens van je site verkennen en GraphQL-query's maken.
 {% endhint %}
 
-#### Volg de onderstaande stappen om de GraphiQL-interface in Gatsby te openen:
+## Volg de onderstaande stappen om de GraphiQL-interface in Gatsby te openen:
 
 * Start je lokale ontwikkelingsserver op door `gatsby develop` uit te voeren in je terminal.
 * Ga in een webbrowser naar [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql). \(Dat zijn drie underscores in de URL.\)
@@ -25,9 +25,9 @@ Net zoals met de GraphiQL interface in je WordPress Applicatie kan je de gegeven
 
 {% page-ref page="../../api-graphql/wpgraphql/graphiql-ide.md" %}
 
-**GraphiQL is een handig hulpmiddel voor het testen van je GraphQL-query's voordat je ze aan je code toevoegt**. Op die manier kan je ervoor zorgen dat je queries altijd  de correcte gegevens retourneren.
+**GraphiQL is een handig hulpmiddel voor het testen van je GraphQL-query's voordat je ze aan je code toevoegt**. Op die manier kan je ervoor zorgen dat je queries altijd de correcte gegevens retourneren.
 
-#### Probeer een paar query's te maken en uit te voeren door het volgende te doen:
+## Probeer een paar query's te maken en uit te voeren door het volgende te doen:
 
 Vink enkele van de blauwe velden in het Explorer-venster aan. Merk op hoe het aanvinken van het vakje voor een veld, het toevoegt aan de query in het **Query document**.
 

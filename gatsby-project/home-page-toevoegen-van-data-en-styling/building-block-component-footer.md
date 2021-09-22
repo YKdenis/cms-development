@@ -8,7 +8,7 @@ description: >-
 
 ![Building block component: Footer](../../.gitbook/assets/image%20%28104%29.png)
 
-### Taak: Maak een nieuwe Building Block component aan genaamd Footer
+## Taak: Maak een nieuwe Building Block component aan genaamd Footer
 
 Navigeer naar je `src/components` map en creëer een nieuw bestand met de naam `footer.js`.
 
@@ -47,7 +47,6 @@ const Footer = ({ siteTitle, companyInfo }) => {
 }
 
 export default Footer
-
 ```
 {% endcode %}
 
@@ -113,14 +112,14 @@ export default Layout
 ```
 {% endcode %}
 
-*  importeer je `Footer` en definieer het helemaal vanonder in je component.
+* importeer je `Footer` en definieer het helemaal vanonder in je component.
 
 {% code title="src/components/layout.js" %}
 ```jsx
   // Imports
-  
+
   const Layout = ({ children }) => {
-  
+
   // useStaticQuery hook
 
   return (
@@ -162,7 +161,7 @@ export default Layout
 ```
 {% endcode %}
 
-### Taak: Style je Footer component ✨
+## Taak: Style je Footer component ✨
 
 In je Footer component zal je een link moeten leggen met Facebook en Instagram. Voor beide is er een icoontje voorzien dat je hieronder kan downloaden. Voeg het toe aan de map `src/images`.
 
@@ -249,7 +248,6 @@ p {
 .facebook {
   background-image: url("../images/facebook.svg");
 }
-
 ```
 {% endcode %}
 
@@ -305,7 +303,6 @@ const Footer = ({ siteTitle, companyInfo }) => {
 }
 
 export default Footer
-
 ```
 {% endcode %}
 
@@ -313,5 +310,5 @@ export default Footer
 
 ![Footer eindresultaat](../../.gitbook/assets/image%20%2840%29.png)
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen!  ✨
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen! ✨
 

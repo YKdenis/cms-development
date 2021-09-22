@@ -12,10 +12,10 @@ description: >-
 In dit hoofdstuk zal je werken aan het hieronder weergegeven ontwerp. Zoals je kan zien wordt de Wordpress data, zowel tekst als foto's, ingeladen en in een esthetisch jasje gestoken.
 
 {% hint style="info" %}
-**Opmerking** 📣**:** Verschillende onderdelen, zoals de artists tiles en de footer, heb je gemaakt in het vorige hoofdstuk. Deze onderdelen kan je hergebruiken. 
+**Opmerking** 📣**:** Verschillende onderdelen, zoals de artists tiles en de footer, heb je gemaakt in het vorige hoofdstuk. Deze onderdelen kan je hergebruiken.
 
 **Het herbruikbaar maken van componenten helpt je tijd te besparen en natuurlijk dubbele code te vermijden!**
 {% endhint %}
 
-![Artists Page](../../.gitbook/assets/localhost_8000_artists-1-.png)
+![Artists Page](../../.gitbook/assets/localhost_8000_artists-1-%20%281%29.png)
 

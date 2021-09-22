@@ -4,7 +4,7 @@ description: "Gefeliciteerd, je hebt het einde van het deel Toevoegen van dynami
 
 # Conclusie
 
-## Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden: 
+## Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden:
 
 * Wanneer moet je de component `GatsbyImage` gebruiken in plaats van de component `StaticImage`?
 
@@ -22,14 +22,14 @@ git commit -m "Toevoegen van dynamische afbeeldingen finished"
 git push origin main
 ```
 
-### Belangrijkste leerpunten 
+### Belangrijkste leerpunten
 
 * Gebruik de `StaticImage`-component als je component altijd dezelfde afbeelding weergeeft \(van een relatief pad of een externe URL\). 
 * Gebruik de `GatsbyImage`-component als de afbeeldingsbron verandert voor verschillende instanties van je component \(**zoals als deze wordt doorgegeven als een prop**\).
 
 ### Extra resources 📚
 
-{% embed url="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image\#restrictions-on-using-staticimage" %}
+{% embed url="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image\#restrictions-on-using-staticimage" caption="" %}
 
 ### Wat nu? 🤔
 

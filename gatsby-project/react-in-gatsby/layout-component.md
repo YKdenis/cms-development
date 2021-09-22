@@ -15,7 +15,7 @@ In plaats daarvan zou het beter zijn om **één gemeenschappelijke Layout compon
 In deze sectie maak je je eerste aangepaste Building block component: `Layout`. Om dat te doen, moet je een **speciale React-prop** gebruiken die `children` wordt genoemd.
 
 {% hint style="info" %}
-#### Key React Concept: Componenten met children
+### Key React Concept: Componenten met children
 
 Naast de props die je aan je componenten kunt toevoegen, maakt React ook automatisch bepaalde props voor je componenten aan.
 
@@ -39,7 +39,7 @@ Zie je `Layout` component als een fotolijst. Een lijst heeft zijn eigen vorm en 
 ![](../../.gitbook/assets/image%20%28140%29.png)
 
 {% hint style="info" %}
-Hier is een voorbeeld van hoe de code voor dit scenario eruit zou kunnen zien. Ten eerste, wanneer de `<Frame>` component  wordt weergegeven, wordt de inhoud tussen de openings- en sluitingstag doorgegeven:
+Hier is een voorbeeld van hoe de code voor dit scenario eruit zou kunnen zien. Ten eerste, wanneer de `<Frame>` component wordt weergegeven, wordt de inhoud tussen de openings- en sluitingstag doorgegeven:
 {% endhint %}
 
 {% code title="src/pages/gallery.js" %}

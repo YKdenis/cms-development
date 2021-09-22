@@ -15,10 +15,10 @@ Om de basispaginastructuur voor je artist agency op te bouwen, moet je weten wat
 1. nieuwe **page components** aan te maken en toe te voegen aan je site;
 2. Importeren en gebruiken van een kant-en-klaar component uit een andere package;
 3. Het maken van je eigen herbruikbare "**building block**" -component;
-4. Gebruik ****van **component props** om de manier waarop een component wordt weergegeven te manipuleren;
+4. Gebruik **\*\*van** component props\*\* om de manier waarop een component wordt weergegeven te manipuleren;
 5. Gebruik van de **children prop** om een **wrapper component** te maken;
 
-### Wat is React? 
+### Wat is React?
 
 React is de JavaScript-bibliotheek die Gatsby onder de motorkap gebruikt om gebruikersinterfaces \(UI's\) te maken. Met React kun je je gebruikersinterface opsplitsen in kleinere, herbruikbare stukjes die componenten \(**components**\) worden genoemd.
 

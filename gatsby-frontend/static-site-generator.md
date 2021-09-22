@@ -20,9 +20,9 @@ Satic site-generators passen gegevens en inhoud toe op templates en genereren ee
 
 Het grootste verschil tussen een static site-generator en een traditionele webapplicatie-stack, is dat in plaats van te wachten tot een pagina wordt opgevraagd en vervolgens elke keer de weergave op aanvraag genereert, **een static site-generator dit van tevoren doet**, zodat de weergave klaar is om op voorhand te serveren. En het doet dit voor elke pagina van een site tijdens het bouwen.
 
-Beschouw een static site-generator als een **bouw proces** dat gegevens, inhoud en templates opneemt, verwerkt en een map vol met alle resulterende pagina's en middelen exporteert \(**HTML, CSS en Javascript bestanden**\). 
+Beschouw een static site-generator als een **bouw proces** dat gegevens, inhoud en templates opneemt, verwerkt en een map vol met alle resulterende pagina's en middelen exporteert \(**HTML, CSS en Javascript bestanden**\).
 
-Dit heeft een aantal waardevolle effecten, maar het belangrijkste is dat het werk verschuift van "**request time**" \(wanneer gebruikers om de weergave vragen\) naar "**build time**" \(de tijd nodig om het gehele bouwproces te doorlopen\). 
+Dit heeft een aantal waardevolle effecten, maar het belangrijkste is dat het werk verschuift van "**request time**" \(wanneer gebruikers om de weergave vragen\) naar "**build time**" \(de tijd nodig om het gehele bouwproces te doorlopen\).
 
 In een traditionele aanpak, zoals bij de gekoppelde CMS-architectuur van WordPress, wordt er bij elke aanvraag van een pagina **dynamisch een template en databank gegevens gecombineerd**. Dit proces vindt plaats op de server en zal de **request time verhogen**!
 
@@ -32,25 +32,25 @@ In een traditionele aanpak, zoals bij de gekoppelde CMS-architectuur van WordPre
 
 ### Statische en dynamische websites
 
-Websites kunnen over het algemeen worden onderverdeeld in twee categorieën: **statisch** en **dynamisch**. 
+Websites kunnen over het algemeen worden onderverdeeld in twee categorieën: **statisch** en **dynamisch**.
 
-{% embed url="https://www.youtube.com/watch?v=\_wFJj94kSTU&t=337s&ab\_channel=Academind" %}
+{% embed url="https://www.youtube.com/watch?v=\_wFJj94kSTU&t=337s&ab\_channel=Academind" caption="" %}
 
 #### Statische websites
 
-Een statische website lijkt veel op zoals het klinkt: statisch, vast, constant. Dat wil zeggen dat het wordt opgeslagen op een server en in de huidige vorm wordt afgeleverd in de webbrowser van de gebruiker. Het verandert niet tussen het moment waarop de ontwikkelaar op de knop "Opslaan" drukt en het moment waarop de eindgebruiker erop klikt. 
+Een statische website lijkt veel op zoals het klinkt: statisch, vast, constant. Dat wil zeggen dat het wordt opgeslagen op een server en in de huidige vorm wordt afgeleverd in de webbrowser van de gebruiker. Het verandert niet tussen het moment waarop de ontwikkelaar op de knop "Opslaan" drukt en het moment waarop de eindgebruiker erop klikt.
 
-Ontwikkelaars maken de inhoud met behulp van **HTML, CSS** en **Javascript.** De Javascript van toepassing in statische websites is uitsluitend bedoeld voor in de webbrowser. 
+Ontwikkelaars maken de inhoud met behulp van **HTML, CSS** en **Javascript.** De Javascript van toepassing in statische websites is uitsluitend bedoeld voor in de webbrowser.
 
 {% hint style="info" %}
 Javascript zoals NodeJS, dat op een server wordt uitgevoerd, is hier niet van toepassing!
 {% endhint %}
 
-De code dat op de hostingserver staat bestaat uitsluitend uit HTML, CSS en Javascript. Deze wordt in zijn geheel naar de eindgebruiker verstuurt wanneer er een request wordt ingediend. De eindgebruiker zal met **één request** de gehele website te zien krijgen. **Er wordt geen dynamische data achteraf opgehaald.**  
+De code dat op de hostingserver staat bestaat uitsluitend uit HTML, CSS en Javascript. Deze wordt in zijn geheel naar de eindgebruiker verstuurt wanneer er een request wordt ingediend. De eindgebruiker zal met **één request** de gehele website te zien krijgen. **Er wordt geen dynamische data achteraf opgehaald.**
 
 #### Dynamische Websites
 
-Dynamische websites zijn in een bijna constante staat van verandering en worden doorgaans aangedreven door een CMS. Het CMS bouwt letterlijk elke pagina op aanvraag elke keer dat een gebruiker deze oproept. 
+Dynamische websites zijn in een bijna constante staat van verandering en worden doorgaans aangedreven door een CMS. Het CMS bouwt letterlijk elke pagina op aanvraag elke keer dat een gebruiker deze oproept.
 
 Elke pagina bevat een template waarin er dynamisch data wordt ingeladen. Wanneer een gebruiker een bepaalde dynamische pagina oproept zal de hostingserver de **template** aanroepen en invullen. De server zal **meerdere requests** sturen naar het CMS \(of externe services\) om de dynamische data op te vragen. Vervolgens zal de server de pagina opbouwen a.d.h.v. de ontvangen dynamische data en stuurt deze ten slotte naar de browser.
 
@@ -64,7 +64,7 @@ Het grootste voordeel van een SPA is de gebruiksvriendelijkheid. De gebruiker ho
 **React applicaties zijn SPA's** - Je kan het merken aan de snelle response tijd bij het laden van een "nieuwe pagina". Het is instant, geen wit scherm tussen het navigeren van pagina's!
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=Kg0Q\_YaQ3Gk&ab\_channel=Academind" %}
+{% embed url="https://www.youtube.com/watch?v=Kg0Q\_YaQ3Gk&ab\_channel=Academind" caption="" %}
 
 ### Problemen met CMS-aangedreven websites
 
@@ -78,7 +78,7 @@ Gelukkig is er een andere manier.
 
 ### Voordelen van static sites vs dynamic sites
 
-Een static site-generator is in principe een set tools voor het bouwen van statische websites op basis van een set input files. Static site-generators maken voor ontwikkelaars een statische site die voornamelijk bestaat uit een reeks HTML-pagina's die op een HTTP-server worden geïmplementeerd. In die zin zijn er alleen bestanden en mappen, **dus geen database en geen calls naar een externe backend/server**. Bij het opzetten van een server nemen ontwikkelaars de statische site die is gemaakt door de static site-generator en implementeren deze op de server. Wanneer een gebruiker een pagina opvraagt, vindt de server eenvoudig het overeenkomende bestand en stuurt het terug naar de gebruiker. 
+Een static site-generator is in principe een set tools voor het bouwen van statische websites op basis van een set input files. Static site-generators maken voor ontwikkelaars een statische site die voornamelijk bestaat uit een reeks HTML-pagina's die op een HTTP-server worden geïmplementeerd. In die zin zijn er alleen bestanden en mappen, **dus geen database en geen calls naar een externe backend/server**. Bij het opzetten van een server nemen ontwikkelaars de statische site die is gemaakt door de static site-generator en implementeren deze op de server. Wanneer een gebruiker een pagina opvraagt, vindt de server eenvoudig het overeenkomende bestand en stuurt het terug naar de gebruiker.
 
 {% hint style="info" %}
 **M.a.w. er worden geen requests gedaan naar externe services die overbodige complexiteit, prestatieproblemen en beveiligingsproblemen zouden toevoegen**.
@@ -108,7 +108,7 @@ Een version control system dient als een zeer betrouwbare externe back-up. Het i
 
 ### Een static site-generator is niet altijd de beste optie
 
-Static site-generators bieden een oplossing waarmee bedrijven **een zeer veilige, snelle, schaalbare en flexibele** website kunnen maken. Maar hoewel ze inderdaad de voordelen bieden van zowel de CMS als de static site-wereld, zijn ze niet per se geschikt voor elk project, en er zijn een aantal dingen die je zeker moet overwegen vooraleer je een SSG gebruikt. 
+Static site-generators bieden een oplossing waarmee bedrijven **een zeer veilige, snelle, schaalbare en flexibele** website kunnen maken. Maar hoewel ze inderdaad de voordelen bieden van zowel de CMS als de static site-wereld, zijn ze niet per se geschikt voor elk project, en er zijn een aantal dingen die je zeker moet overwegen vooraleer je een SSG gebruikt.
 
 Om te beginnen lijken static site-generators misschien ingewikkeld voor niet-programmeurs, en het is waar dat je niet ver komt met een SSG zonder enige ontwikkelingsexpertise aan boord. En hier is nog een knelpunt: de community van static site-generators is nog relatief nieuw en daarom klein in vergelijking met bijvoorbeeld de WordPress-ondersteuningen die er zijn. Relatief, omdat de community van SSG's zoals Gatsby enorm snel aan het groeien zijn.
 
@@ -122,6 +122,5 @@ En als je een volledig dynamische website nodig hebt waarvan de inhoud van bepaa
 
 Voor sites die niet de functionaliteit van een dynamische website nodig hebben, bieden static site-generators een hele reeks voordelen. De meeste websites overschrijden zelden enkele tientallen pagina's, en zelfs degenen die niet vaak moeten worden bijgewerkt. Als zodanig is een CMS vaak overkill, wat de prestaties van de site beïnvloedt, de site blootstelt aan beveiligingsrisico's en de kosten verhoogt.
 
-**Met static site-generator zijn er minder bewegende delen, wat de snelheid en prestaties aanzienlijk verbetert.** Ze zijn ook zeer veilig, zeer betrouwbaar, worden steeds krachtiger, vergen minimale onderhoudsinspanning en kosten minder geld om te bedienen. Om deze redenen kunnen we in de toekomst verwachten dat het SSG-gebruik verder zal groeien, evenals verbeteringen van providers die ze gemakkelijk te gebruiken maken voor niet-technische gebruikers.  
-
+**Met static site-generator zijn er minder bewegende delen, wat de snelheid en prestaties aanzienlijk verbetert.** Ze zijn ook zeer veilig, zeer betrouwbaar, worden steeds krachtiger, vergen minimale onderhoudsinspanning en kosten minder geld om te bedienen. Om deze redenen kunnen we in de toekomst verwachten dat het SSG-gebruik verder zal groeien, evenals verbeteringen van providers die ze gemakkelijk te gebruiken maken voor niet-technische gebruikers.
 

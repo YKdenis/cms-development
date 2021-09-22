@@ -6,7 +6,7 @@ description: >-
 
 # Wat is een WordPress Child-thema?
 
-## Wat is een Child-thema? 
+## Wat is een Child-thema?
 
 Onderliggende thema's worden vaak gebruikt wanneer je een bestaand WordPress-thema wilt aanpassen zonder de mogelijkheid te verliezen om dat thema te updaten. In het verleden was er geen gemakkelijke manier om WordPress-thema's bij te werken zonder alle aangepaste stijlen en wijzigingen die je had aangebracht te verliezen. Dit wordt chaos als je er plotseling achter komt dat een veelgebruikt script in populaire thema's een grote exploit heeft en je je thema's zo snel mogelijk moet bijwerken. Het wordt een moeilijke keuze omdat je aan de ene kant alle aangepaste stijlen verliest als je een update uitvoert en aan de andere kant het risico loopt dat je site gehackt kan worden.
 

@@ -22,7 +22,7 @@ Navigeer naar Pages in je WordPress werkbalk en voeg 4 nieuwe pagina's toe en ve
 
 ![](../../.gitbook/assets/image%20%2887%29.png)
 
-We hebben de Sample Page verwijderd terwijl er nog een field group aanhing. Navigeer terug naar Custom fields en zet de Sample Page Fields op inactive. 
+We hebben de Sample Page verwijderd terwijl er nog een field group aanhing. Navigeer terug naar Custom fields en zet de Sample Page Fields op inactive.
 
 _Je mag de Sample Page Fields ook verwijderen maar het kan handig zijn als referentie voor later._
 
@@ -84,7 +84,5 @@ De correcte oplossing zal in les 3 op Digitap worden gezet!
 
 Nu dat je de correcte structuur hebt voorzien voor de field group mag je voor alle pagina's de metadata invullen! Gebruik hiervoor echte data of dummy data dat de grote van elk inputveld reflecteert. 4 woorden voor een description is niet voldoende!
 
-Je kan hiervoor een Lorem Ipsum generator gebruiken. Er zijn verschillende gratis generators te vinden op het internet! 
-
-
+Je kan hiervoor een Lorem Ipsum generator gebruiken. Er zijn verschillende gratis generators te vinden op het internet!
 

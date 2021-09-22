@@ -11,7 +11,7 @@ Om de `GatsbyImage`-component te gebruiken, moet je de plugin `gatsby-transforme
 
 Wanneer Gatsby tijdens het bouwen nodes aan de Data Layer toevoegt, zoekt de plugin `gatsby-transformer-sharp` naar `File` nodes die eindigen op een afbeeldingsextensie \(zoals .png of .jpg\) en maakt een `ImageSharp`-node voor dat bestand.
 
-{% embed url="https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/" %}
+{% embed url="https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/" caption="" %}
 
 `gatsby-transformer-sharp` is al geïnstalleerd in je project aangezien het gebaseerd is op een starter template. Het enigste dat je moet doen is het toevoegen aan je `gatsby-config.js`-file zoals hieronder weergegeven:
 

@@ -8,9 +8,9 @@ description: >-
 
 ## Een Custom Taxonomies manueel aanmaken
 
-Voeg de volgende code toe aan het `functions.php` van je child-thema. Als je nog geen child-thema hebt aangemaakt doe dat eerst. Indien er ooit een update komt van je hoofdthema zal al de onderstaande code verloren gaan! 
+Voeg de volgende code toe aan het `functions.php` van je child-thema. Als je nog geen child-thema hebt aangemaakt doe dat eerst. Indien er ooit een update komt van je hoofdthema zal al de onderstaande code verloren gaan!
 
-Let er op dat je deze code plakt binnen de opening en closing tags van je PHP code en niet binnen de body van een andere functie. Als je al een custom post type hebt aangemaakt kan je de taxonomy code op het zelfde niveau juist daaronder plaatsen.  Als je meer informatie wenst omtrent de code en hoe WordPress dit interpreteert bekijk dan zeker eens de [documentatie.](https://developer.wordpress.org/reference/functions/register_taxonomy/)
+Let er op dat je deze code plakt binnen de opening en closing tags van je PHP code en niet binnen de body van een andere functie. Als je al een custom post type hebt aangemaakt kan je de taxonomy code op het zelfde niveau juist daaronder plaatsen. Als je meer informatie wenst omtrent de code en hoe WordPress dit interpreteert bekijk dan zeker eens de [documentatie.](https://developer.wordpress.org/reference/functions/register_taxonomy/)
 
 {% code title="functions.php" %}
 ```php
@@ -77,7 +77,7 @@ add_action('init', function() {
 
 In dit voorbeeld maken we een taxonomy aan met de naam '`role`' als eerste argument. Het tweede argument bepaald op welke soort post type de taxonomy van toepassing is. In ons geval is dat de custom post type '`artist`'. Het derde argument is een array van object types waarmee de taxonomy geassocieerd wordt. Aan de hand van deze object types kan je de taxonomy aanpassen net zoals je dat bij de custom post type hebt gedaan.
 
-#### Object Types
+### Object Types
 
 * **public**: Of een taxonomy bedoeld is voor openbaar gebruik, hetzij via de admin-interface, hetzij door front-end gebruikers.
 * **Labels**: Een reeks labels die worden gebruikt in de GUI van WordPress.
