@@ -32,6 +32,8 @@ Jullie zullen zelf een Headless WordPress back-end en Gatsby front-end moeten op
 
 Je zal je website via de hosting service van **Netlify** online moeten zetten. Dit zal je doen met behulp van Continuous Deployment!
 
+Voorbeeld opdracht: [Artist Agency](https://artist-agency-2021.netlify.app/)
+
 ### SharePoint
 
 SharePoint is een tool waarmee je sites kan maken om documenten en informatie te delen met collega's, partners en klanten.
