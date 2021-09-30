@@ -14,7 +14,7 @@
 
 * [Headless WordPress](headless-wordpress-1/omschrijving.md)
 * [Headless WP vs Traditionele WP](headless-wordpress-1/waarom-headless.md)
-* [Waarom WP doen?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/README.md)
+* [Waarom Headless WP?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/README.md)
   * [Voordelen van een Headless approach](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/voordelen.md)
   * [Nadelen van een Headless approach](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/nadelen.md)
   * [Wat onderscheidt Headless precies?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/hoe-werkt-headless-precies.md)
