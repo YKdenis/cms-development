@@ -30,7 +30,7 @@ Wanneer je de front-end van WordPress verwijdert, kom je uit op een lichtgewicht
 
 Dit betekent op zijn beurt dat je inhoud gemakkelijk te consumeren is, zelfs op mobiele apparaten, wat steeds belangrijker wordt als je weet dat meer dan de helft van al het webverkeer afkomstig is van mobiele apparaten.
 
-Sinds je front-end is losgekoppeld kan je opteren voor eender welke front-end technologie waaronder ook statische website builders zoals Gatsby. Een gekoppelde WordPress site laad data dynamisch in. M.a.w. voor elk soort data, dit kan een gebruiker zijn, blog posts, menu items, foto's, etc., wordt er een aparte call gedaan naar de server en terug. Dit zorgt er voor dat je website snel verschillende megabytes moet gaan downloaden vooraleer het iets kan weergeven in de browser. Een statische websitebuilder zoals Gatsby prerendert de website en genereert HTML files waarin de dynamische data statisch wordt weergegeven. Dit wilt zeggen dat de browser geen dynamische requests meer moet uitvoeren om de eerste schets te tekenen.
+Sinds je front-end is losgekoppeld kan je opteren voor eender welke front-end technologie waaronder ook statische website builders zoals Gatsby. Een gekoppelde WordPress site laadt data dynamisch in. M.a.w. voor elk soort data, dit kan een gebruiker zijn, blog posts, menu items, foto's, etc., wordt er een aparte call gedaan naar de server en terug. Dit zorgt er voor dat je website snel verschillende megabytes moet gaan downloaden vooraleer het iets kan weergeven in de browser. Een statische websitebuilder zoals Gatsby prerendert de website en genereert HTML files waarin de dynamische data statisch wordt weergegeven. Dit wilt zeggen dat de browser geen dynamische requests meer moet uitvoeren om de eerste schets te tekenen.
 
 {% hint style="info" %}
 Als je dit nog niet zo goed begrijpt, geen zorgen! We komen hier later nog op terug wanneer we ons zullen verdiepen in Gatsby en statische websites.
@@ -52,7 +52,9 @@ Bovendien kan Headless WordPress, aangezien het API-gestuurd is, toekomstige pop
 
 Gezien de populariteit van WordPress is het vaak een doelwit voor hackers. Het is een opensource platform waarvan de front-end en de back-end op dezelfde server worden gehost. Dit brengt met zich mee dat er vaak exploits worden gevonden waardoor de data van de gebruikers niet meer veilig is. Combineer dat nog eens met slechte beveiligingspraktijken en gehackte websites en DDOS-aanvallen zijn niet ongebruikelijk.
 
-_De website content kan van de ene op de andere dag kan verdwijnen als je niet oppast of als je een hostingbedrijf gebruikt dat geen goede beveiligingsprotocollen implementeert._
+{% hint style="info" %}
+De website content kan van de ene op de andere dag verdwijnen als je niet oppast of als je een hostingbedrijf gebruikt dat geen goede beveiligingsprotocollen implementeert.
+{% endhint %}
 
 De ontkoppeling van WordPress kan dus de beveiliging verbeteren, vooral als je de website en WordPress admin op verschillende servers en domeinen hebt staan. Hacks en DDoS-aanvallen kunnen alleen op een van deze eindpunten worden gericht. Dus als beveiliging belangrijk voor je is, kan een headless CMS op een verborgen server de oplossing zijn.
 
