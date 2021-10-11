@@ -28,10 +28,10 @@ git commit -m "Query data met GraphQL finished"
 git push origin main
 ```
 
-### Belangrijkste leerpunten 
+### Belangrijkste leerpunten
 
 * `source` **plugins** halen gegevens van hun oorspronkelijke locatie naar de Gatsby GraphQL Data Layer.
-* Je kan het** GraphiQL eindpunt** ([localhost:8000/\__\_graphql](http://localhost:8000/\__\_graphql)) gebruiken om de gegevens in de Data Layer te verkennen en GraphQL-query's te ontwerpen. 
+* Je kan het **GraphiQL eindpunt** ([localhost:8000/\__\_graphql](http://localhost:8000/\__\_graphql)) gebruiken om de gegevens in de Data Layer te verkennen en GraphQL-query's te ontwerpen. 
 * Je kan GraphQL-query's schrijven om gegevens uit de Data Layer en in je React-componenten te halen. 
   * Gebruik de `useStaticQuery`**-hook** om gegevens naar een "**Building Block**" -component op te halen. 
   * Gebruik een **page query** om gegevens in een **page component** op te halen.

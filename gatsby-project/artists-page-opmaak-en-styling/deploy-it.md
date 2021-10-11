@@ -8,7 +8,7 @@ description: >-
 
 ## Eindresultaat:
 
-![Artists Page](<../../.gitbook/assets/localhost\_8000\_artists (1).png>)
+![Artists Page](../../.gitbook/assets/localhost\_8000\_artists-1-.png)
 
 ### Push je aanpassingen naar GitHub
 

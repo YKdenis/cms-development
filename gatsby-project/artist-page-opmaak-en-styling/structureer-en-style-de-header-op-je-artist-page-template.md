@@ -6,9 +6,9 @@ description: >-
 
 # Structureer en style de header op je Artist page template
 
-![Eindresultaat Artist Page Template header](<../../.gitbook/assets/image (152).png>)
+![Eindresultaat Artist Page Template header](<../../.gitbook/assets/image (71).png>)
 
-### Taak: Voeg de JSX structuur toe voor je header op je Artist template page
+## Taak: Voeg de JSX structuur toe voor je header op je Artist template page
 
 Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
@@ -60,7 +60,7 @@ const ArtistPage = ({
 {% endcode %}
 
 {% hint style="info" %}
-**Pro tip 🧙‍♂️: **Als je een object of array deconstrueert kan je aan de hand van een `:`-operator kan je de variabele dat je er uithaalt een andere naam geven. 
+**Pro tip 🧙‍♂️:** Als je een object of array deconstrueert kan je aan de hand van een `:`-operator kan je de variabele dat je er uithaalt een andere naam geven.
 
 In de code hierboven heb je dit toegepast op het `nodes` object en heb je het de naam `roles` gegeven!
 {% endhint %}
@@ -78,7 +78,7 @@ const ArtistPage = ({
 ```
 
 {% hint style="info" %}
-Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND (&&) gebruiken zoals je hierboven hebt gedaan! 
+Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND (&&) gebruiken zoals je hierboven hebt gedaan!
 
 Als `artistName` niet gelijk is aan `null` dan wordt het `<h3>`-element met de `artistName` weergegeven in je HTML.
 
@@ -89,7 +89,7 @@ Meer info: [Logical AND operator](https://developer.mozilla.org/en-US/docs/Web/J
 {artist.artistName && <h3>{artist.artistName}</h3>}
 ```
 
-### Taak: Sprinkle wat CSS op je Artist page template header  ✨
+## Taak: Sprinkle wat CSS op je Artist page template header  ✨
 
 * Navigeer naar je page.module.css en voeg onderstaande CSS classes toe onderaan je file.
 
@@ -223,6 +223,6 @@ const ArtistPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Eindresultaat](<../../.gitbook/assets/image (152).png>)
+![Eindresultaat](<../../.gitbook/assets/image (71) (1).png>)
 
 In het volgende onderdeel zal je een nieuwe sectie aanmaken en daaraan de pictures toevoegen!

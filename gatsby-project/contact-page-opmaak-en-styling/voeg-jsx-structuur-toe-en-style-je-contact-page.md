@@ -6,7 +6,7 @@ description: >-
 
 # Voeg JSX structuur toe en style je contact page
 
-### Taak: Voeg toe en pas de JSX structuur aan voor je Contact Page
+## Taak: Voeg toe en pas de JSX structuur aan voor je Contact Page
 
 Voeg de onderstaande JSX toe aan de return waarde van je page component. Vergeet niet je imports toe te voegen voor `GatsbyImage` en `getImage`!
 
@@ -58,7 +58,7 @@ const ContactPage = ({
 ```
 {% endcode %}
 
-### Taak: Voeg CSS toe aan je Contact page JSX  ✨
+## Taak: Voeg CSS toe aan je Contact page JSX  ✨
 
 Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 

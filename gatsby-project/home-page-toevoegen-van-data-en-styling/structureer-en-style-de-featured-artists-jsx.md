@@ -6,9 +6,9 @@ description: >-
 
 # Structureer en style de Featured Artists JSX
 
-![Featured artists sectie](<../../.gitbook/assets/image (145).png>)
+![Featured artists sectie](<../../.gitbook/assets/image (11).png>)
 
-### Taak: Giet je featured artists data in een JSX structuur
+## Taak: Giet je featured artists data in een JSX structuur
 
 Je featured artists data bestaat uit een `title`, `description` en een array van artiesten genaamd `artists`. Itereer over je artiesten array met behulp van een `map`-functie. Voor elke artiest zal je een Gatsby `Link` component moeten terugsturen dat een link legt met de `{wpArtist.slug}.js` page template.
 
@@ -19,14 +19,14 @@ Je featured artists data bestaat uit een `title`, `description` en een array van
 <Layout>
 
 // Home Page Header JSX
-  
+
   <div>
     <h2>{homePage.featuredArtists.title}</h2>
     <p>{homePage.featuredArtists.description}</p>
     <div>
       {homePage.featuredArtists.artists.map(artist => {
         const profile = getImage(artist.artistMeta.profilePicture.localFile)
-  
+
         return (
           <Link to={`artists/${artist.slug}`}>
             <GatsbyImage
@@ -54,7 +54,7 @@ Je featured artists data bestaat uit een `title`, `description` en een array van
 
 Het `Link`-component dat je hierboven hebt gedefinieerd zal je hergebruiken op de Artists page. In plaats van het te kopiëren, en zo dubbele code te hebben, kan je van het `Link`-component een **Building Block component** maken.
 
-#### Maak een nieuwe file aan in je `src/components` map genaamd `artist.js`. 
+### Maak een nieuwe file aan in je `src/components` map genaamd `artist.js`.
 
 * Definieer een nieuw component met de naam `Artist` en plak de code binnen je `map`-functie in je featured artists sectie in het component.
 * Vergeet niet je `Link`-component, `GatsbyImage` en `getImage` te importeren!
@@ -97,7 +97,7 @@ export default Artist;
 <Layout>
 
 // Home Page Header JSX
-  
+
   <div>
     <h2>{homePage.featuredArtists.title}</h2>
     <p>{homePage.featuredArtists.description}</p>
@@ -113,9 +113,9 @@ export default Artist;
 ```
 {% endcode %}
 
-### Taak: Sprinkle wat CSS op je Artist JSX  ✨
+## Taak: Sprinkle wat CSS op je Artist JSX  ✨
 
-De CSS voor de Featured Artists zal worden opgesplitst in twee bestanden. `src/components/artist.module.css` en `src/page.module.css`. Aangezien je `Artist.js`-bestand een Building Block component is kunnen we hiervoor een apart CSS-bestand voor voorzien. 
+De CSS voor de Featured Artists zal worden opgesplitst in twee bestanden. `src/components/artist.module.css` en `src/page.module.css`. Aangezien je `Artist.js`-bestand een Building Block component is kunnen we hiervoor een apart CSS-bestand voor voorzien.
 
 * Begin met het maken van een nieuw CSS-bestand in je `src/components` genaamd `artist.module.css`.
 * Voeg volgende CSS classes toe aan `artist.module.css`.
@@ -224,7 +224,7 @@ export default Artist
 ```
 {% endcode %}
 
-### Taak: Style je featured artists sectie  ✨
+## Taak: Style je featured artists sectie  ✨
 
 Vooraleer je begint met het stylen van je featured artists sectie moet je twee SVG-bestanden downloaden en toevoegen aan je `src/images` map.
 
@@ -288,7 +288,6 @@ Deze twee blobs zal je gebruiken in je CSS voor de groene achtergrond te creëre
   margin-top: 90px;
   flex-wrap: wrap;
 }
-
 ```
 {% endcode %}
 
@@ -323,7 +322,7 @@ import {
 <Layout>
 
   // Home Page Header JSX
-  
+
   <div className={section}>
     <h2 className={subtitle}>{homePage.featuredArtists.title}</h2>
     <p>{homePage.featuredArtists.description}</p>
@@ -345,6 +344,6 @@ import {
 
 * Navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![Featured artists sectie](<../../.gitbook/assets/image (145).png>)
+![Featured artists sectie](<../../.gitbook/assets/image (11) (1).png>)
 
-Voila, je featured artists sectie is af! 🥳 In het volgende deel zal je het laatste deel van je home page bouwen namelijk de `Footer`. **Dit zal net zoals je **`Artist`** component een Building block component zijn aangezien het op elke pagina zal worden herbruikt**!
+Voila, je featured artists sectie is af! 🥳 In het volgende deel zal je het laatste deel van je home page bouwen namelijk de `Footer`. **Dit zal net zoals je** `Artist` **component een Building block component zijn aangezien het op elke pagina zal worden herbruikt**!

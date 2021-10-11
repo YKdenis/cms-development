@@ -18,7 +18,7 @@ Gatsby heeft hiervoor zelf een goede tutorial ter beschikking die je kan volgen 
 
 ### De Command Line Interface
 
-De command line is **een op tekst gebaseerde interface die wordt gebruikt om opdrachten op je computer uit te voeren**. Je zult het ook vaak als **de terminal** zien. In deze cursus gebruiken we beide termen door elkaar. 
+De command line is **een op tekst gebaseerde interface die wordt gebruikt om opdrachten op je computer uit te voeren**. Je zult het ook vaak als **de terminal** zien. In deze cursus gebruiken we beide termen door elkaar.
 
 Voor Gatsby zal je basis commando's zoals `cd`, `ls`, en `npm i`, ... moeten gebruiken. In vorige of samenlopende vakken heb je hoogstwaarschijnlijk al eens in de terminal gewerkt. Indien dit niet het geval is, of je wilt de basis er van nog eens opfrissen bekijk dan onderstaande links.
 
@@ -54,27 +54,27 @@ node -v
 {% endtab %}
 {% endtabs %}
 
-![](<../.gitbook/assets/image (92).png>)
+![](<../.gitbook/assets/image (41).png>)
 
 #### Wat is NPM?
 
 **npm is een JavaScript package manager.** Als je Node.js hebt gedownload en geïnstalleerd, is npm er automatisch bij geïnstalleerd!
 
 {% hint style="info" %}
-Een package is een code geschreven door andere developers die je kan hergebruiken in je eigen projecten. 
+Een package is een code geschreven door andere developers die je kan hergebruiken in je eigen projecten.
 
 Bekijk ["Wat is npm?"](https://docs.npmjs.com/about-npm/index.html) voor meer informatie omtrent npm.
 {% endhint %}
 
 ### Git
 
-Git is een **gratis en open source gedistribueerd versiebeheersysteem** dat is ontworpen voor verschillende versies van je code op te slagen. Het helpt teamleden  om tegelijkertijd aan dezelfde codebase te werken.
+Git is een **gratis en open source gedistribueerd versiebeheersysteem** dat is ontworpen voor verschillende versies van je code op te slagen. Het helpt teamleden om tegelijkertijd aan dezelfde codebase te werken.
 
-Voor je Artist Agency project zal je een "starter"-site gebruiken. Dit is een **template project **waarop jij kan verder bouwen  
+Voor je Artist Agency project zal je een "starter"-site gebruiken. Dit is een **template project** waarop jij kan verder bouwen
 
 Wanneer je een Gatsby "starter" -site installeert, gebruikt Gatsby Git achter de schermen om de vereiste bestanden voor je starter te downloaden en te installeren. M.a.w. je moet Git hebben geïnstalleerd om je eerste Gatsby-site op te zetten.
 
-De stappen om Git te downloaden en te installeren, zijn afhankelijk van je besturingssysteem. Volg de gids voor je systeem: 
+De stappen om Git te downloaden en te installeren, zijn afhankelijk van je besturingssysteem. Volg de gids voor je systeem:
 
 * Installeer Git op [macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
 * Installeer Git op [Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
@@ -85,7 +85,7 @@ Git is correct geïnstalleerd als je de versie terug krijgt bij het typen van gi
 git --version
 ```
 
-![](<../.gitbook/assets/image (93).png>)
+![](<../.gitbook/assets/image (85).png>)
 
 ### Gatsby CLI
 

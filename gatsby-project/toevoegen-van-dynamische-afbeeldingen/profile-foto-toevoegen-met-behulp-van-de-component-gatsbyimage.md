@@ -6,7 +6,7 @@ description: >-
 
 # Profile foto toevoegen met behulp van de component GatsbyImage
 
-## Taak: Profile foto toevoegen met behulp van de component GatsbyImage 
+## Taak: Profile foto toevoegen met behulp van de component GatsbyImage
 
 Zodra je je GraphQL-query hebt ingesteld, kan je deze toevoegen aan je artist page template, `{wpArtist.slug}.js`.
 
@@ -70,7 +70,6 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 
@@ -110,7 +109,7 @@ const ArtistPage = (
 {% endcode %}
 
 {% hint style="info" %}
-**Opmerking **📣: `getImage` is een hulpfunctie die een `File`-node of een `ImageSharp`-node opneemt en het `gatsbyImageData`-object voor die node retourneert. Je kan het gebruiken om je code een beetje properder en leesbaar te houden.
+**Opmerking** 📣: `getImage` is een hulpfunctie die een `File`-node of een `ImageSharp`-node opneemt en het `gatsbyImageData`-object voor die node retourneert. Je kan het gebruiken om je code een beetje properder en leesbaar te houden.
 
 Zonder de `getImage`-helperfunctie zou je `artist.profilePicture.localFile.childImageSharp.gatsbyImageData` moeten typen (wat langer is, maar je dezelfde gegevens teruggeeft).
 {% endhint %}
@@ -182,12 +181,11 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 
 Wanneer je nu elk van je artist pagina's bezoekt, zou je de bijbehorende profile foto boven de naam van je artist moeten zien!
 
-![Kevin Bismark - /artists/kevin-bismark](<../../.gitbook/assets/image (137).png>)
+![Kevin Bismark - /artists/kevin-bismark](<../../.gitbook/assets/image (124).png>)
 
-![Anne Woznak - /artists/anne-woznak](<../../.gitbook/assets/image (139).png>)
+![Anne Woznak - /artists/anne-woznak](<../../.gitbook/assets/image (155).png>)

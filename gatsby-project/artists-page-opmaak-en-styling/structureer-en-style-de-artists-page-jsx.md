@@ -6,7 +6,7 @@ description: >-
 
 # Structureer en style de Artists page JSX
 
-### Taak: Voeg toe en pas de JSX structuur aan voor je Artists Page
+## Taak: Voeg toe en pas de JSX structuur aan voor je Artists Page
 
 Importeer de `GatsbyImage` component en de `getImage` hulpfunctie. Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
@@ -50,13 +50,13 @@ const ArtistsPage = ({
 ```
 {% endcode %}
 
-Vergeet niet je `Artist` component te importeren! 
+Vergeet niet je `Artist` component te importeren!
 
 {% hint style="info" %}
-**Pro tip 🧙‍♂**: In de `map`-functie deconstrueer je elk element waarover je itereert. Je haalt er de `node` uit en geeft het een nieuwe naam namelijk `artist`. 
+**Pro tip 🧙‍♂**: In de `map`-functie deconstrueer je elk element waarover je itereert. Je haalt er de `node` uit en geeft het een nieuwe naam namelijk `artist`.
 {% endhint %}
 
-### Taak: Voeg CSS toe aan je Artists page JSX  ✨
+## Taak: Voeg CSS toe aan je Artists page JSX  ✨
 
 Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
@@ -152,4 +152,4 @@ const ArtistsPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je artists page is volledig gestyled. In het volgende hoofdstuk zal je de individuele Artist page herstructuren en stylen!  ✨
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je artists page is volledig gestyled. In het volgende hoofdstuk zal je de individuele Artist page herstructuren en stylen! ✨

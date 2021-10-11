@@ -6,13 +6,13 @@ description: >-
 
 # Conclusie
 
-### Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden:
+## Daag jezelf uit om de volgende vragen uit het hoofd te beantwoorden:
 
 * Wat is het voordeel van het gebruik van een plugin op je Gatsby-site? 
 * Hoe kan je een nieuwe plugin aan je Gatsby-site toevoegen? 
 
 {% hint style="info" %}
-#### Deploy it! 🚀
+### Deploy it! 🚀
 
 Implementeer voordat je verder gaat je wijzigingen op je GitHub Repo, zodat je je voortgang niet kwijtspeelt!
 
@@ -25,7 +25,7 @@ git commit -m "Gatbsy Plugins finished"
 git push origin main
 ```
 
-### Belangrijkste leerpunten 
+## Belangrijkste leerpunten
 
 * Een plugin is een package waarmee je nieuwe features aan je site kan toevoegen. 
 * Het gebruik van plugins bespaart je ontwikkeltijd, omdat het sneller is om een plugin te installeren en configureren dan om dezelfde functionaliteit helemaal opnieuw te creëren. 

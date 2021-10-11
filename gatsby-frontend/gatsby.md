@@ -6,7 +6,7 @@ description: >-
 
 # Wat is Gatsby?
 
-![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MacHjpBjW0NOSAD0CGT%2Fuploads%2Fn4wGXd8zxuAzyLaTqHxk%2Ffile.png?alt=media)
+![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-McK0L74fqwFUdPmFPHF%2Fuploads%2FNNj6wBFBE5VsKvHDtnGx%2Ffile.png?alt=media)
 
 ## Wat is Gatsby?
 
@@ -24,9 +24,9 @@ Lees zeker eens [Gatsby Core Philosophy](https://www.gatsbyjs.com/docs/gatsby-co
 
 Een van de geweldige voordelen van Gatsby is dat het de GraphQL-querytaal gebruikt om gegevens op te halen van eender welke API.
 
-GraphQL is beschikbaar in Gatsby zonder een speciale installatie: een schema wordt automatisch opgezet en aangemaakt wanneer je de `gatsby develop` of `gatsby build`** **command uitvoert. Wanneer de site compileert, kan de graphiQL IDE worden geraadpleegd op: `http:/localhost:8000/___ graphql`. Als je naar deze link navigeert krijg je, net zoals in onze Headless WordPress, een GraphiQL IDE te zien. 
+GraphQL is beschikbaar in Gatsby zonder een speciale installatie: een schema wordt automatisch opgezet en aangemaakt wanneer je de `gatsby develop` of `gatsby build` _\*\*_command uitvoert. Wanneer de site compileert, kan de graphiQL IDE worden geraadpleegd op: `http:/localhost:8000/___ graphql`. Als je naar deze link navigeert krijg je, net zoals in onze Headless WordPress, een GraphiQL IDE te zien.
 
-![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MacHjpBjW0NOSAD0CGT%2Fuploads%2FMj13euQBKLXDFw4FGuyg%2Ffile.png?alt=media)
+![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-McK0L74fqwFUdPmFPHF%2Fuploads%2FBWyLkdbybyBKpNWVftbu%2Ffile.png?alt=media)
 
 Gegevens moeten worden verzameld - of toegevoegd aan het GraphQL-schema - om te worden opgevraagd en naar pagina's te worden getrokken met GraphQL. Gatsby gebruikt source plugins om gegevens op te halen.
 
@@ -37,7 +37,7 @@ Termen zoals `gatsby develop` en `gatsby build` zullen ook tijdens het labo verd
 {% endhint %}
 
 {% hint style="info" %}
-**Opmerking: **GraphQL is niet vereist: je kan Gatsby nog steeds gebruiken zonder GraphQL!
+**Opmerking:** GraphQL is niet vereist: je kan Gatsby nog steeds gebruiken zonder GraphQL!
 {% endhint %}
 
 ### Gatsby gebruikt React
@@ -65,7 +65,7 @@ Het is vermeldenswaardig dat Gatsby is gebouwd met een **plugin-architectuur** i
 
 #### Wat is een plugin?
 
-Gatsby-plugins zijn Node.js-packages die Gatsby-API's implementeren en die gewoonlijk worden geïnstalleerd via een register zoals npm.  Er zijn veel soorten plugins, waaronder data sourcing, SEO, responsieve afbeeldingen, offline ondersteuning, ondersteuning voor Sass, TypeScript, sitemaps en RSS, Google Analytics en meer.
+Gatsby-plugins zijn Node.js-packages die Gatsby-API's implementeren en die gewoonlijk worden geïnstalleerd via een register zoals npm. Er zijn veel soorten plugins, waaronder data sourcing, SEO, responsieve afbeeldingen, offline ondersteuning, ondersteuning voor Sass, TypeScript, sitemaps en RSS, Google Analytics en meer.
 
 Omdat wat we aanbieden een statische site is, kan de manier waarop we omgaan met JavaScript en andere dynamische functionaliteit van React en GraphQL een beetje ingewikkeld worden. Het is dus heel fijn dat we deze complexe code in plugins kunnen overbrengen en we kunnen vertrouwen op een enorm ecosysteem van andere plugin-auteurs om een deel van het zware werk voor ons te doen. I.p.v. het wiel heruit te vinden kunnen we plugins gebruiken van andere programmeurs om veel voorkomende functionaliteit out-of-the-box te voorzien.
 

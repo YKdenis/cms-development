@@ -4,7 +4,7 @@ description: Herhaling van de React library
 
 # Wat is een React Component?(Herhaling)
 
-### Wat is een React-component? 
+## Wat is een React-component?
 
 Onder de motorkap is een React-component een functie die een React-element retourneert. **Een React-element is een object dat React gebruikt om DOM-elementen weer te geven**.
 

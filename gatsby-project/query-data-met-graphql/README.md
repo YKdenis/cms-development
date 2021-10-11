@@ -6,7 +6,7 @@ description: >-
 
 # Query Data met GraphQL
 
-## Introductie 
+## Introductie
 
 Tot nu toe heb je tekst geschreven en afbeeldingen rechtstreeks in je React-componenten toegevoegd. Dat is een uitstekende manier om veel websites te bouwen! Maar vaak is het gemakkelijker om gegevens ergens anders aan te maken en te onderhouden - zoals een map met Markdown-bestanden of een contentmanagementsysteem (CMS) - en deze vervolgens naar behoefte in je componenten op te nemen. Op die manier kan je je inhoud bijwerken zonder de code voor je site te beïnvloeden.
 
@@ -20,9 +20,9 @@ In deze zelfstudie leer je alles over GraphQL dat je moet weten om je eerste Gat
 
 In dit deel leer je hoe je gegevens aan de Data Layer van Gatsby kan toevoegen en hoe je die gegevens in je React-componenten kan opnemen.
 
-#### Aan het einde van dit deel ben je in staat om:
+### Aan het einde van dit deel ben je in staat om:
 
-* **GraphiQL **te gebruiken om de gegevens in de Data Layer te verkennen en je eigen GraphQL-query's te bouwen. 
+* **GraphiQL** te gebruiken om de gegevens in de Data Layer te verkennen en je eigen GraphQL-query's te bouwen. 
 * Een `useStaticQuery`-hook te gebruiken om gegevens naar een "building block" -component te trekken. 
 * De `gatsby-source-filesystem` plugin gebruiken om gegevens vanuit het bestandssysteem van je computer naar je site te halen. 
 * Een Page Query te maken om gegevens in een page component op te halen.

@@ -14,9 +14,9 @@ Aangezien Gatsby routes bouwt op basis van de mappenstructuur in de `src/pages`-
 
 Maak een nieuwe map in je `src/pages`-map en noem het artists.
 
-![](<../../.gitbook/assets/image (131).png>)
+![](<../../.gitbook/assets/image (130).png>)
 
-Verplaats het bestand `src/pages/{wpArtist.slug}.js` naar de nieuwe artists-submap. 
+Verplaats het bestand `src/pages/{wpArtist.slug}.js` naar de nieuwe artists-submap.
 
 Werk de import voor je `Layout` component bij om de nieuwe mapstructuur weer te geven:
 
@@ -33,9 +33,9 @@ Zodra je lokale ontwikkelingsserver je site opnieuw heeft opgebouwd, controleer 
 Je zou nu bijvoorbeeld een pagina moeten hebben op `localhost:8000/artists/kevin-bismark`, en proberen toegang te krijgen tot `localhost:8000/kevin-bismark` (zonder de artists paramater in je route). Deze route zou je naar de **404-pagina** moeten sturen.
 
 {% hint style="info" %}
-**Pro tip **🧙‍♂️: **Gatsby slaat informatie over je site op in de cache** terwijl deze wordt gebouwd, om volgende builds sneller te maken. Maar soms, wanneer je wijzigingen aanbrengt op je site, moet je de cache leegmaken voordat je wijzigingen worden weergegeven.
+**Pro tip** 🧙‍♂️: **Gatsby slaat informatie over je site op in de cache** terwijl deze wordt gebouwd, om volgende builds sneller te maken. Maar soms, wanneer je wijzigingen aanbrengt op je site, moet je de cache leegmaken voordat je wijzigingen worden weergegeven.
 
-Als je onverwacht gedrag ziet (zoals misschien dat je lokale ontwikkelingsserver je nieuwe wijzigingen niet oppikt), kan je `gatsby clean` commando uitvoeren in de terminal om de **cache te verwijderen **en opnieuw te beginnen met je volgende build.
+Als je onverwacht gedrag ziet (zoals misschien dat je lokale ontwikkelingsserver je nieuwe wijzigingen niet oppikt), kan je `gatsby clean` commando uitvoeren in de terminal om de **cache te verwijderen** en opnieuw te beginnen met je volgende build.
 {% endhint %}
 
 Voor de organisatie zou het goed zijn om al je artiest gerelateerde pagina's bij elkaar te houden. Verplaats het bestand `src/pages/artists.js` ook naar je nieuwe map `src/pages/artists`.

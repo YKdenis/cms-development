@@ -8,7 +8,7 @@ description: >-
 
 ## **Headless WP, Gatsby en GraphQL**
 
-We gaan ons toespitsen op een specifieke infrastructuur namelijk Headless. Samen zullen we een headless **WordPress** website opzetten voor een artiesten agentschap die via een [**GraphQL**](https://graphql.org)** API** gegevens zal doorsluizen naar een zelfgeschreven front-end in [**Gatsby**](https://www.gatsbyjs.com).
+We gaan ons toespitsen op een specifieke infrastructuur namelijk Headless. Samen zullen we een headless **WordPress** website opzetten voor een artiesten agentschap die via een [**GraphQL**](https://graphql.org) **API** gegevens zal doorsluizen naar een zelfgeschreven front-end in [**Gatsby**](https://www.gatsbyjs.com).
 
 Voor velen onder jullie zullen de termen **Headless**, **GraphQL** en **Gatsby** je niet veel zeggen. Geen zorgen! Samen zullen we stap voor stap het gehele proces doorlopen.
 
@@ -32,6 +32,8 @@ Jullie zullen zelf een Headless WordPress back-end en Gatsby front-end moeten op
 
 Je zal je website via de hosting service van **Netlify** online moeten zetten. Dit zal je doen met behulp van Continuous Deployment!
 
+Voorbeeld opdracht: [Artist Agency](https://artist-agency-2021.netlify.app)
+
 ### SharePoint
 
 SharePoint is een tool waarmee je sites kan maken om documenten en informatie te delen met collega's, partners en klanten.
@@ -39,7 +41,7 @@ SharePoint is een tool waarmee je sites kan maken om documenten en informatie te
 In het laatste deel van deze cursus zal je leren hoe je een SharePoint website opzet en onderhoudt.
 
 {% hint style="info" %}
-**Opmerking **📣: Termen zoals **statische webpagina's** en **Continuous Deployment** zeggen je waarschijnlijk niet veel. Geen zorgen! We zullen alles stap per stap overlopen!
+**Opmerking** 📣: Termen zoals **statische webpagina's** en **Continuous Deployment** zeggen je waarschijnlijk niet veel. Geen zorgen! We zullen alles stap per stap overlopen!
 {% endhint %}
 
 ### **Doelstelling**

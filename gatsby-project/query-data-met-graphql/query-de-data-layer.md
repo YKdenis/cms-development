@@ -33,9 +33,9 @@ module.exports = {
 
 De `siteMetadata-`gegevens worden automatisch in de GraphQL Data Layer getrokken, dus je hebt geen `source`-plugin nodig.
 
-Aangezien je geen `source`-plugin hoeft in te stellen, kan je rechtstreeks naar GraphiQL navigeren om je GraphQL-query  op te bouwen:
+Aangezien je geen `source`-plugin hoeft in te stellen, kan je rechtstreeks naar GraphiQL navigeren om je GraphQL-query op te bouwen:
 
-Ga in je webbrowser naar [localhost:8000/\__\_graphiql](http://localhost:8000/\__\_graphiql) om de GraphiQL-interface te zien. Open in je **Explorer** de keuzelijst voor het `site` veld. Open in het `site` veld de tweede keuzelijst voor het veld `siteMetadata` (de blauwe). Dit komt overeen met het `siteMetadata`-object in je `gatsby-config.js`-bestand. 
+Ga in je webbrowser naar [localhost:8000/\__\_graphiql](http://localhost:8000/\__\_graphiql) om de GraphiQL-interface te zien. Open in je **Explorer** de keuzelijst voor het `site` veld. Open in het `site` veld de tweede keuzelijst voor het veld `siteMetadata` (de blauwe). Dit komt overeen met het `siteMetadata`-object in je `gatsby-config.js`-bestand.
 
 {% hint style="info" %}
 #### Dubbel zien? 👀
@@ -44,7 +44,7 @@ Het is je misschien opgevallen dat er twee verschillende keuzelijsten zijn voor 
 
 De eerste (**de paarse met een dubbele punt**, `siteMetadata:`) is eigenlijk een argument dat aan het `site` veld is gekoppeld. Je kan de paarse keuzelijsten gebruiken om te filteren welke gegevens uit de Data Layer in het antwoord worden geretourneerd. (Je zult hier later een voorbeeld van zien.)
 
-De tweede (**de blauwe zonder dubbele punt, **`siteMetadata`) is wat je vaker zult gebruiken. Deze voegt het daadwerkelijke `siteMetadata`-veld toe aan je query, die GraphQL vertelt om dat veld in je response data op te nemen.
+De tweede (**de blauwe zonder dubbele punt,** `siteMetadata`) is wat je vaker zult gebruiken. Deze voegt het daadwerkelijke `siteMetadata`-veld toe aan je query, die GraphQL vertelt om dat veld in je response data op te nemen.
 
 Probeer elk van de keuzelijsten in de **Explorer** aan te vinken en kijk hoe de query in het **Query-document** verandert. Welke verschillen merk je op?
 {% endhint %}
@@ -76,24 +76,24 @@ Klik op de knop "**Execute** **Query**" (het driehoekje "**play**" boven aan de 
 }
 ```
 
-Probeer de waarde van de title** **prop in je `gatsby-config.js`-bestand te wijzigen. Wanneer je het bestand opslaat, moet je site opnieuw worden opgebouwd (`gatbsy develop`) en wanneer het klaar is, kan je de query opnieuw uitvoeren in GraphiQL en je bijgewerkte gegevens bekijken.
+Probeer de waarde van de title _\*\*_prop in je `gatsby-config.js`-bestand te wijzigen. Wanneer je het bestand opslaat, moet je site opnieuw worden opgebouwd (`gatbsy develop`) en wanneer het klaar is, kan je de query opnieuw uitvoeren in GraphiQL en je bijgewerkte gegevens bekijken.
 
-### Taak: gebruik `useStaticQuery` om de sitetitle in de `Layout` component binnen te halen en weer te geven. 
+### Taak: gebruik `useStaticQuery` om de sitetitle in de `Layout` component binnen te halen en weer te geven.
 
 Nu je een GraphQL-query hebt die de gegevens retourneert waarnaar je op zoek bent, hoe gebruikt je die query dan in je React-componenten?
 
 Om gegevens naar een Building Block component te halen, gebruik je een vooraf gedefinieerde functie van Gatsby genaamd `useStaticQuery`.
 
 {% hint style="info" %}
-#### Key Gatsby-concept: gegevens in Building Block componenten trekken met `useStaticQuery` 
+#### Key Gatsby-concept: gegevens in Building Block componenten trekken met `useStaticQuery`
 
 De Gatsby-package heeft een speciale vooraf gedefinieerde hook waarmee je GraphQL-query's aan je Building Block componenten kan toevoegen: `useStaticQuery`.
 
-`useStaticQuery` neemt één parameter: een`  templated string  `van de GraphQL-query die je wilt uitvoeren. Het retourneert de gevraagde gegevens, die je in een variabele kunt opslaan en vervolgens in je hele component kunt gebruiken.
+`useStaticQuery` neemt één parameter: een `templated string` van de GraphQL-query die je wilt uitvoeren. Het retourneert de gevraagde gegevens, die je in een variabele kunt opslaan en vervolgens in je hele component kunt gebruiken.
 
 **Hier is een kort overzicht van het proces voor het toevoegen van `useStaticQuery` om gegevens naar je Building Block componenten te door te sluizen:**
 
-Importeer de `useStaticQuery`-hook en de `graphql`-tag uit de gatsby-package. 
+Importeer de `useStaticQuery`-hook en de `graphql`-tag uit de gatsby-package.
 
 * De `graphql`-tag is iets dat letterlijk een [tagged template literal ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates)wordt genoemd. Kortom, de `graphql`-tag vertelt Gatsby dat de string die erop volgt een GraphQL-query is, zodat Gatsby deze kan ontleden en uitvoeren.
 {% endhint %}
@@ -114,7 +114,7 @@ const data = useStaticQuery(graphql`
 ```
 
 {% hint style="info" %}
-Gebruik de gegevens in je component door de puntoperator (`.`) te gebruiken om toegang te krijgen tot het juiste veld buiten het antwoord. 
+Gebruik de gegevens in je component door de puntoperator (`.`) te gebruiken om toegang te krijgen tot het juiste veld buiten het antwoord.
 
 #### Hier, een klein voorbeeld om te laten zien hoe dit proces er in de praktijk uitziet:
 {% endhint %}
@@ -153,7 +153,7 @@ export default Header
 {% endcode %}
 
 {% hint style="info" %}
-**Opmerking **🙋‍♂️: Je kan `useStaticQuery` slechts één keer per bestand aanroepen. **Als je meerdere velden nodig hebt, kan je ze allemaal in één query toevoegen**.
+**Opmerking** 🙋‍♂️: Je kan `useStaticQuery` slechts één keer per bestand aanroepen. **Als je meerdere velden nodig hebt, kan je ze allemaal in één query toevoegen**.
 
 Als je bijvoorbeeld gegevens nodig hebt uit zowel het `site` veld als het veld `siteBuildMetadata`, kan je de volgende query aanroepen om `StaticQuery` te gebruiken:
 {% endhint %}
@@ -193,13 +193,11 @@ export default Layout
 ```
 {% endcode %}
 
-Roep `useStaticQuery` aan en geef het de query door die je in GraphiQL hebt gemaakt. Zorg ervoor dat je de `graphql`-tag gebruikt, zodat Gatsby weet dat de string die je doorgeeft een GraphQL-query is. Sla de geretourneerde waarde van `useStaticQuery` op in een variabele. 
+Roep `useStaticQuery` aan en geef het de query door die je in GraphiQL hebt gemaakt. Zorg ervoor dat je de `graphql`-tag gebruikt, zodat Gatsby weet dat de string die je doorgeeft een GraphQL-query is. Sla de geretourneerde waarde van `useStaticQuery` op in een variabele.
 
 {% hint style="info" %}
 **Opmerking** 🙋: de query die je in GraphiQL bouwt, heeft standaard een **query name**, zoals **MyQuery**. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je de naam** (zoals in het onderstaande codevoorbeeld).
 {% endhint %}
-
-
 
 {% code title="src/components/layout.js" %}
 ```javascript
@@ -227,7 +225,7 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Opmerking** 🙋: als je een regel toevoegt om de waarde van je `data` variabele naar de console af te drukken, zal je zien dat het antwoord een iets andere structuur heeft dan hoe het eruitzag in het **Result venster **van GraphiQL. In het bijzonder bevat je `data` variabele alleen het object dat overeenkomt met het `data` veld in het **Result venster**.
+**Opmerking** 🙋: als je een regel toevoegt om de waarde van je `data` variabele naar de console af te drukken, zal je zien dat het antwoord een iets andere structuur heeft dan hoe het eruitzag in het **Result venster** van GraphiQL. In het bijzonder bevat je `data` variabele alleen het object dat overeenkomt met het `data` veld in het **Result venster**.
 
 Dus als je GraphiQL **Result venster** dit liet zien:
 {% endhint %}
@@ -409,6 +407,6 @@ export default Layout
 
 Wanneer je browser opnieuw wordt geladen, zie je dat je de nieuwe CSS is toegepast op de titel van je site.
 
-![Home page met CSS sitetitle](<../../.gitbook/assets/image (123).png>)
+![Home page met CSS sitetitle](<../../.gitbook/assets/image (94).png>)
 
 Gefeliciteerd, je hebt zojuist GraphQL gebruikt om gegevens naar je site te door te sluizen! Probeer de `sitetitle` in je `gatsby-config.js`-bestand te wijzigen en bekijk je ge-update site in de browser. 💻
