@@ -10,7 +10,7 @@
   * [Ontkoppelde CMS-architectuur](content-management-systemen/cms-architecturen/ontkoppelde-cms-architectuur.md)
   * [Headless CMS-architectuur](content-management-systemen/cms-architecturen/headless-cms-architectuur.md)
 
-## Headless WordPress <a id="headless-wordpress-1"></a>
+## Headless WordPress <a href="headless-wordpress-1" id="headless-wordpress-1"></a>
 
 * [Headless WordPress](headless-wordpress-1/omschrijving.md)
 * [Headless WP vs Traditionele WP](headless-wordpress-1/waarom-headless.md)
@@ -25,7 +25,7 @@
 * [Lokaal ontwikkelen met Local By Flywheel](lokaal-ontwikkelen/local-by-flywheel/README.md)
   * [Installatie - Local](lokaal-ontwikkelen/local-by-flywheel/installatie.md)
 
-## Headless Wordpress Project <a id="wordpress-als-back-end"></a>
+## Headless Wordpress Project <a href="wordpress-als-back-end" id="wordpress-als-back-end"></a>
 
 * [Introductie](wordpress-als-back-end/omschrijving.md)
 * [Wat is een WordPress Child-thema?](wordpress-als-back-end/wordpress-child-thema/README.md)
@@ -42,8 +42,8 @@
 ## API - GraphQL
 
 * [Wat is een API? ⛓](api-graphql/wat-is-een-api.md)
-* [REST API \| voor- en nadelen](api-graphql/rest.md)
-* [GraphQL API \| voor- en nadelen](api-graphql/graphql/README.md)
+* [REST API | voor- en nadelen](api-graphql/rest.md)
+* [GraphQL API | voor- en nadelen](api-graphql/graphql/README.md)
   * [De Application Data Graph](api-graphql/graphql/application-data-graph.md)
   * [GraphQL Resources](api-graphql/graphql/graphql-resources.md)
 * [WP Plugin 🔌: WPGraphQL](api-graphql/wpgraphql/README.md)
@@ -51,7 +51,7 @@
   * [De GraphiQL IDE - Breakdown](api-graphql/wpgraphql/graphiql-ide.md)
   * [Opdracht WPGraphQL](api-graphql/wpgraphql/opdracht-wpgraphql.md)
 
-## Gatsby Theorie <a id="gatsby-frontend"></a>
+## Gatsby Theorie <a href="gatsby-frontend" id="gatsby-frontend"></a>
 
 * [Wat is Gatsby?](gatsby-frontend/gatsby.md)
 * [Wat is een static site-generator?](gatsby-frontend/static-site-generator.md)
@@ -63,7 +63,7 @@
   * [Lokaal ontwikkelen met Gatsby - gatsby develop](gatsby-project/creatie-gatsby/gatsby-develop-lokaal-ontwikkelen.md)
   * [Aanmaken van een Github Repo](gatsby-project/creatie-gatsby/setup-github-repo.md)
 * [De React library 🗂 in Gatsby](gatsby-project/react-in-gatsby/README.md)
-  * [Wat is een React Component?\(Herhaling\)](gatsby-project/react-in-gatsby/react-component.md)
+  * [Wat is een React Component?(Herhaling)](gatsby-project/react-in-gatsby/react-component.md)
   * [Wat is een Page Component?](gatsby-project/react-in-gatsby/page-component.md)
   * [Wat is een Link Component?](gatsby-project/react-in-gatsby/link-component.md)
   * [Wat is de Layout Component?](gatsby-project/react-in-gatsby/layout-component.md)
@@ -115,11 +115,10 @@
   * [Voeg JSX structuur toe en style je contact page](gatsby-project/contact-page-opmaak-en-styling/voeg-jsx-structuur-toe-en-style-je-contact-page.md)
   * [Deploy it 🚀](gatsby-project/contact-page-opmaak-en-styling/deploy-it.md)
 
-## Netlify Hosting
+## Hosting & Automatisation <a href="netlify-hosting" id="netlify-hosting"></a>
 
 * [Introductie](netlify-hosting/introductie.md)
 
 ## Sharepoint
 
 * [Introductie](sharepoint/introductie.md)
-
