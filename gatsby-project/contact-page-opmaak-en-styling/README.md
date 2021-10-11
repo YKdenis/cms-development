@@ -8,9 +8,9 @@ description: >-
 
 ## Maak de Contact page aan
 
-Navigeer in je IDE \(VScode\) naar de `src/pages` map en creëer een nieuwe file genaamd `contact.js`. Defineer een page component en importeer vervolgens de `GatsbyImage`, `getImage,` `graphql`-tag en je `Layout`-component.
+Navigeer in je IDE (VScode) naar de `src/pages` map en creëer een nieuwe file genaamd `contact.js`. Defineer een page component en importeer vervolgens de `GatsbyImage`, `getImage,` `graphql`-tag en je `Layout`-component.
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](<../../.gitbook/assets/image (155).png>)
 
 {% hint style="info" %}
 Het kan zijn dat je nog een `page-2`.js dummy file in je project hebt zitten. Je mag deze verwijderen!
@@ -77,5 +77,4 @@ Dit vormt de basis van je Contact page. In het volgende deel zal je de contact p
 
 In dit hoofdstuk zal je werken aan het hieronder weergegeven ontwerp. Zoals je kan zien wordt de Wordpress data, zowel tekst als foto's, ingeladen en in een esthetisch jasje gestoken.
 
-![Contact page eindresultaat](../../.gitbook/assets/localhost_8000_contact%20%281%29.png)
-
+![Contact page eindresultaat](<../../.gitbook/assets/localhost\_8000\_contact (1).png>)

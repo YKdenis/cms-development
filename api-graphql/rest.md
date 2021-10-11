@@ -5,27 +5,27 @@ description: >-
   hebben tot webgegevens en deze kunnen manipuleren.
 ---
 
-# REST API \| voor- en nadelen
+# REST API | voor- en nadelen
 
-### Wat is REST?
+#### Wat is REST?
 
 Het architecturale principe van REST wordt al meer dan tien jaar gebruikt door ontwikkelaars. Het vereenvoudigt de communicatie tussen machines en ondersteunt vele gegevensformaten, zoals JSON, XML of YAML. Ondanks het feit dat het duidelijk een van de meest populaire benaderingen is in de bedrijven van vandaag, met steun van grote giganten zoals Google en Netflix, heeft het nog steeds bepaalde gebreken die de toepasbaarheid ervan beperken.
 
-REST \(afkorting van **RE**presentational **S**tate **T**ransfer\) is gebaseerd op een uniforme en vooraf gedefinieerde reeks staatloze bewerkingen waarmee gebruikers toegang hebben tot webgegevens en deze kunnen manipuleren. API's die voldoen aan REST-ontwerpprincipes worden meestal **RESTful API's** genoemd.
+REST (afkorting van **RE**presentational **S**tate **T**ransfer) is gebaseerd op een uniforme en vooraf gedefinieerde reeks staatloze bewerkingen waarmee gebruikers toegang hebben tot webgegevens en deze kunnen manipuleren. API's die voldoen aan REST-ontwerpprincipes worden meestal **RESTful API's** genoemd.
 
-In REST-architectuur stellen API's hun functionaliteit bloot als bronnen, dit zijn alle soorten services, gegevens of objecten waartoe een client toegang heeft. Elke bron wordt geleverd met zijn eigen unieke URI \(Uniform Resource Identifier\) waartoe een client toegang kan krijgen door een verzoek naar de server te sturen.
+In REST-architectuur stellen API's hun functionaliteit bloot als bronnen, dit zijn alle soorten services, gegevens of objecten waartoe een client toegang heeft. Elke bron wordt geleverd met zijn eigen unieke URI (Uniform Resource Identifier) waartoe een client toegang kan krijgen door een verzoek naar de server te sturen.
 
 {% hint style="info" %}
 Een bepaalde bron van een API wordt ook wel eens een endpoint genoemd!
 {% endhint %}
 
-Dus wanneer een client een RESTful API aanroept, reageert de server met een weergave van de status van de opgevraagde bron. Veel gangbare REST-implementaties gebruiken de standaard HTTP-methoden \(GET, POST, PUT, DELETE en PATCH\) om een server aan te roepen.
+Dus wanneer een client een RESTful API aanroept, reageert de server met een weergave van de status van de opgevraagde bron. Veel gangbare REST-implementaties gebruiken de standaard HTTP-methoden (GET, POST, PUT, DELETE en PATCH) om een server aan te roepen.
 
 {% hint style="info" %}
 Dit betekent dat wanneer een RESTful API wordt aangeroepen, de server een weergave van de status van de aangevraagde bron naar de client zal overdragen.
 {% endhint %}
 
-### SWAPI REST API voorbeeld
+#### SWAPI REST API voorbeeld
 
 SWAPI is een API voor het ophalen van alle gegevens uit het Star Wars universum en een perfect voorbeeld om de werking van REST uit te leggen.
 
@@ -33,7 +33,7 @@ Een REST API kan je aanroepen door een bepaalde URI aan te spreken. In het geval
 
 Je kan bepaalde resources opvragen door achter `api/` iets op te geven. Je kan daar natuurlijk niet zo maar iets typen, er zijn hiervoor bepaalde endpoints voor voorzien. Je kan alle endpoints terugvinden in de [documentatie](https://swapi.dev/documentation) van Swapi.
 
-Voor het ophalen van alle personen in Star Wars kan je het endpoint [https://swapi.dev/api/people/](https://swapi.dev/api/people/) gebruiken. Indien je 1 persoon wilt opvragen dan kan je dat doen a.d.h.v. een ID.
+Voor het ophalen van alle personen in Star Wars kan je het endpoint [https://swapi.dev/api/people/](https://swapi.dev/api/people/) gebruiken. Indien je 1 persoon wilt opvragen dan kan je dat doen a.d.h.v. een ID. 
 
 * `/people/` -- Fetch alle personen
 * `/people/:id/` -- Fetch een specifieke persoon
@@ -126,32 +126,32 @@ Allow: GET, HEAD, OPTIONS
 ```
 {% endcode %}
 
-Je zal niet altijd alle data nodig hebben van een persoon. Het is dus onnodig om bij elke request de hele waslijst van gegevens te retourneren.
+Je zal niet altijd alle data nodig hebben van een persoon. Het is dus onnodig om bij elke request de hele waslijst van gegevens te retourneren. 
 
 In plaats daarvan geeft SWAPI voor sommige velden een URI terug die op haar beurt kan worden aangeroepen indien de consument toch meer informatie wenst. Door niet alle data in een request terug te sturen los je het probleem van overfetching op.
 
 Het principe van URI's terug te sturen als data is een good practice voor het bouwen van REST API's. **één groot nadeel is wel dat je verschillende endpoints moet aanspreken indien je toch bepaalde informatie nodig hebt.** Er zullen dus meerdere roundtrips naar de server worden gedaan waardoor de performantie van je front-end aftakelt!
 
-### Overfetching en Underfetching
+#### Overfetching en Underfetching
 
 Overfetching treedt op wanneer een eindpunt overbodige gegevens retourneert dan eigenlijk nodig is. Omgekeerd houdt underfetching in dat een eindpunt niet voldoende van de vereiste gegevens kan retourneren.
 
-* **Overfetching:** treedt op wanneer een endpoint overbodige gegevens retourneert dan eigenlijk nodig is.
+* **Overfetching: **treedt op wanneer een endpoint overbodige gegevens retourneert dan eigenlijk nodig is.
 * **underfetching:** houdt in dat een endpoint niet voldoende van de vereiste gegevens kan retourneren.
 
 Aangezien een REST-API een gegevensstructuur heeft die ontworpen is om voorgeschreven gegevens te retourneren, kan je onnodige gegevens krijgen of gedwongen worden om meerdere roundtrips naar de server te doen voordat je de relevante gegevens krijgt. **Deze tekortkomingen vergroten ook de tijd die de server nodig heeft om alle gevraagde informatie terug te sturen.**
 
-### **Nadelen van een REST API:**
+#### **Nadelen van een REST API:**
 
 * Je hebt veel endpoints, wordt snel onoverzichtelijk. 
 * Je moet de tijd nemen om documentatie te schrijven zodat ontwikkelaars je API kunnen leren en gebruiken.
-* Er wordt te veel of te weinig informatie opgehaald \(**overfetching**, **underfetching**\). Beslissen tussen underfetching, creëren van veel endpoints m.a.w. veel roundtrips naar de server, of overfetching van data m.a.w. endpoints aanspreken die de data die je nodig hebt terug sturen plus een extra overhead aan data.
+* Er wordt te veel of te weinig informatie opgehaald (**overfetching**, **underfetching**). Beslissen tussen underfetching, creëren van veel endpoints m.a.w. veel roundtrips naar de server, of overfetching van data m.a.w. endpoints aanspreken die de data die je nodig hebt terug sturen plus een extra overhead aan data.
 
-## Conclusie
+### Conclusie
 
 REST wordt al meer dan twee decennia gebruikt en heeft er voor gezorgd dat de implementatie van de client en de implementatie van de server onafhankelijk worden gedaan zonder dat ze van elkaar weten. **Dit betekent dat de front-end code op elk moment kan worden gewijzigd zonder de werking van de server te beïnvloeden, en de back-end code kan worden gewijzigd zonder de werking van de client te beïnvloeden**.
 
-Door een REST-API te gebruiken, kunnen verschillende clients \(front-ends\) dezelfde REST-endpoints aanspreken en dus dezelfde data opvragen van, en wijzigen in de databank.
+Door een REST-API te gebruiken, kunnen verschillende clients (front-ends) dezelfde REST-endpoints aanspreken en dus dezelfde data opvragen van, en wijzigen in de databank.
 
 REST heeft het programmeer landschap drastisch veranderd in de positieve zin! Het heeft de security, scalability en performance van applicaties verbeterd als de interoperabiliteit en herbruikbaarheid.
 
