@@ -6,11 +6,11 @@ description: >-
 
 # Structureer en style de Home page header JSX
 
-![Header sectie van je home page](<../../.gitbook/assets/image (2).png>)
+![Header sectie van je home page](../../.gitbook/assets/image%20%282%29.png)
 
 ## Taak: Voeg de JSX structuur toe voor je Home Page Header
 
-Momenteel wordt je page title nog toegevoegd in je `Layout` component. Je zal niet dezelfde JSX (**HTML + Javascript**) structuur hebben voor je page titel op je home page als op je artists page. Met andere woorden je kan je page title beter in de page component zelf definiëren en niet in de `Layout` component.
+Momenteel wordt je page title nog toegevoegd in je `Layout` component. Je zal niet dezelfde JSX \(**HTML + Javascript**\) structuur hebben voor je page titel op je home page als op je artists page. Met andere woorden je kan je page title beter in de page component zelf definiëren en niet in de `Layout` component.
 
 ### Pas je `Layout` component aan en verwijder de `pageTitle` prop:
 
@@ -120,15 +120,13 @@ const IndexPage = ({
 
 ## Taak: Sprinkle wat CSS op je JSX  ✨
 
-![](<../../.gitbook/assets/image (13).png>)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd om wat styling toe te voegen met behulp van **CSS modules**.
 
 **Opfrisser nodig?** Bekijk onderstaande link:
 
-{% content-ref url="../react-in-gatsby/style-components-css-modules.md" %}
-[style-components-css-modules.md](../react-in-gatsby/style-components-css-modules.md)
-{% endcontent-ref %}
+{% page-ref page="../react-in-gatsby/style-components-css-modules.md" %}
 
 * Maak een nieuwe CSS file aan in je `src` map genaamd `page.module.css`.
 * Voeg onderstaande CSS classes toe aan je `page.module.css` file.
@@ -254,6 +252,7 @@ const IndexPage = ({
 
 * Start je ontwikkelingsserver met `gatsby develop` en navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](../../.gitbook/assets/image%20%282%29%20%281%29.png)
 
 Super, je header sectie is af! 🥳 In het volgende deel zal je verder bouwen aan je home page en de Featured Artists sectie opmaken en stylen!
+

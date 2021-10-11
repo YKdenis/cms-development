@@ -111,7 +111,7 @@ const ArtistPage = (
 {% hint style="info" %}
 **Opmerking** 📣: `getImage` is een hulpfunctie die een `File`-node of een `ImageSharp`-node opneemt en het `gatsbyImageData`-object voor die node retourneert. Je kan het gebruiken om je code een beetje properder en leesbaar te houden.
 
-Zonder de `getImage`-helperfunctie zou je `artist.profilePicture.localFile.childImageSharp.gatsbyImageData` moeten typen (wat langer is, maar je dezelfde gegevens teruggeeft).
+Zonder de `getImage`-helperfunctie zou je `artist.profilePicture.localFile.childImageSharp.gatsbyImageData` moeten typen \(wat langer is, maar je dezelfde gegevens teruggeeft\).
 {% endhint %}
 
 Gebruik de component `GatsbyImage` van `gatsby-plugin-image` om de `profilePicture` gegevens weer te geven. Je moet aan `GatsbyImage` twee props doorgeven:
@@ -186,6 +186,7 @@ export default ArtistPage
 
 Wanneer je nu elk van je artist pagina's bezoekt, zou je de bijbehorende profile foto boven de naam van je artist moeten zien!
 
-![Kevin Bismark - /artists/kevin-bismark](<../../.gitbook/assets/image (124).png>)
+![Kevin Bismark - /artists/kevin-bismark](../../.gitbook/assets/image%20%28124%29.png)
 
-![Anne Woznak - /artists/anne-woznak](<../../.gitbook/assets/image (155).png>)
+![Anne Woznak - /artists/anne-woznak](../../.gitbook/assets/image%20%28155%29.png)
+

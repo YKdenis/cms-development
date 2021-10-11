@@ -6,7 +6,7 @@ description: >-
 
 # Structureer en style de Featured Artists JSX
 
-![Featured artists sectie](<../../.gitbook/assets/image (11).png>)
+![Featured artists sectie](../../.gitbook/assets/image%20%2811%29.png)
 
 ## Taak: Giet je featured artists data in een JSX structuur
 
@@ -228,13 +228,9 @@ export default Artist
 
 Vooraleer je begint met het stylen van je featured artists sectie moet je twee SVG-bestanden downloaden en toevoegen aan je `src/images` map.
 
-{% file src="../../.gitbook/assets/blob-1.svg" %}
-Green Blob 1
-{% endfile %}
+{% file src="../../.gitbook/assets/blob-1.svg" caption="Green Blob 1" %}
 
-{% file src="../../.gitbook/assets/blob-2.svg" %}
-Green Blob 2
-{% endfile %}
+{% file src="../../.gitbook/assets/blob-2.svg" caption="Green Blob 2" %}
 
 Deze twee blobs zal je gebruiken in je CSS voor de groene achtergrond te creëren in je featured artists sectie.
 
@@ -344,6 +340,7 @@ import {
 
 * Navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![Featured artists sectie](<../../.gitbook/assets/image (11) (1).png>)
+![Featured artists sectie](../../.gitbook/assets/image%20%2811%29%20%281%29.png)
 
 Voila, je featured artists sectie is af! 🥳 In het volgende deel zal je het laatste deel van je home page bouwen namelijk de `Footer`. **Dit zal net zoals je** `Artist` **component een Building block component zijn aangezien het op elke pagina zal worden herbruikt**!
+

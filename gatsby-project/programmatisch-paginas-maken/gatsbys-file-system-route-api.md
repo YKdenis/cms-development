@@ -17,7 +17,7 @@ Stel je bijvoorbeeld voor dat je site een aantal product nodes in de Data Layer 
 
 ## Een collection route maken:
 
-Bepaal van welk type node je pagina's wilt maken. Kies welk veld op die node je wilt gebruiken in de route (de URL) voor je pagina's. Maak een nieuwe page component in je `src/pages`-directory met behulp van de volgende **naamgevingsconventie**: `{nodeType.field}.js`. **Vergeet niet de accolades** (`{}`) in je bestandsnaam op te nemen om het dynamische deel van de route aan te geven!
+Bepaal van welk type node je pagina's wilt maken. Kies welk veld op die node je wilt gebruiken in de route \(de URL\) voor je pagina's. Maak een nieuwe page component in je `src/pages`-directory met behulp van de volgende **naamgevingsconventie**: `{nodeType.field}.js`. **Vergeet niet de accolades** \(`{}`\) in je bestandsnaam op te nemen om het dynamische deel van de route aan te geven!
 
 Als je bijvoorbeeld een aparte pagina voor elke product node wilt maken en je wilt de naam van het product in de URL gebruiken, dan maak je een nieuw bestand aan op `src/pages/{Product.name}.js`. Dan zou Gatsby die pagina's maken op routes zoals `/bottle` of `/sweatshirt` of `/notebook`.
 {% endhint %}
@@ -84,3 +84,4 @@ Dat ziet eruit als een goed formaat voor een URL!
 {% hint style="info" %}
 **Opmerking** 📣: in dit geval is het slug-veld een goede keuze omdat het leesbaar is voor mensen, wat betekent dat de URL's voor je artiesten gemakkelijker te begrijpen zijn voor gebruikers. **Maar je kan elk veld in je routes gebruiken**, zelfs als het speciale tekens of witruimte bevat, omdat Gatsby elke route zal ["slugifyen"](https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/). `I ♥ Paris` wordt bijvoorbeeld omgezet in `i-love-paris`.
 {% endhint %}
+

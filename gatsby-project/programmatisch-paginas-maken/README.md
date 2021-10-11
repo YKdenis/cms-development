@@ -14,3 +14,4 @@ In dit deel van de zelfstudie leer je hoe je dynamisch nieuwe pagina's kan maken
 
 * **Gatsby's Filesystem Route API** te gebruiken om dynamisch nieuwe pagina's voor je artiesten te maken. 
 * Een **query variabele** toe te voegen aan een **page query**.
+

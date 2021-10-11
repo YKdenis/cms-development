@@ -169,3 +169,4 @@ const AboutPage = ({
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
 Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je about page is volledig gestyled. In het volgende hoofdstuk zal je de laatste pagina stylen, namelijk de contact pagina. ✨
+

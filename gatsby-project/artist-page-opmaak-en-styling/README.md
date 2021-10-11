@@ -15,4 +15,5 @@ In dit hoofdstuk zal je werken aan het hieronder weergegeven ontwerp. Zoals je k
 **Let op** 👀: Je zal ook alle roles moeten opvragen van een artist!
 {% endhint %}
 
-![Eindresultaat Artist template page](../../.gitbook/assets/localhost\_8000\_artists_kevin-bismark.png)
+![Eindresultaat Artist template page](../../.gitbook/assets/localhost_8000_artists_kevin-bismark.png)
+

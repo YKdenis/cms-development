@@ -8,9 +8,9 @@ description: Bouw je artists page query op met behulp van je GraphiQL IDE.
 
 Je kan je artists page data opvragen door `wpPage` open te klikken in je GraphiQL explorer en vervolgens het `artistsPage`-veld aan te vinken.
 
-Vink het `slug`-argument (paars veld) in de Explorer aan. Je mag het `slug`-argument hard coderen met de waarde **"artists"**.
+Vink het `slug`-argument \(paars veld\) in de Explorer aan. Je mag het `slug`-argument hard coderen met de waarde **"artists"**.
 
-![](<../../.gitbook/assets/image (78).png>)
+![](../../.gitbook/assets/image%20%2878%29.png)
 
 Vraag vervolgens alle data op die je hebt gedefinieerd in je WP applicatie voor je artists page.
 
@@ -166,3 +166,4 @@ export const query = graphql`
 export default ArtistsPage
 ```
 {% endcode %}
+

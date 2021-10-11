@@ -115,6 +115,12 @@
   * [Voeg JSX structuur toe en style je contact page](gatsby-project/contact-page-opmaak-en-styling/voeg-jsx-structuur-toe-en-style-je-contact-page.md)
   * [Deploy it 🚀](gatsby-project/contact-page-opmaak-en-styling/deploy-it.md)
 
+## Hosting & Automatisation
+
+* [Wat is Netlify?](hosting-and-automatisation/wat-is-netlify/README.md)
+  * [Wat is een CDN?](hosting-and-automatisation/wat-is-netlify/wat-is-een-cdn.md)
+* [Automatiseren van je Build Process met Netlify](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify.md)
+
 ## Sharepoint
 
 * [Introductie](sharepoint/introductie.md)

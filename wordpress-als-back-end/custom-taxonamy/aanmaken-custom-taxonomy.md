@@ -81,21 +81,22 @@ In dit voorbeeld maken we een taxonomy aan met de naam '`role`' als eerste argum
 
 * **public**: Of een taxonomy bedoeld is voor openbaar gebruik, hetzij via de admin-interface, hetzij door front-end gebruikers.
 * **Labels**: Een reeks labels die worden gebruikt in de GUI van WordPress.
-* **show_admin_column**: Of er een kolom voor de taxonomy moet worden weergegeven op de schermen met post type lijsten.
+* **show\_admin\_column**: Of er een kolom voor de taxonomy moet worden weergegeven op de schermen met post type lijsten.
 * De 3 onderste array waarden zullen worden besproken wanneer we ons verder zullen verdiepen in GraphQL.
 
 Eenmaal als je de code hebt toegevoegd zou je bij je Artists een nieuwe kolom moeten zien met de naam **Role**. We kunnen vervolgens onder de **Artists** tab op het submenu '**Roles**' klikken en nieuwe rollen toevoegen.
 
-![](<../../.gitbook/assets/image (49).png>)
+![](../../.gitbook/assets/image%20%2849%29.png)
 
 Voeg een paar rollen toe zoals Actor, Model, Singer, ...
 
-![](<../../.gitbook/assets/image (100).png>)
+![](../../.gitbook/assets/image%20%28100%29.png)
 
 Voeg twee artiesten toe en geef ze beide een paar roles mee. Om meerdere roles toe te voegen aan een artiest moet je ze onderscheiden met een komma zoals hierboven weergegeven. Vergeet niet op **publish/update** te klikken om de roles op te slaan!
 
-![](<../../.gitbook/assets/image (6).png>)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 Je kan ze vervolgens filteren op basis van hun role. Dit kan je doen door op de naam van een role te klikken onder de kolom '**Role**'. Als je de filter wilt verwijderen klik je op de knop '**Filter**' in de werkbalk boven de tabel.
 
 Voila! Je hebt een custom taxonomy toegevoegd aan je WP installatie zonder hulp van een plugin! Je mag beide artiesten verwijderen. Later zullen we er opnieuw toevoegen maar dan met wat meer informatie dan alleen een titel.
+

@@ -16,7 +16,7 @@ Hoewel de back-end en de front-end onafhankelijk van elkaar werken, is de front-
 API staat voor **Application Programming Interface**, kort omschreven stelt verschillende systemen instaat om met elkaar te communiceren en gegevens uit te wisselen.
 {% endhint %}
 
-![Een ontkoppelde CMS-Architectuur](<../../.gitbook/assets/image (123).png>)
+![Een ontkoppelde CMS-Architectuur](../../.gitbook/assets/image%20%28123%29.png)
 
 ## Pro's en cons van ontkoppelde CMS-architectuur
 
@@ -32,3 +32,4 @@ In een ontkoppelde CMS zijn de back-end en front-end afzonderlijk ondergebracht.
 ### **Con's:**
 
 1. een ontkoppelde CMS is veel ingewikkelder dan een gekoppelde CMS. Het vereist extra ontwikkelingswerk.
+

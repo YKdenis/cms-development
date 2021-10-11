@@ -16,7 +16,7 @@ Nu je weet welk node-type en veld je moet gebruiken, kan je ze aan een sluiten m
 
 Maak een nieuw bestand in je `src/pages`-map met de naam `{wpArtist.slug}.js`. **Dit wordt het bestand voor Artist Page Template**.
 
-Maak een simpele page component in je nieuwe `{wpArtist.slug}.js`-bestand. Voeg voorlopig het `Layout` component toe, maar hardcode de `pagetitle` en de inhoud van je component. (Je zult die later dynamisch maken.)
+Maak een simpele page component in je nieuwe `{wpArtist.slug}.js`-bestand. Voeg voorlopig het `Layout` component toe, maar hardcode de `pagetitle` en de inhoud van je component. \(Je zult die later dynamisch maken.\)
 
 {% code title="src/pages/{wpArtist.slug}.js" %}
 ```jsx
@@ -35,18 +35,19 @@ export default ArtistPage
 ```
 {% endcode %}
 
-Ga in een webbrowser naar [localhost:8000/kevin-bismark](http://localhost:8000/kevin-bismark) (verander `/kevin-bismark` met de naam van jouw artiest) en je zou je hard-coded inhoud moeten zien.
+Ga in een webbrowser naar [localhost:8000/kevin-bismark](http://localhost:8000/kevin-bismark) \(verander `/kevin-bismark` met de naam van jouw artiest\) en je zou je hard-coded inhoud moeten zien.
 
 {% hint style="info" %}
 Je kan je URL bijwerken met de slugs van je andere artiesten om te controleren of er ook identieke pagina's voor zijn gemaakt.
 {% endhint %}
 
-![Artist Template Page](<../../.gitbook/assets/image (88).png>)
+![Artist Template Page](../../.gitbook/assets/image%20%2888%29.png)
 
 {% hint style="info" %}
-**Pro tip** 🧙‍♂️**:** Weet je niet zeker welke pagina's zijn gemaakt? Bekijk de **404-pagina** als je `gatsby develop` uitvoert. (Je kan er komen door te navigeren naar een URL van een pagina die niet bestaat.) **Onder aan de pagina staan de routes voor alle pagina's die Gatsby voor je site heeft gemaakt.**
+**Pro tip** 🧙‍♂️**:** Weet je niet zeker welke pagina's zijn gemaakt? Bekijk de **404-pagina** als je `gatsby develop` uitvoert. \(Je kan er komen door te navigeren naar een URL van een pagina die niet bestaat.\) **Onder aan de pagina staan de routes voor alle pagina's die Gatsby voor je site heeft gemaakt.**
 
-(Als je wijzigingen aanbrengt in je routes, moet je de lokale ontwikkelingsserver stoppen en opnieuw starten om de lijst met pagina's op de **404-pagina** bij te werken.)
+\(Als je wijzigingen aanbrengt in je routes, moet je de lokale ontwikkelingsserver stoppen en opnieuw starten om de lijst met pagina's op de **404-pagina** bij te werken.\)
 {% endhint %}
 
-![](<../../.gitbook/assets/image (145).png>)
+![](../../.gitbook/assets/image%20%28145%29.png)
+

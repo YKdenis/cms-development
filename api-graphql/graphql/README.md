@@ -4,7 +4,7 @@ description: >-
   flexibeler alternatief biedt voor REST.
 ---
 
-# GraphQL API | voor- en nadelen
+# GraphQL API \| voor- en nadelen
 
 Het is ontwikkeld en open source gemaakt door Facebook en wordt nu onderhouden door een grote gemeenschap van bedrijven en individuen van over de hele wereld.
 
@@ -36,7 +36,7 @@ in een blogtoepassing moet een app de titels van de berichten van een specifieke
 
 Met een REST API verzamel je de gegevens doorgaans door toegang te krijgen tot meerdere endpoints. In het voorbeeld zou dit een `/users/<id>` endpoint kunnen zijn om de initiële gebruikersgegevens op te halen. Ten tweede is er waarschijnlijk een `/users/<id>/posts/` endpoint dat alle posts voor een gebruiker retourneert. Het derde endpoint is de `/users/<id>/followers/` die een lijst met volgers per gebruiker retourneert.
 
-![](<../../.gitbook/assets/image (128).png>)
+![](../../.gitbook/assets/image%20%28128%29.png)
 
 Met REST moet je drie verzoeken doen aan verschillende endpoints om de vereiste gegevens op te halen. Je haalt ook te veel gegevens op omdat de endpoints aanvullende informatie retourneren die niet we in de front-end niet zullen gebruiken. M.a.w. er wordt aan **overfetching** gedaan!
 
@@ -44,7 +44,7 @@ Met REST moet je drie verzoeken doen aan verschillende endpoints om de vereiste 
 
 In GraphQL daarentegen, stuur je **één enkele query** naar de GraphQL-server waarin je concreet vermeld welke data je nodig hebt. De server reageert vervolgens met een JSON-object dat alleen de gevraagde data bevat.
 
-![](<../../.gitbook/assets/image (136).png>)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 aan de hand van een query kan de gebruiker in GraphQL precies de gegevens specificeren die hij/zij nodig heeft. In de bovenstaande foto wordt er een query geleverd aan de GraphQL-server met daarin de vraag achter specifieke informatie van de user. **De client ontvangt vervolgens precies de informatie die hij/zij in de query heeft gedefinieerd** en niets meer, waardoor **overfetching** gegevens wordt **vermeden**. Merk op dat de structuur van het antwoord van de server precies de geneste structuur volgt die in de query is gedefinieerd.
 
@@ -78,7 +78,7 @@ Een ander nadeel is dat de werking van GraphQL heel anders is dan dat van REST. 
 
 Alle requests van GraphQL zijn POST requests. Zelfs als je data opvraagt zal GraphQL dit behandelen als een POST. Dit heeft als nadeel dat de browser niet automatisch de opgevraagde gegevens cached. Ook al is de data al eens vanuit de server opgevraagd toch zal GraphQL hiervoor een request naar de server sturen.
 
-Er zijn hiervoor natuurlijk oplossingen voorzien zoals [Apollo GraphQL](https://www.apollographql.com) maar dan ben je weer afhankelijk van een externe partij om je data weg te schrijven naar je lokale cache. Je kan Apollo vergelijken met wat JQuery is voor Javascript. Het is super handig en eenvoudig maar het kan snel omkeren en limiterend worden of bizarre errors gooien.
+Er zijn hiervoor natuurlijk oplossingen voorzien zoals [Apollo GraphQL](https://www.apollographql.com/) maar dan ben je weer afhankelijk van een externe partij om je data weg te schrijven naar je lokale cache. Je kan Apollo vergelijken met wat JQuery is voor Javascript. Het is super handig en eenvoudig maar het kan snel omkeren en limiterend worden of bizarre errors gooien.
 
 ## Conclusie
 
@@ -88,8 +88,8 @@ GraphQL lost de pijnpunten van REST op maar brengt andere kwesties met zich mee 
 In de praktijk wordt GraphQL over REST gekozen voor **interne applicaties**. Applicaties waarbij de backend en de frontend door hetzelfde bedrijf worden beheerd. Als er een API wordt gemaakt voor **externe bedrijven** dan kiest men hoofdzakelijk voor een REST API.
 {% endhint %}
 
-* **GraphQL -> Private API's**
-* **REST -> Public API's**
+* **GraphQL -&gt; Private API's**
+* **REST -&gt; Public API's**
 
 Dit heeft te maken met de server complexiteit van GraphQL. Met REST kan je meerdere endpoints aanspreken. Als er een endpoint eens niet werkt dan is dat geen ramp. Bij GraphQL centraliseer je alle data en geef je deze vrij via één endpoint. M.a.w. de kans dat de gehele API plat ligt is veel groter. Als je API wordt gebruikt door verschillende externe bedrijven is dit iets dat je echt niet wilt meemaken!
 
@@ -99,6 +99,7 @@ Met GraphQL kan je snel een flexibele en efficiënte API opzetten. Voor interne 
 Facebook, de maker van GraphQL, gebruikt voor haar externe services nog steeds REST. Alleen voor interne services gebruiken ze GraphQL.
 {% endhint %}
 
-_**Raadpleeg de GraphQL website via deze link**_ [_**graphql.org**_](https://graphql.org) _**indien je meer informatie wenst omtrent de query language.**_
+_**Raadpleeg de GraphQL website via deze link**_ [_**graphql.org**_](https://graphql.org/) _**indien je meer informatie wenst omtrent de query language.**_
 
-{% embed url="https://www.youtube.com/watch?v=sdqBPtXClHI&t=1s&ab_channel=RapidAPI" %}
+{% embed url="https://www.youtube.com/watch?v=sdqBPtXClHI&t=1s&ab\_channel=RapidAPI" caption="" %}
+

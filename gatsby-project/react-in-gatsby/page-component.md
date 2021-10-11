@@ -1,5 +1,5 @@
 ---
-description: Een page component is eigen aan Gatsby, niet aan React!
+description: 'Een page component is eigen aan Gatsby, niet aan React!'
 ---
 
 # Wat is een Page Component?
@@ -19,7 +19,7 @@ Als je dit nog niet hebt gedaan, open je Gatsby-site in Visual Studio Code en st
 {% endhint %}
 
 1. Open je command line / terminal. 
-2. Verander je map route naar de map voor je Gatsby-site (gebruik het commando `cd`). 
+2. Verander je map route naar de map voor je Gatsby-site \(gebruik het commando `cd`\). 
 3. Run **gatsby develop**. 
 4. Open [localhost:8000](http://localhost:8000) in je webbrowser.
 
@@ -48,19 +48,19 @@ export default IndexPage
 ```
 {% endcode %}
 
-Ga naar **localhost:8000** in je webbrowser. (Mogelijk moet je even wachten terwijl je ontwikkelingsserver opnieuw wordt opgebouwd.) Zodra je pagina is bijgewerkt, zou deze er ongeveer zo uit moeten zien:
+Ga naar **localhost:8000** in je webbrowser. \(Mogelijk moet je even wachten terwijl je ontwikkelingsserver opnieuw wordt opgebouwd.\) Zodra je pagina is bijgewerkt, zou deze er ongeveer zo uit moeten zien:
 
-![home page Inghelbrecht Agency](<../../.gitbook/assets/image (156).png>)
+![home page Inghelbrecht Agency](../../.gitbook/assets/image%20%28156%29.png)
 
 {% hint style="info" %}
 #### Key Gatsby-concept 💡
 
 Gatsby maakt automatisch pagina's aan voor React-componenten die de standaard export zijn van bestanden in de `src/pages`-directory.
 
-Als een gebruiker de URL probeert te bezoeken voor een pagina die niet bestaat, gebruikt Gatsby de page component `src/pages/404.js` om in plaats daarvan een fout weer te geven. Ga je gang en probeer het eens! (Als je het op **localhost:8000** probeert, moet je op de knop "**Preview custom 404-pagina**" klikken.)
+Als een gebruiker de URL probeert te bezoeken voor een pagina die niet bestaat, gebruikt Gatsby de page component `src/pages/404.js` om in plaats daarvan een fout weer te geven. Ga je gang en probeer het eens! \(Als je het op **localhost:8000** probeert, moet je op de knop "**Preview custom 404-pagina**" klikken.\)
 {% endhint %}
 
-![](<../../.gitbook/assets/image (151).png>)
+![](../../.gitbook/assets/image%20%28151%29.png)
 
 ### Taak: Maak een nieuwe page component aan voor je about pagina
 
@@ -91,7 +91,7 @@ export default AboutPage
 
 Ga in een webbrowser naar **localhost:8000/about**. Wanneer je ontwikkelingsserver klaar is met het opnieuw opbouwen van je site, zou de pagina about er ongeveer zo uit moeten zien:
 
-![About us page Inghelbrecht Agency](<../../.gitbook/assets/image (26).png>)
+![About us page Inghelbrecht Agency](../../.gitbook/assets/image%20%2826%29.png)
 
 {% hint style="info" %}
 #### Key Gatsby-concept 💡
@@ -100,3 +100,4 @@ Pagina's die in de map `src/pages` zijn gemaakt, gebruiken de naam van het besta
 
 Als je bijvoorbeeld een bestand had met de naam `src/pages/garden-gnomes.js`, zou je die pagina kunnen openen op **localhost:8000/garden-gnomes**.
 {% endhint %}
+

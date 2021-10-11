@@ -208,3 +208,4 @@ const ContactPage = ({
 Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je contact page is volledig gestyled. M.a.w. je volledige website is af en klaar om gedeployed te worden!
 
 In het volgende hoofdstuk zal je leren hoe je met Netlify je website kan deployen en hoe je Continuous Deployment toevoegt via GitHub!
+

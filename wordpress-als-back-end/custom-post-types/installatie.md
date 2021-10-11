@@ -12,7 +12,7 @@ Vooraleer je begint aan het creëren van een Custom Post Type is het belangrijk 
 
 Navigeer naar je `functions.php` file in je child-thema map. In deze file zullen we de custom post type toevoegen. Normaal gezien staat er in je `functions.php` file al een functie die de parent `style.css` file inlaadt.
 
-![functions.php](<../../.gitbook/assets/image (7).png>)
+![functions.php](../../.gitbook/assets/image%20%287%29.png)
 
 Juist onder de functie `tt_child_enqueue_parent_styles` schrijf je deze code:
 
@@ -59,8 +59,9 @@ Labels worden gebruikt in het dashboard van WordPress om de gebruiker **een bete
 
 Eenmaal als je de code hebben opgeslagen, krijgen we een nieuwe tab in ons dashboard te zien waarmee we gemakkelijk artiesten kunnen toevoegen, bewerken en verwijderen.
 
-![](<../../.gitbook/assets/image (113).png>)
+![](../../.gitbook/assets/image%20%28113%29.png)
 
 Navigeer naar '**Add New**' onder '**Artists**' in je WP dashboard. Bij het aanmaken van een artiest krijg je de standaard velden van een post te zien, een titel en een HTML teksteditor. Dit is niet echt handig sinds we een artiest bv. ook een naam en geboortedatum willen geven. We zullen dit later aan de hand van de plugin **Advanced Custom Fields** kunnen toevoegen. We zullen velden zoals naam en geboortedatum toevoegen en de standaardvelden zoals de teksteditor verwijderen.
 
-![](<../../.gitbook/assets/image (131).png>)
+![](../../.gitbook/assets/image%20%28131%29.png)
+

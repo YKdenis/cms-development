@@ -5,21 +5,21 @@ description: >-
   hebben tot webgegevens en deze kunnen manipuleren.
 ---
 
-# REST API | voor- en nadelen
+# REST API \| voor- en nadelen
 
 ### Wat is REST?
 
 Het architecturale principe van REST wordt al meer dan tien jaar gebruikt door ontwikkelaars. Het vereenvoudigt de communicatie tussen machines en ondersteunt vele gegevensformaten, zoals JSON, XML of YAML. Ondanks het feit dat het duidelijk een van de meest populaire benaderingen is in de bedrijven van vandaag, met steun van grote giganten zoals Google en Netflix, heeft het nog steeds bepaalde gebreken die de toepasbaarheid ervan beperken.
 
-REST (afkorting van **RE**presentational **S**tate **T**ransfer) is gebaseerd op een uniforme en vooraf gedefinieerde reeks staatloze bewerkingen waarmee gebruikers toegang hebben tot webgegevens en deze kunnen manipuleren. API's die voldoen aan REST-ontwerpprincipes worden meestal **RESTful API's** genoemd.
+REST \(afkorting van **RE**presentational **S**tate **T**ransfer\) is gebaseerd op een uniforme en vooraf gedefinieerde reeks staatloze bewerkingen waarmee gebruikers toegang hebben tot webgegevens en deze kunnen manipuleren. API's die voldoen aan REST-ontwerpprincipes worden meestal **RESTful API's** genoemd.
 
-In REST-architectuur stellen API's hun functionaliteit bloot als bronnen, dit zijn alle soorten services, gegevens of objecten waartoe een client toegang heeft. Elke bron wordt geleverd met zijn eigen unieke URI (Uniform Resource Identifier) waartoe een client toegang kan krijgen door een verzoek naar de server te sturen.
+In REST-architectuur stellen API's hun functionaliteit bloot als bronnen, dit zijn alle soorten services, gegevens of objecten waartoe een client toegang heeft. Elke bron wordt geleverd met zijn eigen unieke URI \(Uniform Resource Identifier\) waartoe een client toegang kan krijgen door een verzoek naar de server te sturen.
 
 {% hint style="info" %}
 Een bepaalde bron van een API wordt ook wel eens een endpoint genoemd!
 {% endhint %}
 
-Dus wanneer een client een RESTful API aanroept, reageert de server met een weergave van de status van de opgevraagde bron. Veel gangbare REST-implementaties gebruiken de standaard HTTP-methoden (GET, POST, PUT, DELETE en PATCH) om een server aan te roepen.
+Dus wanneer een client een RESTful API aanroept, reageert de server met een weergave van de status van de opgevraagde bron. Veel gangbare REST-implementaties gebruiken de standaard HTTP-methoden \(GET, POST, PUT, DELETE en PATCH\) om een server aan te roepen.
 
 {% hint style="info" %}
 Dit betekent dat wanneer een RESTful API wordt aangeroepen, de server een weergave van de status van de aangevraagde bron naar de client zal overdragen.
@@ -145,14 +145,15 @@ Aangezien een REST-API een gegevensstructuur heeft die ontworpen is om voorgesch
 
 * Je hebt veel endpoints, wordt snel onoverzichtelijk. 
 * Je moet de tijd nemen om documentatie te schrijven zodat ontwikkelaars je API kunnen leren en gebruiken.
-* Er wordt te veel of te weinig informatie opgehaald (**overfetching**, **underfetching**). Beslissen tussen underfetching, creëren van veel endpoints m.a.w. veel roundtrips naar de server, of overfetching van data m.a.w. endpoints aanspreken die de data die je nodig hebt terug sturen plus een extra overhead aan data.
+* Er wordt te veel of te weinig informatie opgehaald \(**overfetching**, **underfetching**\). Beslissen tussen underfetching, creëren van veel endpoints m.a.w. veel roundtrips naar de server, of overfetching van data m.a.w. endpoints aanspreken die de data die je nodig hebt terug sturen plus een extra overhead aan data.
 
 ## Conclusie
 
 REST wordt al meer dan twee decennia gebruikt en heeft er voor gezorgd dat de implementatie van de client en de implementatie van de server onafhankelijk worden gedaan zonder dat ze van elkaar weten. **Dit betekent dat de front-end code op elk moment kan worden gewijzigd zonder de werking van de server te beïnvloeden, en de back-end code kan worden gewijzigd zonder de werking van de client te beïnvloeden**.
 
-Door een REST-API te gebruiken, kunnen verschillende clients (front-ends) dezelfde REST-endpoints aanspreken en dus dezelfde data opvragen van, en wijzigen in de databank.
+Door een REST-API te gebruiken, kunnen verschillende clients \(front-ends\) dezelfde REST-endpoints aanspreken en dus dezelfde data opvragen van, en wijzigen in de databank.
 
 REST heeft het programmeer landschap drastisch veranderd in de positieve zin! Het heeft de security, scalability en performance van applicaties verbeterd als de interoperabiliteit en herbruikbaarheid.
 
 We zijn nu 20 jaar verder en er zijn nieuwe innovatieve technologieën in opkomst die dezelfde functie als REST invullen maar dan beter. In het volgende hoofdstuk zullen we een van de snelst opkomende technologieën bespreken namelijk GraphQL. GraphQL kan de nadelen van REST, zoals hierboven besproken, rechtzetten.
+

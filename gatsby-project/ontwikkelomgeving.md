@@ -14,7 +14,7 @@ Voordat je begint met het bouwen van je eerste Gatsby-site, moet je vertrouwd ra
 Gatsby heeft hiervoor zelf een goede tutorial ter beschikking die je kan volgen via onderstaande link.
 {% endhint %}
 
-{% embed url="https://www.gatsbyjs.com/docs/tutorial/part-0/" %}
+{% embed url="https://www.gatsbyjs.com/docs/tutorial/part-0/" caption="" %}
 
 ### De Command Line Interface
 
@@ -34,9 +34,7 @@ De instructies voor het gebruik van de command line verschillen enigszins, afhan
 
 Indien Node nog niet geïnstalleerd is op je computer kan je de laatste versie van Node via de onderstaande link downloaden. Volg vervolgens de instructies om het te installeren.
 
-{% embed url="https://nodejs.org/en/" %}
-Node installatie link
-{% endembed %}
+{% embed url="https://nodejs.org/en/" caption="Node installatie link" %}
 
 Eenmaal als je het hebt geïnstalleerd navigeer je naar je terminal en type je **npm -v of node -v**. De installatie is gelukt indien je de versie van npm of Node terugkrijgt!
 
@@ -48,13 +46,13 @@ npm -v
 {% endtab %}
 
 {% tab title="node" %}
-```
+```text
 node -v
 ```
 {% endtab %}
 {% endtabs %}
 
-![](<../.gitbook/assets/image (41).png>)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 #### Wat is NPM?
 
@@ -85,11 +83,11 @@ Git is correct geïnstalleerd als je de versie terug krijgt bij het typen van gi
 git --version
 ```
 
-![](<../.gitbook/assets/image (85).png>)
+![](../.gitbook/assets/image%20%2885%29.png)
 
 ### Gatsby CLI
 
-De Gatsby-Command Line Interface (CLI) is een hulpmiddel waarmee je snel een Gatsby aangedreven site kan maken. De CLI is een gepubliceerd npm-pakket, wat betekent dat je het met npm kunt installeren.
+De Gatsby-Command Line Interface \(CLI\) is een hulpmiddel waarmee je snel een Gatsby aangedreven site kan maken. De CLI is een gepubliceerd npm-pakket, wat betekent dat je het met npm kunt installeren.
 
 Installeer de Gatsby CLI globaal door de onderstaande opdracht uit te voeren.
 
@@ -104,3 +102,4 @@ gatsby --version
 ```
 
 Nu dat je de Gatsby CLI hebt geïnstalleerd kan je de **gatsby** command tools gebruiken in je terminal voor het aanmaken van je eerste gatsby aangedreven website!
+

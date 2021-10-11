@@ -106,14 +106,14 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Syntax tip**: Om klassen toe te passen op React-componenten, gebruik je de prop `className`. (Dit is nog een voorbeeld van een ingebouwde prop die React automatisch weet te hanteren.)
+**Syntax tip**: Om klassen toe te passen op React-componenten, gebruik je de prop `className`. \(Dit is nog een voorbeeld van een ingebouwde prop die React automatisch weet te hanteren.\)
 
 Dit kan verwarrend zijn als je gewend bent om het `class` attribuut op HTML-elementen te gebruiken. Doe je best om ze niet door elkaar te halen!
 {% endhint %}
 
 Wanneer je je lokale site in een webbrowser opent, zou je nu moeten zien dat het lettertype is gewijzigd en dat de inhoud meer op de pagina is gecentreerd.
 
-![Home page Artist Agency](<../../.gitbook/assets/image (119).png>)
+![Home page Artist Agency](../../.gitbook/assets/image%20%28119%29.png)
 
 Nu je hebt gezien hoe je een enkel element voor je component kunt opmaken, voeg je wat meer stijlen toe om vervolgens toe te passen op de andere elementen in je `Layout`-component. Je kan ook de `html` en `body` tag stylen in je css-bestand.
 
@@ -220,11 +220,12 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Syntax tip**: In CSS is de conventie om klassen een naam te geven met behulp van kebab-case (zoals `.nav-links`). Maar in JavaScript is de conventie om variabelen een naam te geven met behulp van camel case (zoals `navLinks`).
+**Syntax tip**: In CSS is de conventie om klassen een naam te geven met behulp van kebab-case \(zoals `.nav-links`\). Maar in JavaScript is de conventie om variabelen een naam te geven met behulp van camel case \(zoals `navLinks`\).
 
 Gelukkig, als je CSS-modules met Gatsby gebruikt, kan je beide hebben! De klassennamen van je kebab-case in je `.modules.css`-bestanden worden automatisch geconverteerd naar camel-case-variabelen die je in je .`js`-bestanden kunt importeren.
 {% endhint %}
 
 Zodra je ontwikkelingsserver klaar is met het opnieuw opbouwen van je site, zou je je nieuwe stijlen moeten zien in je webbrowser:
 
-![Home Page met nieuwe stijlen](<../../.gitbook/assets/image (139).png>)
+![Home Page met nieuwe stijlen](../../.gitbook/assets/image%20%28139%29.png)
+

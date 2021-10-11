@@ -24,11 +24,11 @@ Bijvoorbeeld: Een e-commerce winkel die een front-end heeft in React maar wilt u
 Als ze een headless CMS hebben dan moeten ze alleen een front-end voor beide besturingssystemen maken. Aangezien de API front-end agnostisch is kan de back-end worden hergebruikt!
 {% endhint %}
 
-![Headless CMS-Architectuur](<../../.gitbook/assets/image (52).png>)
+![Headless CMS-Architectuur](../../.gitbook/assets/image%20%2852%29.png)
 
 ## Pro's en cons van headless CMS-architectuur
 
-Headless CMS-architectuur is een subset van een ontkoppelde CMS m.a.w. het deelt bijna alle voordelen. Zonder een aangewezen front-end biedt een headless CMS echter de grootste flexibiliteit om inhoud op verschillende platformen te publiceren. In tegenstelling tot ontkoppeld, kan je met headless dynamische inhoud publiceren op elk apparaat dat via IoT (Internet of Things) is verbonden. Van alle drie de CMS-architecturen biedt headless CMS de meeste controle over hoe en waar je inhoud wordt weergegeven.
+Headless CMS-architectuur is een subset van een ontkoppelde CMS m.a.w. het deelt bijna alle voordelen. Zonder een aangewezen front-end biedt een headless CMS echter de grootste flexibiliteit om inhoud op verschillende platformen te publiceren. In tegenstelling tot ontkoppeld, kan je met headless dynamische inhoud publiceren op elk apparaat dat via IoT \(Internet of Things\) is verbonden. Van alle drie de CMS-architecturen biedt headless CMS de meeste controle over hoe en waar je inhoud wordt weergegeven.
 
 Een nadeel is dat headless CMS-platformen meestal geen gebruikersinterface hebben, daarom kan het moeilijker zijn om een ​​nauwkeurige live preview te zien dan bij ontkoppeld. Om deze redenen zijn headless-platforms het meest geschikt voor bedrijven met een robuust team van ontwikkelaars die er de voorkeur aan geven hun favoriete frameworks en tools te gebruiken.
 
@@ -43,6 +43,5 @@ Een nadeel is dat headless CMS-platformen meestal geen gebruikersinterface hebbe
 
 ## Extra resources 📚
 
-{% embed url="https://www.smashingmagazine.com/2021/08/history-future-jamstack-cms/" %}
-Geschiedenis van JAMstack
-{% endembed %}
+{% embed url="https://www.smashingmagazine.com/2021/08/history-future-jamstack-cms/" caption="Geschiedenis van JAMstack" %}
+

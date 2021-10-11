@@ -17,4 +17,5 @@ In dit hoofdstuk zal je werken aan het hieronder weergegeven ontwerp. Zoals je k
 **Het herbruikbaar maken van componenten helpt je tijd te besparen en natuurlijk dubbele code te vermijden!**
 {% endhint %}
 
-![Artists Page](<../../.gitbook/assets/localhost\_8000\_artists-1- (1).png>)
+![Artists Page](../../.gitbook/assets/localhost_8000_artists-1-%20%281%29.png)
+

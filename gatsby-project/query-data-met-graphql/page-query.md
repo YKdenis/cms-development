@@ -103,7 +103,7 @@ export default Layout
 
 Als je nu naar [localhost:8000/artists](http://localhost:8000/artists) gaat in je webbrowser, zou je je nieuwe `Artists` page moeten zien en zou er een link naar de `Artists` page in je navigatiebalk moeten zijn.
 
-![Skelet Artists page](<../../.gitbook/assets/image (107).png>)
+![Skelet Artists page](../../.gitbook/assets/image%20%28107%29.png)
 
 ### Taak: Connect je Headless WordPress met behulp van een source plugin
 
@@ -157,9 +157,9 @@ module.exports = {
 };
 ```
 
-Het bovenstaande codevoorbeeld laat zien hoe je je Headless WP koppelt aan je Gatsby a.d.h.v. de graphql endpoint van je WP applicatie. Je kan de URL terug vinden als je navigeert naar je **WP dashboard -> graphQL -> Settings - GraphQL Endpoint**.
+Het bovenstaande codevoorbeeld laat zien hoe je je Headless WP koppelt aan je Gatsby a.d.h.v. de graphql endpoint van je WP applicatie. Je kan de URL terug vinden als je navigeert naar je **WP dashboard -&gt; graphQL -&gt; Settings - GraphQL Endpoint**.
 
-![http://artist-agency-2021.local/graphql](<../../.gitbook/assets/image (51).png>)
+![http://artist-agency-2021.local/graphql](../../.gitbook/assets/image%20%2851%29.png)
 
 Met m.b.v. deze URL zal Gatsby je data vanuit Headless WP doorsluizen naar de Data Layer en beschikbaar stellen in je gehele project.
 
@@ -171,7 +171,7 @@ Met m.b.v. deze URL zal Gatsby je data vanuit Headless WP doorsluizen naar de Da
 
 Het laatste dat je nog zal moeten doen is de plugin **WPGatsby downloaden en installeren** op je WordPress Applicatie. Zonder deze plugin zal je Gatsby website geen connectie kunnen maken met je WP graphql endpoint!
 
-![WPGatsby plugin in de WordPress plugin store](<../../.gitbook/assets/image (92).png>)
+![WPGatsby plugin in de WordPress plugin store](../../.gitbook/assets/image%20%2892%29.png)
 
 #### Query de WordPress data vanuit je Data Layer
 
@@ -182,7 +182,7 @@ Je kan de query `AllWpArtist` gebruiken om gegevens over van meerdere artiesten 
 {% hint style="info" %}
 **Opmerking** 📣: Je query, voor het ophalen van je artists, heeft in Gatsby een geheel andere structuur dan in je GraphiQL op je WordPress Applicatie.
 
-Als je meerdere artiesten wilt opvragen gebruik je `AllWpArtist` en indien je één artiest wilt opvragen gebruik je `wpArtist`. Met behulp van een selector (paars veld in GraphiQL) kan je specificeren welke artist je wilt opvragen.
+Als je meerdere artiesten wilt opvragen gebruik je `AllWpArtist` en indien je één artiest wilt opvragen gebruik je `wpArtist`. Met behulp van een selector \(paars veld in GraphiQL\) kan je specificeren welke artist je wilt opvragen.
 
 Voor meer informatie bekijk de [GitHub pagina](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/tutorials/building-a-new-site-wordpress-and-gatsby.md) van `gatsby-source-wordpress`.
 {% endhint %}
@@ -269,7 +269,7 @@ Het gebruik van GraphQL-query's in Page component gebruikt een iets andere synta
 
 Het proces voor het maken van een query in een page component ziet er iets anders uit dan `useStaticQuery`:
 
-Importeer de `graphql`-tag uit de Gatsby-package. Exporteer een variabele die een string opslaat met de GraphQL-query die je wilt uitvoeren. **Wanneer je site wordt gebouwd, voert Gatsby je page query uit en geeft de resulterende gegevens door aan je page component als een** `prop` **die** `data` **wordt genoemd.** Je page query moet buiten je page component worden gedefinieerd. (Met `useStaticQuery` is je query gedefinieerd in je component.) Je kan de `data` prop in je page component gebruiken om je page query gegevens op te halen en te gebruiken. Je kan de Javascript punt-operator (`.`) gebruiken om velden binnen de `data` prop te kiezen.
+Importeer de `graphql`-tag uit de Gatsby-package. Exporteer een variabele die een string opslaat met de GraphQL-query die je wilt uitvoeren. **Wanneer je site wordt gebouwd, voert Gatsby je page query uit en geeft de resulterende gegevens door aan je page component als een** `prop` **die** `data` **wordt genoemd.** Je page query moet buiten je page component worden gedefinieerd. \(Met `useStaticQuery` is je query gedefinieerd in je component.\) Je kan de `data` prop in je page component gebruiken om je page query gegevens op te halen en te gebruiken. Je kan de Javascript punt-operator \(`.`\) gebruiken om velden binnen de `data` prop te kiezen.
 
 **Hier is een klein voorbeeld om te laten zien hoe dit proces er in de praktijk uitziet:**
 {% endhint %}
@@ -301,7 +301,7 @@ export default HomePage
 
 Volg de onderstaande stappen om een lijst met artiesten toe te voegen aan je Artist page.
 
-#### 1) Importeer de `graphql`-tag uit de Gatsby-package.
+#### 1\) Importeer de `graphql`-tag uit de Gatsby-package.
 
 {% code title="src/pages/artists.js" %}
 ```jsx
@@ -320,9 +320,9 @@ export default ArtistsPage
 ```
 {% endcode %}
 
-#### 2) Definieer en exporteer je page query.
+#### 2\) Definieer en exporteer je page query.
 
-Kopieer de query die je in GraphiQL hebt gebouwd. Opmerking: de query die jee in GraphiQL bouwt, heeft standaard een query name, zoals `MyQuery`. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je best de query name** (zoals in het onderstaande codevoorbeeld).
+Kopieer de query die je in GraphiQL hebt gebouwd. Opmerking: de query die jee in GraphiQL bouwt, heeft standaard een query name, zoals `MyQuery`. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je best de query name** \(zoals in het onderstaande codevoorbeeld\).
 
 {% hint style="info" %}
 **Opmerking 📣:** Als alternatief kan je elk van je queries een unieke naam geven. **Query names kunnen handig zijn voor het opsporen van fouten die in je console verschijnen wanneer Gatsby je query's uitvoert tijdens het bouwen.**
@@ -364,7 +364,7 @@ export default ArtistsPage
 ```
 {% endcode %}
 
-#### 3) Voeg de **`data`** prop toe aan de functie definitie.
+#### 3\) Voeg de **`data`** prop toe aan de functie definitie.
 
 Vervang vervolgens het placeholder-element door een lijst met artiesten. Gebruik de Javascript-array `.map()`-methode om de `edges`-array te doorlopen en de `firstName` en `lastName` voor elke artist weer te geven.
 
@@ -415,8 +415,9 @@ export default ArtistsPage
 
 Als je nu naar je Artists page in een webbrowser kijkt, zou je een lijst moeten zien met de volledige namen van je artiesten:
 
-![Artists page met lijst artiesten namen](<../../.gitbook/assets/image (38).png>)
+![Artists page met lijst artiesten namen](../../.gitbook/assets/image%20%2838%29.png)
 
 Goed gedaan! 🎉 Je hebt de eerste stap van je nieuwe Artists page voltooid.
 
 Maak je nog geen zorgen over de styling en de exacte data dat wordt weergegeven. Je zal dit later in een volgende tutorial onder de loep nemen!
+

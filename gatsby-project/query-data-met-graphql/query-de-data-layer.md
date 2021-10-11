@@ -35,16 +35,16 @@ De `siteMetadata-`gegevens worden automatisch in de GraphQL Data Layer getrokken
 
 Aangezien je geen `source`-plugin hoeft in te stellen, kan je rechtstreeks naar GraphiQL navigeren om je GraphQL-query op te bouwen:
 
-Ga in je webbrowser naar [localhost:8000/\__\_graphiql](http://localhost:8000/\__\_graphiql) om de GraphiQL-interface te zien. Open in je **Explorer** de keuzelijst voor het `site` veld. Open in het `site` veld de tweede keuzelijst voor het veld `siteMetadata` (de blauwe). Dit komt overeen met het `siteMetadata`-object in je `gatsby-config.js`-bestand.
+Ga in je webbrowser naar [localhost:8000/\_\_\_graphiql](http://localhost:8000/___graphiql) om de GraphiQL-interface te zien. Open in je **Explorer** de keuzelijst voor het `site` veld. Open in het `site` veld de tweede keuzelijst voor het veld `siteMetadata` \(de blauwe\). Dit komt overeen met het `siteMetadata`-object in je `gatsby-config.js`-bestand.
 
 {% hint style="info" %}
 #### Dubbel zien? 👀
 
-Het is je misschien opgevallen dat er twee verschillende keuzelijsten zijn voor `siteMetadata` (en voor elk veld onder de site dropdown).
+Het is je misschien opgevallen dat er twee verschillende keuzelijsten zijn voor `siteMetadata` \(en voor elk veld onder de site dropdown\).
 
-De eerste (**de paarse met een dubbele punt**, `siteMetadata:`) is eigenlijk een argument dat aan het `site` veld is gekoppeld. Je kan de paarse keuzelijsten gebruiken om te filteren welke gegevens uit de Data Layer in het antwoord worden geretourneerd. (Je zult hier later een voorbeeld van zien.)
+De eerste \(**de paarse met een dubbele punt**, `siteMetadata:`\) is eigenlijk een argument dat aan het `site` veld is gekoppeld. Je kan de paarse keuzelijsten gebruiken om te filteren welke gegevens uit de Data Layer in het antwoord worden geretourneerd. \(Je zult hier later een voorbeeld van zien.\)
 
-De tweede (**de blauwe zonder dubbele punt,** `siteMetadata`) is wat je vaker zult gebruiken. Deze voegt het daadwerkelijke `siteMetadata`-veld toe aan je query, die GraphQL vertelt om dat veld in je response data op te nemen.
+De tweede \(**de blauwe zonder dubbele punt,** `siteMetadata`\) is wat je vaker zult gebruiken. Deze voegt het daadwerkelijke `siteMetadata`-veld toe aan je query, die GraphQL vertelt om dat veld in je response data op te nemen.
 
 Probeer elk van de keuzelijsten in de **Explorer** aan te vinken en kijk hoe de query in het **Query-document** verandert. Welke verschillen merk je op?
 {% endhint %}
@@ -61,7 +61,7 @@ query MyQuery {
 }
 ```
 
-Klik op de knop "**Execute** **Query**" (het driehoekje "**play**" boven aan de pagina) om de query uit te voeren. Het antwoord in het **Result veld** zou er ongeveer zo uit moeten zien als het onderstaande object. **Merk op hoe de structuur van het gegevensobject in het antwoord overeenkomt met de structuur van de velden in de query!**
+Klik op de knop "**Execute** **Query**" \(het driehoekje "**play**" boven aan de pagina\) om de query uit te voeren. Het antwoord in het **Result veld** zou er ongeveer zo uit moeten zien als het onderstaande object. **Merk op hoe de structuur van het gegevensobject in het antwoord overeenkomt met de structuur van de velden in de query!**
 
 ```yaml
 {
@@ -76,7 +76,7 @@ Klik op de knop "**Execute** **Query**" (het driehoekje "**play**" boven aan de 
 }
 ```
 
-Probeer de waarde van de title _\*\*_prop in je `gatsby-config.js`-bestand te wijzigen. Wanneer je het bestand opslaat, moet je site opnieuw worden opgebouwd (`gatbsy develop`) en wanneer het klaar is, kan je de query opnieuw uitvoeren in GraphiQL en je bijgewerkte gegevens bekijken.
+Probeer de waarde van de title _\*\*_prop in je `gatsby-config.js`-bestand te wijzigen. Wanneer je het bestand opslaat, moet je site opnieuw worden opgebouwd \(`gatbsy develop`\) en wanneer het klaar is, kan je de query opnieuw uitvoeren in GraphiQL en je bijgewerkte gegevens bekijken.
 
 ### Taak: gebruik `useStaticQuery` om de sitetitle in de `Layout` component binnen te halen en weer te geven.
 
@@ -114,7 +114,7 @@ const data = useStaticQuery(graphql`
 ```
 
 {% hint style="info" %}
-Gebruik de gegevens in je component door de puntoperator (`.`) te gebruiken om toegang te krijgen tot het juiste veld buiten het antwoord.
+Gebruik de gegevens in je component door de puntoperator \(`.`\) te gebruiken om toegang te krijgen tot het juiste veld buiten het antwoord.
 
 #### Hier, een klein voorbeeld om te laten zien hoe dit proces er in de praktijk uitziet:
 {% endhint %}
@@ -196,7 +196,7 @@ export default Layout
 Roep `useStaticQuery` aan en geef het de query door die je in GraphiQL hebt gemaakt. Zorg ervoor dat je de `graphql`-tag gebruikt, zodat Gatsby weet dat de string die je doorgeeft een GraphQL-query is. Sla de geretourneerde waarde van `useStaticQuery` op in een variabele.
 
 {% hint style="info" %}
-**Opmerking** 🙋: de query die je in GraphiQL bouwt, heeft standaard een **query name**, zoals **MyQuery**. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je de naam** (zoals in het onderstaande codevoorbeeld).
+**Opmerking** 🙋: de query die je in GraphiQL bouwt, heeft standaard een **query name**, zoals **MyQuery**. Mogelijk zie je een fout als je meer dan één query met dezelfde naam hebt, dus **nadat je je query van GraphiQL naar je component hebt gekopieerd, verwijder je de naam** \(zoals in het onderstaande codevoorbeeld\).
 {% endhint %}
 
 {% code title="src/components/layout.js" %}
@@ -255,7 +255,7 @@ dan heeft je `data` variabele de volgende structuur:
 }
 ```
 
-Nu je een variabele hebt met de resultaten van je query, kan je de `title` van je site in de **JSX** weergeven voor je `Layout` component. Om toegang te krijgen tot de `sitetitle`, gebruik je de JavaScript punt-operator (`.`) om de waarde van `data.site.siteMetadata.title` op te halen. **Voeg het toe zodat het zowel in het browsertabblad, als bovenaan je pagina-inhoud wordt weergegeven**.
+Nu je een variabele hebt met de resultaten van je query, kan je de `title` van je site in de **JSX** weergeven voor je `Layout` component. Om toegang te krijgen tot de `sitetitle`, gebruik je de JavaScript punt-operator \(`.`\) om de waarde van `data.site.siteMetadata.title` op te halen. **Voeg het toe zodat het zowel in het browsertabblad, als bovenaan je pagina-inhoud wordt weergegeven**.
 
 {% code title="src/components/layout.js" %}
 ```jsx
@@ -310,7 +310,7 @@ export default Layout
 ```
 {% endcode %}
 
-![Site title op de home page in nav menu](<../../.gitbook/assets/image (122).png>)
+![Site title op de home page in nav menu](../../.gitbook/assets/image%20%28122%29.png)
 
 Nu de `sitetitle` op de pagina verschijnt, is het tijd om wat stijl toe te voegen! Definieer enkele stijlen voor de `sitetitle` onder de bestaande stijlen in je `layout.module.css`-bestand. Vervang ook je `nav-link-item` klasse van `padding-left` naar `padding-right`.
 
@@ -407,6 +407,7 @@ export default Layout
 
 Wanneer je browser opnieuw wordt geladen, zie je dat je de nieuwe CSS is toegepast op de titel van je site.
 
-![Home page met CSS sitetitle](<../../.gitbook/assets/image (94).png>)
+![Home page met CSS sitetitle](../../.gitbook/assets/image%20%2894%29.png)
 
 Gefeliciteerd, je hebt zojuist GraphQL gebruikt om gegevens naar je site te door te sluizen! Probeer de `sitetitle` in je `gatsby-config.js`-bestand te wijzigen en bekijk je ge-update site in de browser. 💻
+

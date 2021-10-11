@@ -8,7 +8,7 @@ description: Bouw je home page query op met behulp van je GraphiQL IDE.
 
 Je kan je home page data opvragen door `wpPage` open te klikken in je GraphiQL explorer en vervolgens het `homePage`-veld aan te vinken.
 
-**We zijn alleen geïnteresseerd in het ophalen van de home page en moeten dus een query argument gebruiken.** Je mag het `slug`-argument (paars veld) in de Explorer aanvinken. Je mag het `slug`-argument hardcoderen met de waarde **"home"**
+**We zijn alleen geïnteresseerd in het ophalen van de home page en moeten dus een query argument gebruiken.** Je mag het `slug`-argument \(paars veld\) in de Explorer aanvinken. Je mag het `slug`-argument hardcoderen met de waarde **"home"**
 
 Vraag vervolgens alle data op die je hebt gedefinieerd in je WP applicatie voor je home page.
 
@@ -81,7 +81,7 @@ Met `width` en `height` kan je de image opvragen in een specifieke grote.
 {% endhint %}
 
 {% hint style="info" %}
-**GraphQL Core-concept** 💡: in je GraphQL query heb je **featuredArtists > artists** en dan een stukje nieuwe syntax: `... on wpArtist`. Deze syntax wordt gebruikt voor het toevoegen van een GraphQL fragment.
+**GraphQL Core-concept** 💡: in je GraphQL query heb je **featuredArtists &gt; artists** en dan een stukje nieuwe syntax: `... on wpArtist`. Deze syntax wordt gebruikt voor het toevoegen van een GraphQL fragment.
 
 ### Wat is een Fragment?
 
@@ -170,3 +170,4 @@ query {
 export default IndexPage
 ```
 {% endcode %}
+

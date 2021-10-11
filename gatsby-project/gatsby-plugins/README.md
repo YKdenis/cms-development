@@ -17,3 +17,4 @@ In dit deel van de zelfstudie leer je wat **Gatsby plugins** zijn en hoe je ze o
 * De Gatsby plugin bibliotheek te gebruiken om door alle beschikbare plug-ins te zoeken. 
 * Een plug-in toe te voegen aan je Gatsby-site. 
 * Configureren van je plugins in je `gatsby-config.js`-bestand.
+

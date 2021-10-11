@@ -29,3 +29,4 @@ Het maken van een WordPress-child-thema kan net zo eenvoudig zijn als het maken 
 * toestaan ​​dat hoofdthema's worden bijgewerkt zonder je wijzigingen te verliezen;
 * bespaar op ontwikkelingstijd omdat je het wiel niet opnieuw heruitvindt;
 * Het is een geweldige manier om te leren over thema-ontwikkeling; 
+

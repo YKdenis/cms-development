@@ -20,7 +20,7 @@ Resolvers zijn functies die in de backend gaan bepalen hoe de data uit de databa
 
 De officiële GraphQL documentatie is een goede plek om te beginnen met GraphQL. Je zal er de basis principes van GraphQL leren en de GraphQL-syntax onder de knie krijgen.
 
-{% embed url="https://graphql.org/learn/" %}
+{% embed url="https://graphql.org/learn/" caption="" %}
 
 Doorloop het **introductie** gedeelte en **Queries and Mutations**.
 
@@ -33,9 +33,10 @@ Doorloop het **introductie** gedeelte en **Queries and Mutations**.
 * Operation Names
 * Variables
 * Directives
-* ~~Mutations~~ (valt buiten de scope van de cursus)
+* ~~Mutations~~ \(valt buiten de scope van de cursus\)
 * Inline fragments
 
 #### Extra resources
 
-{% embed url="https://www.wpgraphql.com/docs/intro-to-graphql/" %}
+{% embed url="https://www.wpgraphql.com/docs/intro-to-graphql/" caption="" %}
+

@@ -15,7 +15,7 @@ Eerst moet je `/app/public/wp-content/themes/` openen in je WordPress directory 
 Je kan gemakkelijk navigeren naar je WordPress directory via het pijltje aangeduid in onderstaande foto!
 {% endhint %}
 
-![](<../../.gitbook/assets/image (138).png>)
+![](../../.gitbook/assets/image%20%28138%29.png)
 
 Open een teksteditor zoals Vscode, maak een nieuwe file aan en plak er deze code in:
 
@@ -59,11 +59,11 @@ wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 ```
 {% endcode %}
 
-Dit zijn de minimumvereiste voor het maken van een child-thema. Je kunt nu naar _**Appearance -> Themes**_ gaan waar je Twenty Twenty-One Child Theme ziet. Je moet op de knop '**activate**' klikken om het child-thema op je site te gebruiken.
+Dit zijn de minimumvereiste voor het maken van een child-thema. Je kunt nu naar _**Appearance -&gt; Themes**_ gaan waar je Twenty Twenty-One Child Theme ziet. Je moet op de knop '**activate**' klikken om het child-thema op je site te gebruiken.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](../../.gitbook/assets/image%20%284%29.png)
 
-![](<../../.gitbook/assets/image (126).png>)
+![](../../.gitbook/assets/image%20%28126%29.png)
 
 ## style.css
 
@@ -75,6 +75,7 @@ Je hoofdthema heeft ook een `style.css`. Deze wordt overgeërfd door het child-t
 
 ## functions.php
 
-In tegenstelling tot `style.css`, overschrijft de `functions.php` van een child-thema de `functions.php` van het hoofdthema niet. In plaats daarvan wordt de `functions.php` van het child-thema file toegevoegd aan die van het hoofdthema. (Het wordt net voor het bestand van de ouder ingeladen.)
+In tegenstelling tot `style.css`, overschrijft de `functions.php` van een child-thema de `functions.php` van het hoofdthema niet. In plaats daarvan wordt de `functions.php` van het child-thema file toegevoegd aan die van het hoofdthema. \(Het wordt net voor het bestand van de ouder ingeladen.\)
 
 Op die manier bieden de `functions.php` van een child-thema een slimme, probleemloze methode om de functionaliteit van een hoofdthema aan te passen. Stel dat je een PHP-functie aan je thema wilt toevoegen. De snelste manier is om het bestand `functions.php` in je hoofdthema-map te openen en de functie daar te plaatsen. Maar dat is niet zo slim: de volgende keer dat je thema wordt bijgewerkt, verdwijnt je functie. Door de functie in de `functions.php` file van je child-thema te zetten zal je functie niet worden beïnvloed door toekomstige updates van het hoofdthema. **M.a.w. door een child-thema te gebruiken vermijd je code te verliezen bij elke thema update.**
+

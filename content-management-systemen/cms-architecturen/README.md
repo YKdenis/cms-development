@@ -20,3 +20,4 @@ Een voorkomende misconceptie is dat men de CDA als de back-end ziet en de CMA al
 {% endhint %}
 
 Op de volgende pagina's zullen we de verschillende CMS-architecturen overlopen die tegenwoordig worden gebruikt, en bespreken we de voor- en nadelen van elk systeem.
+

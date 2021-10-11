@@ -8,7 +8,7 @@ description: >-
 
 ## Eindresultaat:
 
-![Contact page eindresultaat](../../.gitbook/assets/localhost\_8000\_contact.png)
+![Contact page eindresultaat](../../.gitbook/assets/localhost_8000_contact.png)
 
 ### Push je aanpassingen naar GitHub
 
@@ -17,11 +17,12 @@ description: >-
 
 Implementeer voordat je verder gaat je wijzigingen op je GitHub Repo, zodat je je voortgang niet kwijtspeelt!
 
-Voer eerst de volgende opdrachten uit in een terminal om je wijzigingen naar je GitHub-repository te pushen. (Zorg ervoor dat je zich in de directory op het hoogste niveau van je Gatsby-site bevindt!)
+Voer eerst de volgende opdrachten uit in een terminal om je wijzigingen naar je GitHub-repository te pushen. \(Zorg ervoor dat je zich in de directory op het hoogste niveau van je Gatsby-site bevindt!\)
 {% endhint %}
 
-```
+```text
 git add .
 git commit -m "Contact page: opmaak en styling"
 git push origin main
 ```
+

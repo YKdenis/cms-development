@@ -116,3 +116,4 @@ query ($id: String) {
 {% hint style="info" %}
 **Let op** 👀**:** Het kan zijn dat je het `childImageSharp`-veld niet ziet staan in de **Explorer** van je GraphiQLIDE en dat je GraphiQL het zal onderstrepen met een rode lijn wanneer je het toevoegt in de **Query Editor**.
 {% endhint %}
+

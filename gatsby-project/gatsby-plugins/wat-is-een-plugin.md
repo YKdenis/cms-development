@@ -14,8 +14,9 @@ Er zijn verschillende plugins die elk verschillende gebruiksscenario's hebben. S
 Het zijn net die fancy kookgadgets voor één doel die appels schillen of knoflook pletten. Je zou dezelfde taak kunnen volbrengen met een gewoon mes, maar het is vaak sneller om een tool te gebruiken die is gebouwd om die ene specifieke taak heel goed uit te voeren.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (120).png>)
+![](../../.gitbook/assets/image%20%28120%29.png)
 
 {% hint style="info" %}
 Je zal waarschijnlijk plugins gebruiken op bijna elke Gatsby-site die je bouwt. Terwijl je de rest van de zelfstudie doorloopt, heb je veel mogelijkheden om te oefenen met het installeren en gebruiken van plugins.
 {% endhint %}
+

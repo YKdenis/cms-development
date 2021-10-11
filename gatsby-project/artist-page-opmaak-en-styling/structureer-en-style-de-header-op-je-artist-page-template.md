@@ -6,7 +6,7 @@ description: >-
 
 # Structureer en style de header op je Artist page template
 
-![Eindresultaat Artist Page Template header](<../../.gitbook/assets/image (71).png>)
+![Eindresultaat Artist Page Template header](../../.gitbook/assets/image%20%2871%29.png)
 
 ## Taak: Voeg de JSX structuur toe voor je header op je Artist template page
 
@@ -78,7 +78,7 @@ const ArtistPage = ({
 ```
 
 {% hint style="info" %}
-Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND (&&) gebruiken zoals je hierboven hebt gedaan!
+Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND \(&&\) gebruiken zoals je hierboven hebt gedaan!
 
 Als `artistName` niet gelijk is aan `null` dan wordt het `<h3>`-element met de `artistName` weergegeven in je HTML.
 
@@ -223,6 +223,7 @@ const ArtistPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Eindresultaat](<../../.gitbook/assets/image (71) (1).png>)
+![Eindresultaat](../../.gitbook/assets/image%20%2871%29%20%281%29.png)
 
 In het volgende onderdeel zal je een nieuwe sectie aanmaken en daaraan de pictures toevoegen!
+

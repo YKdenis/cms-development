@@ -40,6 +40,7 @@ Maar hoe weet je of je de `StaticImage`-component of de `GatsbyImage`-component 
 * Het gebruik van de `StaticImage`-component is als het vragen om een ​​routebeschrijving met behulp van een fysiek adres, zoals "400 Main Street". Je komt altijd op dezelfde plek uit, hoeveel mensen je ook vraagt. 
 * Het gebruik van de `GatsbyImage`-component is als vragen om een ​​algemenere weg. Als je iemand vraagt ​​om je naar de beste koffiebar in de stad te verwijzen, hangt het af van aan wie je het vraagt ​​en wat hun persoonlijke voorkeuren zijn.
 
-![](<../../.gitbook/assets/image (144).png>)
+![](../../.gitbook/assets/image%20%28144%29.png)
 
 In dit deel van de zelfstudie voeg je een profiel foto toe aan je Artist Template Page. Aangezien de afbeeldingsbron die je in de page template laadt, voor elke artiest verandert, gebruik je de `GatsbyImage`-component.
+

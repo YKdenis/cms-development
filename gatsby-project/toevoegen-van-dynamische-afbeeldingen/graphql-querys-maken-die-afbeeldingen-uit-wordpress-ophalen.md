@@ -115,3 +115,4 @@ Deze opties zijn gelijk aan degene die je zou doorgeven aan de `StaticImage`-com
 
 Voor meer informatie, zie de [gatsby-plugin-image Documentatie](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/#image-options).
 {% endhint %}
+

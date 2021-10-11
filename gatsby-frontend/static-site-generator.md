@@ -6,7 +6,7 @@ description: >-
 
 # Wat is een static site-generator?
 
-Jarenlang was voor het ontwikkelen, publiceren en bewerken van inhoud op een website kennis van HTML, CSS en Javascript vereist, waardoor deze processen buiten de mogelijkheden van de gemiddelde gebruiker lagen. Sindsdien zijn er contentmanagementsystemen (CMS'en) ontstaan ​​- zoals WordPress, Joomla, Drupal, enz. - **die de technische drempel verlaagde om webcontent te wijzigen**.
+Jarenlang was voor het ontwikkelen, publiceren en bewerken van inhoud op een website kennis van HTML, CSS en Javascript vereist, waardoor deze processen buiten de mogelijkheden van de gemiddelde gebruiker lagen. Sindsdien zijn er contentmanagementsystemen \(CMS'en\) ontstaan ​​- zoals WordPress, Joomla, Drupal, enz. - **die de technische drempel verlaagde om webcontent te wijzigen**.
 
 Handige en gebruiksvriendelijke CMS'en stellen niet-technische gebruikers in staat hun eigen inhoud op het internet te beheren en controle te krijgen over het ontwerp en de weergave van een website.
 
@@ -20,21 +20,21 @@ Satic site-generators passen gegevens en inhoud toe op templates en genereren ee
 
 Het grootste verschil tussen een static site-generator en een traditionele webapplicatie-stack, is dat in plaats van te wachten tot een pagina wordt opgevraagd en vervolgens elke keer de weergave op aanvraag genereert, **een static site-generator dit van tevoren doet**, zodat de weergave klaar is om op voorhand te serveren. En het doet dit voor elke pagina van een site tijdens het bouwen.
 
-Beschouw een static site-generator als een **bouw proces** dat gegevens, inhoud en templates opneemt, verwerkt en een map vol met alle resulterende pagina's en middelen exporteert (**HTML, CSS en Javascript bestanden**).
+Beschouw een static site-generator als een **bouw proces** dat gegevens, inhoud en templates opneemt, verwerkt en een map vol met alle resulterende pagina's en middelen exporteert \(**HTML, CSS en Javascript bestanden**\).
 
-Dit heeft een aantal waardevolle effecten, maar het belangrijkste is dat het werk verschuift van "**request time**" (wanneer gebruikers om de weergave vragen) naar "**build time**" (de tijd nodig om het gehele bouwproces te doorlopen).
+Dit heeft een aantal waardevolle effecten, maar het belangrijkste is dat het werk verschuift van "**request time**" \(wanneer gebruikers om de weergave vragen\) naar "**build time**" \(de tijd nodig om het gehele bouwproces te doorlopen\).
 
 In een traditionele aanpak, zoals bij de gekoppelde CMS-architectuur van WordPress, wordt er bij elke aanvraag van een pagina **dynamisch een template en databank gegevens gecombineerd**. Dit proces vindt plaats op de server en zal de **request time verhogen**!
 
-**In plaats van bij elke request de pagina dynamisch op te bouwen wordt dit bij een static site-generator op voorhand gedaan tijdens een build proces**. Eenmaal als het build proces is afgerond kunnen de gecreëerde statische bestanden (HTML, CSS en JS) op een server worden gehost en rechtstreeks worden geleverd aan de eindgebruikers. Er moet geen code meer uitgevoerd worden tijdens de request time. **Dit maakt de response tijd van een website gegenereerd door een SSG (static site generator) veel sneller dan een website met een traditionele aanpak!**
+**In plaats van bij elke request de pagina dynamisch op te bouwen wordt dit bij een static site-generator op voorhand gedaan tijdens een build proces**. Eenmaal als het build proces is afgerond kunnen de gecreëerde statische bestanden \(HTML, CSS en JS\) op een server worden gehost en rechtstreeks worden geleverd aan de eindgebruikers. Er moet geen code meer uitgevoerd worden tijdens de request time. **Dit maakt de response tijd van een website gegenereerd door een SSG \(static site generator\) veel sneller dan een website met een traditionele aanpak!**
 
-![Werking van een static site-generator - bron Netlify](<../.gitbook/assets/image (135).png>)
+![Werking van een static site-generator - bron Netlify](../.gitbook/assets/image%20%28135%29.png)
 
 ### Statische en dynamische websites
 
 Websites kunnen over het algemeen worden onderverdeeld in twee categorieën: **statisch** en **dynamisch**.
 
-{% embed url="https://www.youtube.com/watch?v=_wFJj94kSTU&t=337s&ab_channel=Academind" %}
+{% embed url="https://www.youtube.com/watch?v=\_wFJj94kSTU&t=337s&ab\_channel=Academind" caption="" %}
 
 #### Statische websites
 
@@ -52,9 +52,9 @@ De code dat op de hostingserver staat bestaat uitsluitend uit HTML, CSS en Javas
 
 Dynamische websites zijn in een bijna constante staat van verandering en worden doorgaans aangedreven door een CMS. Het CMS bouwt letterlijk elke pagina op aanvraag elke keer dat een gebruiker deze oproept.
 
-Elke pagina bevat een template waarin er dynamisch data wordt ingeladen. Wanneer een gebruiker een bepaalde dynamische pagina oproept zal de hostingserver de **template** aanroepen en invullen. De server zal **meerdere requests** sturen naar het CMS (of externe services) om de dynamische data op te vragen. Vervolgens zal de server de pagina opbouwen a.d.h.v. de ontvangen dynamische data en stuurt deze ten slotte naar de browser.
+Elke pagina bevat een template waarin er dynamisch data wordt ingeladen. Wanneer een gebruiker een bepaalde dynamische pagina oproept zal de hostingserver de **template** aanroepen en invullen. De server zal **meerdere requests** sturen naar het CMS \(of externe services\) om de dynamische data op te vragen. Vervolgens zal de server de pagina opbouwen a.d.h.v. de ontvangen dynamische data en stuurt deze ten slotte naar de browser.
 
-#### Single Page Application (SPA) - Extra
+#### Single Page Application \(SPA\) - Extra
 
 Een SPA is een applicatie met **één pagina** die wordt **aangedreven door javascript**. Javascript stuurt server requests uit telkens als de gebruiker nieuwe data opvraagt. Dit wordt ook wel eens **clientside rendering** genoemd. In plaats dat de server de inhoud en de template combineert, en vervolgens het als gehele pagina terugstuurt, wordt de data dynamisch opgehaald vanuit de client en in realtime ingevuld.
 
@@ -64,7 +64,7 @@ Het grootste voordeel van een SPA is de gebruiksvriendelijkheid. De gebruiker ho
 **React applicaties zijn SPA's** - Je kan het merken aan de snelle response tijd bij het laden van een "nieuwe pagina". Het is instant, geen wit scherm tussen het navigeren van pagina's!
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=Kg0Q_YaQ3Gk&ab_channel=Academind" %}
+{% embed url="https://www.youtube.com/watch?v=Kg0Q\_YaQ3Gk&ab\_channel=Academind" caption="" %}
 
 ### Problemen met CMS-aangedreven websites
 
@@ -90,7 +90,7 @@ Dit verschilt enorm van een typische WordPress-site, die talloze databasequery's
 
 Naast snelheid en prestaties lossen static site-generators ook de beveiligingsproblemen op die CMS-aangedreven sites teisteren. Aangezien statische websites uitsluitend uit statische bestanden bestaan, hebben ze geen database - en aangezien er **geen database** is, kunnen aanvallers geen standaard hackaanvallen uitvoeren, zoals scripting, SQL-database-injecties of profiteren van beveiligingslekken in de database aan de serverside.
 
-Bovendien zijn platforms zoals WordPress, die door miljoenen mensen over de hele wereld worden gebruikt, vanzelfsprekend gemeenschappelijke doelwitten geworden voor kwaadwillende aanvallers. Er zijn letterlijk honderden tools die een cybercrimineel gemakkelijk kan downloaden en uitvoeren en die proberen om bestaande WordPress-, Drupal- en Joomla-sites automatisch te compromitteren - simpelweg door alle bekende kwetsbaarheden tegen elk CMS-systeem (en zijn plugins) te doorzoeken, op zoek naar beveiligingslekken. Daarom moeten sitebeheerders hun systemen blijven patchen met beveiligingsupdates en constant kat en muis spelen om ervoor te zorgen dat ze niet worden misbruikt door hackers.
+Bovendien zijn platforms zoals WordPress, die door miljoenen mensen over de hele wereld worden gebruikt, vanzelfsprekend gemeenschappelijke doelwitten geworden voor kwaadwillende aanvallers. Er zijn letterlijk honderden tools die een cybercrimineel gemakkelijk kan downloaden en uitvoeren en die proberen om bestaande WordPress-, Drupal- en Joomla-sites automatisch te compromitteren - simpelweg door alle bekende kwetsbaarheden tegen elk CMS-systeem \(en zijn plugins\) te doorzoeken, op zoek naar beveiligingslekken. Daarom moeten sitebeheerders hun systemen blijven patchen met beveiligingsupdates en constant kat en muis spelen om ervoor te zorgen dat ze niet worden misbruikt door hackers.
 
 Statische sites zijn daarentegen praktisch onmogelijk te hacken. **Er wordt geen code uitgevoerd - wanneer een gebruiker een pagina opvraagt, de server stuurt alleen een bestand voor die pagina - dus er zijn geen kwetsbaarheden die kunnen worden misbruikt.**
 
@@ -102,7 +102,7 @@ Dan is er het kostenvoordeel van SSG's. Het runnen van een statische site is nie
 
 #### Versiebeheer
 
-Alle broncode voor een statische site kan in een **version control system zoals Git** leven. Met Git is het mogelijk om terug te gaan naar een enkele versie van de site in zijn hele geschiedenis. Hierdoor blijven oude bestanden behouden en kunnen gemaakte wijzigingen of fouten snel ongedaan worden gemaakt of gecorrigeerd. **CMS-databases zijn daarentegen extreem vluchtig**. Elke gebruiker met de juiste machtigingen kan in een opwelling inhoud toevoegen, wijzigen of permanent verwijderen. Het is waar dat je een back-up kunt (en zou moeten maken) van databases, maar zelfs als dit regelmatig wordt gedaan, is de kans groot dat sommige gegevens verloren gaan als iemand een fout maakt of als een aanvaller zijn / haar weg naar binnen vindt.
+Alle broncode voor een statische site kan in een **version control system zoals Git** leven. Met Git is het mogelijk om terug te gaan naar een enkele versie van de site in zijn hele geschiedenis. Hierdoor blijven oude bestanden behouden en kunnen gemaakte wijzigingen of fouten snel ongedaan worden gemaakt of gecorrigeerd. **CMS-databases zijn daarentegen extreem vluchtig**. Elke gebruiker met de juiste machtigingen kan in een opwelling inhoud toevoegen, wijzigen of permanent verwijderen. Het is waar dat je een back-up kunt \(en zou moeten maken\) van databases, maar zelfs als dit regelmatig wordt gedaan, is de kans groot dat sommige gegevens verloren gaan als iemand een fout maakt of als een aanvaller zijn / haar weg naar binnen vindt.
 
 Een version control system dient als een zeer betrouwbare externe back-up. Het is altijd mogelijk om met een paar toetsaanslagen terug te gaan naar een vorige versie van de site, aangezien alle benodigde bestanden zich in de opslagplaats van het version control system bevinden.
 
@@ -116,10 +116,11 @@ Bovendien kunnen niet-technische gebruikers met populaire CMS-systemen zoals Wor
 
 **Grote sites met honderden of duizenden pagina's kunnen ook moeilijk te beheren zijn met een static site-generator**. Hoewel het mogelijk is, als je bijvoorbeeld meerdere auteurs op meerdere locaties hebt die allemaal regelmatig meerdere artikelen of blogposts bijdragen, wordt het bewerken en publiceren van inhoud een stuk lastiger en tijdrovender met een static site generator. Dit omdat er bij elke bewerking de HTML pagina's opnieuw moeten worden gebouwd. Realtime updates kunnen worden vertraagd en de bouwtijd kan snel toenemen.
 
-En als je een volledig dynamische website nodig hebt waarvan de inhoud van bepaalde pagina's (zoals user admin panels) niet vooraf bekend en gegenereerd kan worden, zijn static site-generators waarschijnlijk niet de beste optie.
+En als je een volledig dynamische website nodig hebt waarvan de inhoud van bepaalde pagina's \(zoals user admin panels\) niet vooraf bekend en gegenereerd kan worden, zijn static site-generators waarschijnlijk niet de beste optie.
 
 ### Conclusie
 
 Voor sites die niet de functionaliteit van een dynamische website nodig hebben, bieden static site-generators een hele reeks voordelen. De meeste websites overschrijden zelden enkele tientallen pagina's, en zelfs degenen die niet vaak moeten worden bijgewerkt. Als zodanig is een CMS vaak overkill, wat de prestaties van de site beïnvloedt, de site blootstelt aan beveiligingsrisico's en de kosten verhoogt.
 
 **Met static site-generator zijn er minder bewegende delen, wat de snelheid en prestaties aanzienlijk verbetert.** Ze zijn ook zeer veilig, zeer betrouwbaar, worden steeds krachtiger, vergen minimale onderhoudsinspanning en kosten minder geld om te bedienen. Om deze redenen kunnen we in de toekomst verwachten dat het SSG-gebruik verder zal groeien, evenals verbeteringen van providers die ze gemakkelijk te gebruiken maken voor niet-technische gebruikers.
+

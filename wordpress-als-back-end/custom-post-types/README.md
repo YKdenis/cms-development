@@ -8,15 +8,15 @@ description: >-
 
 ## **WordPress wordt geleverd met vijf standaard post types:**
 
-* Post (bericht)
-* Page (pagina)
+* Post \(bericht\)
+* Page \(pagina\)
 * Attachment
 * Revision
 * Nav-menu
 
 Die laatste drie zijn iets dat we nu niet hoeven te bespreken. Ze volbrengen hun doel stilletjes in de achtergrond van WordPress, en ze vereisen niet veel aandacht van onze kant. Berichten en pagina's is waar wij ons op zullen toespitsen. Vanuit technisch oogpunt werken ze vrijwel hetzelfde, en het belangrijkste verschil tussen hen is dat posts toegankelijk zijn vanuit je wp-admin via het menu **Posts**, terwijl pagina's toegankelijk zijn via **Pages**.
 
-![](<../../.gitbook/assets/image (18).png>)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 Deze twee waren de klassieke post types die beschikbaar waren in WordPress tot versie 3.0 erbij kwam. Daarin kregen gebruikers de mogelijkheid om hun eigen post types te creëren, boven de standaard posts en pagina's.
 
@@ -30,7 +30,7 @@ WordPress is geëvolueerd van een eenvoudig blogplatform naar een robuust CMS wa
 
 Custom post types kunnen je in veel situaties helpen, op basis van het type inhoud dat je op je WordPress-site wilt publiceren.
 
-Meestal is een nieuwe custom post type een goed idee als je gewoon iets (een soort inhoud) wilt publiceren dat apart moet worden gehouden van berichten en pagina's.
+Meestal is een nieuwe custom post type een goed idee als je gewoon iets \(een soort inhoud\) wilt publiceren dat apart moet worden gehouden van berichten en pagina's.
 
 {% hint style="info" %}
 M.a.w. je wilt dat het niet als bericht of als pagina wordt gepresenteerd.
@@ -46,10 +46,11 @@ Als je een apart gedeelte voor `boeken` op je recensie website hebt, wordt de in
 
 Alle post types worden opgeslagen in de databasetabel van posts en worden onderscheiden door een kolom met de naam `post_type`. Je kan via MySQL workbench, adminer of PHPmyAdmin de posts tabel bekijken en je zal zien dat er bij `post_type` een van de 5 hierboven vernoemde types zal staan.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 {% hint style="info" %}
 Met Local kan je gemakkelijk je WordPress database bekijken. Navigeer naar Database en klik op '**Open Adminer**'
 {% endhint %}
 
-![](<../../.gitbook/assets/image (60).png>)
+![](../../.gitbook/assets/image%20%2860%29.png)
+

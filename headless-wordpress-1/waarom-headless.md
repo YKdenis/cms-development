@@ -19,3 +19,4 @@ En dat is precies het punt: je krijgt de complete WordPress-installatie met bijn
 Het enige wat je hoeft te doen is de content, die je in de WordPress dashboard aanmaakt, vrijgeven via een API om je op maat gemaakte website en je WordPress back-end te verbinden. Dit is hoe WordPress al werkt, maar met een beetje code kan je de standaardverbindingen verbreken en de WordPress front-end vervangen door je eigen werk.
 
 De ontkoppeling van WordPress kan ook de beveiliging verbeteren, vooral als je je website en WordPress admin op verschillende servers en domeinen host. Hacks en DDoS-aanvallen kunnen alleen op een van deze eindpunten worden gericht. Dus als beveiliging belangrijk voor je is, kan een headless CMS op een verborgen server de oplossing zijn.
+

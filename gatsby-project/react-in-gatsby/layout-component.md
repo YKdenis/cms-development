@@ -8,7 +8,7 @@ description: >-
 
 ## Een herbruikbare Layout component maken
 
-Je kan elementen zoals je `sitetitel` afzonderlijk naar elke pagina van je site kopiëren. Maar stel je voor dat je site tientallen (of zelfs duizenden) pagina's had. Als je de structuur van je `navigatiemenu` wilt wijzigen, moet je elk van die bestanden afzonderlijk bijwerken.
+Je kan elementen zoals je `sitetitel` afzonderlijk naar elke pagina van je site kopiëren. Maar stel je voor dat je site tientallen \(of zelfs duizenden\) pagina's had. Als je de structuur van je `navigatiemenu` wilt wijzigen, moet je elk van die bestanden afzonderlijk bijwerken.
 
 In plaats daarvan zou het beter zijn om **één gemeenschappelijke Layout component te maken** waarin alle gedeelde elementen worden gegroepeerd om ze op meerdere pagina's opnieuw te gebruiken. Op die manier kan je, wanneer je de layout moet bijwerken, de wijziging op één plaats aanbrengen en wordt deze automatisch toegepast op alle pagina's die dat onderdeel gebruiken.
 
@@ -36,7 +36,7 @@ Een zo'n prop wordt `children` genoemd. Wanneer je een component rendert, wordt 
 Zie je `Layout` component als een fotolijst. Een lijst heeft zijn eigen vorm en stijl, maar je kunt de inhoud ervan wisselen met wat je maar wilt. Je zou dezelfde fotolijst rond een foto van een huis of een standbeeld kunnen gebruiken. Je zou zelfs iets anders dan een foto kunnen plaatsen, zoals een schilderij of een borduursel.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (140).png>)
+![](../../.gitbook/assets/image%20%28140%29.png)
 
 {% hint style="info" %}
 Hier is een voorbeeld van hoe de code voor dit scenario eruit zou kunnen zien. Ten eerste, wanneer de `<Frame>` component wordt weergegeven, wordt de inhoud tussen de openings- en sluitingstag doorgegeven:
@@ -92,7 +92,7 @@ In de browser zien de daadwerkelijke DOM-elementen er ongeveer zo uit:
 
 Volg de onderstaande stappen om een `Layout` component te maken en deze toe te voegen aan je Home- en About-pagina's.
 
-Navigeer naar het bestand met de naam `src/components/layout.js`. Vervang de code met de code hieronder. **Deze component geeft een dynamische paginatitel en header weer** (van de `paginatitel` prop), **een lijst met navigatielinks en de inhoud die is doorgegeven met de** `children` **prop**. Om de toegankelijkheid te verbeteren, is er ook een `<main>`-element dat de paginaspecifieke elementen omhult (de `<h1>`-header en de inhoud van `children`).
+Navigeer naar het bestand met de naam `src/components/layout.js`. Vervang de code met de code hieronder. **Deze component geeft een dynamische paginatitel en header weer** \(van de `paginatitel` prop\), **een lijst met navigatielinks en de inhoud die is doorgegeven met de** `children` **prop**. Om de toegankelijkheid te verbeteren, is er ook een `<main>`-element dat de paginaspecifieke elementen omhult \(de `<h1>`-header en de inhoud van `children`\).
 
 {% code title="src/components/layout.js" %}
 ```jsx
@@ -199,6 +199,7 @@ export default AboutPage
 
 Controleer je Home- en About-pagina's in een webbrowser om er zeker van te zijn dat je nieuwe `Layout` component werkt:
 
-![Home page with Layout component](<../../.gitbook/assets/image (101).png>)
+![Home page with Layout component](../../.gitbook/assets/image%20%28101%29.png)
 
-![About page with Layout component](<../../.gitbook/assets/image (39).png>)
+![About page with Layout component](../../.gitbook/assets/image%20%2839%29.png)
+

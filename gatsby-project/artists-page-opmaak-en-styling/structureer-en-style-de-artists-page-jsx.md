@@ -153,3 +153,4 @@ const ArtistsPage = ({
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
 Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je artists page is volledig gestyled. In het volgende hoofdstuk zal je de individuele Artist page herstructuren en stylen! ✨
+

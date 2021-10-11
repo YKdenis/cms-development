@@ -6,11 +6,11 @@ description: Custom fields toevoegen met behulp van ACF (Advanced Custom Fields)
 
 Het eerste dat je moet doen is de plugin voor ACF installeren en activeren. Navigeer naar Plugins, Klik op '**Add New**' en zoek naar **Advanced Custom Fields**. Installeer en en activeer de plugin.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 Na de activatie van ACF zal er een nieuwe menu item in je WP werkbalk verschijnen, namelijk Custom Fields.
 
-![](<../../.gitbook/assets/image (91).png>)
+![](../../.gitbook/assets/image%20%2891%29.png)
 
 ## Field Groups in ACF
 
@@ -18,7 +18,7 @@ Een Field Group is als een container van een set custom fields. Hiermee kan je m
 
 Klik op '**Custom Fields**' in je werkbalk. Je krijgt onderstaand scherm te zien.
 
-![](<../../.gitbook/assets/image (93).png>)
+![](../../.gitbook/assets/image%20%2893%29.png)
 
 ### Aanmaken van een Field Group
 
@@ -26,7 +26,7 @@ Laten we samen overlopen hoe je een field group met custom fields aanmaakt en de
 
 Op de volgende pagina kan je in het bovenstaande veld de naam van je field group invullen. Vul hier Sample Page Fields in.
 
-![](<../../.gitbook/assets/image (150).png>)
+![](../../.gitbook/assets/image%20%28150%29.png)
 
 Vervolgens zie je een tabel met rechtsonder een knop '**Add Field**'. In deze tabel kan je custom fields toevoegen maar vooraleer we ons hier verder in zullen verdiepen is het belangrijk om te weten hoe je deze field group koppelt aan de sample page.
 
@@ -36,13 +36,13 @@ In de Tabel er onder, met als titel **Location**, kan je de field group koppelen
 
 We willen dat deze field group van toepassing is op het type '**Page**' en dat deze pagina de naam '**Sample Page**' moet hebben.
 
-![](<../../.gitbook/assets/image (27).png>)
+![](../../.gitbook/assets/image%20%2827%29.png)
 
 Indien je wilt dat deze field group ook van toepassing is op bijvoorbeeld alle artiesten dan kan je dat verwezenlijken door een extra conditionele regel toe te voegen.
 
-De werking is exact hetzelfde als de **&&** (AND) en **||** (OR) operatoren in programmeren. In het geval van ons voorbeeld willen we een OR. We drukken op de knop '**add rule group**' en voegen een conditionele regel toe waarvan de **Post Type** gelijk moet zijn aan **Artist**.
+De werking is exact hetzelfde als de **&&** \(AND\) en **\|\|** \(OR\) operatoren in programmeren. In het geval van ons voorbeeld willen we een OR. We drukken op de knop '**add rule group**' en voegen een conditionele regel toe waarvan de **Post Type** gelijk moet zijn aan **Artist**.
 
-![](<../../.gitbook/assets/image (80).png>)
+![](../../.gitbook/assets/image%20%2880%29.png)
 
 De field group zal nu worden toegewezen aan de Sample Page als zowel elke artiest die we hebben aangemaakt en in de toekomst zullen maken.
 
@@ -74,18 +74,18 @@ ACF beschikt over heel een uitgebreide en duidelijke documentatie. Indien je mee
   * **Instructions:** Geef een korte beschrijving van de pagina.
   * **Required:** True
 
-![](<../../.gitbook/assets/image (62).png>)
+![](../../.gitbook/assets/image%20%2862%29.png)
 
 * Image
   * **Field Label:** Banner Picture
-  * **Field Name:** banner_picture
+  * **Field Name:** banner\_picture
   * **Field Type:** Image
   * **Instructions:** Upload een banner foto.
   * **Required:** False
   * **Maximum File Size:** 1MB
   * **Allowed File Types:** jpg, jpeg, png
 
-![](<../../.gitbook/assets/image (74).png>)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 {% hint style="info" %}
 Door een maximum file size op te geven zorg je ervoor dat gebruikers geen grote foto's uploaden. Hoe groter de file size van de foto hoe meer tijd de browser nodig heeft om deze in te laden. Het is nooit een goed idee om een foto groter dan 1 MB te gebruiken!
@@ -101,18 +101,19 @@ De optie '**Active**' moet je aantikken om de field group te activeren. Hiermee 
 
 De meeste opties spreken voor zich en hebben geen extra uitleg nodig. Met de laatste optie, '**Hide on screen**', kan je standaard metadata die out of the box wordt meegegeven door WP zoals comments, author, etc. uitschakelen.
 
-![](<../../.gitbook/assets/image (125).png>)
+![](../../.gitbook/assets/image%20%28125%29.png)
 
 ### Publishen van de field group
 
 Eenmaal als je beide custom fields hebt toegevoegd mag je rechtsboven op '**Publish**' klikken.
 
-![](<../../.gitbook/assets/image (19).png>)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 Als je field group is gepubliceerd en je hebt Active op true staan in je field group settings dan mag je navigeren naar je Sample Page onder pages in je WP werkbalk. Als je op het bewerkingsscherm van je Sample Page naar beneden scrollt zal je zien dat deze 2 nieuwe custom fields zijn toegevoegd.
 
-![](<../../.gitbook/assets/image (76).png>)
+![](../../.gitbook/assets/image%20%2876%29.png)
 
 op deze manier kan je gemakkelijk custom fields toevoegen aan eender welke soort post of pagina in WP. Het bespaart je een hele hoop tijd dan als je dit met de native functionaliteit van WP zou moeten oplossen.
 
 Tijdens het voorbeeld project en het project dat op punten staat zal je field groups moeten aanmaken met verschillende custom field types op zowel pages als custom post types. Als er iets niet duidelijk is bekijk dan zeker eerst eens de [documentatie](https://www.advancedcustomfields.com/resources/) van ACF. **Indien je geen antwoord vindt op je vraag stel deze dan op het studentenforum op Digitap**.
+

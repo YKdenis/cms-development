@@ -10,9 +10,9 @@ description: >-
 
 Nu je je computer hebt ingesteld met alle tools die je nodig hebt, is het tijd om aan de slag te gaan!
 
-In de loop van deze zelfstudie bouw en implementeer je je eerste Gatsby-site. Je site zal in connectie staan met je headless WP en via GraphQL de data opvragen en weergeven! Hier is een **\*\*\[**volledig voorbeeld\*\*]\([https://artist-agency-2021.netlify.app/](https://artist-agency-2021.netlify.app)) van de site die je gaat bouwen.
+In de loop van deze zelfstudie bouw en implementeer je je eerste Gatsby-site. Je site zal in connectie staan met je headless WP en via GraphQL de data opvragen en weergeven! Hier is een **\*\*\[**volledig voorbeeld\*\*\]\([https://artist-agency-2021.netlify.app/](https://artist-agency-2021.netlify.app/)\) van de site die je gaat bouwen.
 
-{% embed url="https://artist-agency-2021.netlify.app/" %}
+{% embed url="https://artist-agency-2021.netlify.app/" caption="" %}
 
 In dit deel van de zelfstudie doorloop je het proces om de sjabloon voor je artiesten website te maken en deze online te zetten.
 
@@ -28,4 +28,5 @@ Met `gatsby new` creëer je een nieuwe gatsby website. Het laatste argument in d
 
 Open je VScode, of je IDE naar keuze, en navigeer naar je Gatsby project. Je zal zien dat de mappen structuur de exacte structuur van het gatsby-default-starter sjabloon volgt.
 
-![](<../../.gitbook/assets/image (103).png>)
+![](../../.gitbook/assets/image%20%28103%29.png)
+
