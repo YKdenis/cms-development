@@ -11,7 +11,7 @@ description: >-
 Nu je alle pagina's voor je artiesten hebt ingesteld, is het tijd om de daadwerkelijke artist inhoud binnen te halen. **Je hebt geleerd dat je gegevens in je componenten kan trekken met behulp van GraphQL-query's**. Maar hoe kan je Gatsby vertellen welke `wpArtist`-node uit de Data Layer op elke pagina moet worden opgehaald? Om dat te doen, moet je meer te weten komen over een ander **belangrijk GraphQL-concept: query variabelen**.
 
 {% hint style="info" %}
-### **Belangrijk GraphQL-concept** ⛓**: query variabelen**
+#### **Belangrijk GraphQL-concept **⛓**: query variabelen** 
 
 In GraphQL zijn query variabelen een manier om extra gegevens mee te sturen met je request. Met query variabelen kan je dynamische query's schrijven die verschillende gegevens retourneren op basis van de waarden die je doorgeeft.
 
@@ -62,10 +62,10 @@ GraphiQL heeft een inklapbare sectie **"Query variabelen"** onder aan het venste
 ```
 
 {% hint style="info" %}
-### Ga als volgt te werk om de query variabele in je query te gebruiken:
+#### Ga als volgt te werk om de query variabele in je query te gebruiken:
 
-* Definieer je query variabele. Het moet de naam van je variabele bevatten \(met een `$` ervoor\) en het GraphQL-gegevenstype. 
-* Gebruik de query variabele in je query. \(Je moet een $ toevoegen voor de naam van de variabele.\) 
+* Definieer je query variabele. Het moet de naam van je variabele bevatten (met een `$` ervoor) en het GraphQL-gegevenstype. 
+* Gebruik de query variabele in je query. (Je moet een $ toevoegen voor de naam van de variabele.) 
 
 Hier zie je bijvoorbeeld hoe je de vorige query zou moeten bijwerken om een query variabele te gebruiken in plaats van een argument:
 {% endhint %}
@@ -86,25 +86,27 @@ query MyQuery($slug: String) {
 Het uitvoeren van deze nieuwe query zou hetzelfde antwoord moeten opleveren als de vorige zonder query variabele. Maar nu kan je de waarde van je `slug`-variabele omwisselen met een andere waarde, zoals **"anne-woznak"**, en je response stuurt de juiste node terug.
 
 Het onderstaande diagram laat zien hoe de query, query variabelen en respons allemaal in elkaar passen in de GraphiQL-interface:
+
+
 {% endhint %}
 
-![GraphiQL Interface met een query variabele](../../.gitbook/assets/image%20%2872%29.png)
+![GraphiQL Interface met een query variabele](<../../.gitbook/assets/image (132).png>)
 
 {% hint style="info" %}
-**Opmerking** 📣**:** In Gatsby kunnen query variabelen alleen binnen page query's worden gebruikt. \(**Je kunt ze niet gebruiken met de useStaticQuery hook**.\)
+**Opmerking **📣**:** In Gatsby kunnen query variabelen alleen binnen page query's worden gebruikt. (**Je kunt ze niet gebruiken met de useStaticQuery hook**.)
 {% endhint %}
 
 Wanneer je Gatsby's File System Route API gebruikt, voegt het automatisch enkele `props` toe aan de page template component voor elke pagina:
 
 * De `id` voor de Data Layer node wordt gebruikt om de pagina te maken. 
-* Het veld dat je hebt gebruikt om het dynamische deel van de route te maken. \(In jou geval het `slug`-veld.\) 
+* Het veld dat je hebt gebruikt om het dynamische deel van de route te maken. (In jou geval het `slug`-veld.) 
 
 **Onder de motorkap stelt Gatsby beide waarden beschikbaar om te gebruiken als query variabelen in je page query's.**
 
 {% hint style="info" %}
-### Query variabele in je page query, hoe werkt dat juist?
+#### Query variabele in je page query, hoe werkt dat juist?
 
-Voeg een `console.log` toe om de `props` voor je Artist page component in `src/pages/blog/{wpArtist.slug}.js` af te drukken.
+Voeg een `console.log` toe om de `props` voor je Artist page component in `src/pages/blog/{wpArtist.slug}.js` af te drukken. 
 {% endhint %}
 
 {% code title="src/pages/artists/{wpArtist.slug}.js" %}
@@ -121,7 +123,7 @@ const ArtistPage = (props) => {
   )
 }
 
-export default ArtistPage
+export default ArtistPage 
 ```
 {% endcode %}
 
@@ -144,7 +146,7 @@ Object {
 De keys in het `pageContext`-object worden toegevoegd wanneer je een pagina maakt met behulp van de File System Route API. **Dit zijn ook de keys die je kan gebruiken als query variabelen in je page query voor de page template voor artiesten.**
 {% endhint %}
 
-### 1\) Begin met het gebruik van GraphiQL om een page query te maken voor je Artist page template.
+#### 1) Begin met het gebruik van GraphiQL om een page query te maken voor je Artist page template. 
 
 * Aangezien elke pagina slechts data nodig heeft voor een enkele `wpArtist`-node, gebruik je het veld `wpArtist`. 
 * De snelste manier om nodes op te zoeken is door het `id`-veld te gebruiken, dus gebruik de `id`-query variabele in plaats van `slug`.
@@ -168,7 +170,7 @@ query MyQuery($id: String) {
 }
 ```
 
-### 2\) Voeg je page query toe aan de page template voor artiesten.
+#### 2) Voeg je page query toe aan de page template voor artiesten.
 
 * Vergeet niet de `graphql` tag te importeren! 
 * Je moet ook de query name, **MyQuery**, verwijderen of vervangen door een unieke naam.
@@ -210,7 +212,7 @@ export default ArtistPage
 ```
 {% endcode %}
 
-### 3\) Gebruik de data-prop om je artist informatie weer te geven in je page template component.
+#### 3) Gebruik de data-prop om je artist informatie weer te geven in je page template component.
 
 * Je hebt al geleerd dat Gatsby de resultaten van je page query doorgeeft aan je page component als een `data`-prop. 
 * Je kan je Artist component bijwerken om de `data`-prop te gebruiken en de inhoud van je artist weer te geven.
@@ -257,7 +259,7 @@ export const query = graphql`
   }
 `
 
-export default ArtistPage
+export default ArtistPage 
 ```
 
 {% hint style="info" %}
@@ -266,9 +268,8 @@ export default ArtistPage
 Volg [deze link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#object_destructuring) voor meer informatie omtrent **destructering in Javascript**.
 {% endhint %}
 
-### 4\) Ga in je webbrowser naar een van je artist pagina's \(zoals [`localhost:8000/blog/kevin-bismark`](http://localhost:8000/blog/kevin-bismark)\). Je zou de inhoud van je artist op hun eigen pagina moeten zien!
+#### 4) Ga in je webbrowser naar een van je artist pagina's (zoals [`localhost:8000/blog/kevin-bismark`](http://localhost:8000/blog/kevin-bismark)). Je zou de inhoud van je artist op hun eigen pagina moeten zien!
 
 * Probeer de routes voor je andere artiesten te controleren om er zeker van te zijn dat al je pagina's de inhoud van de artiesten correct weergeven.
 
-![](../../.gitbook/assets/image%20%2844%29.png)
-
+![](<../../.gitbook/assets/image (133).png>)

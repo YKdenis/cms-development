@@ -6,7 +6,7 @@ description: >-
 
 # GraphQL-query's maken die afbeeldingen uit WordPress ophalen
 
-## Voeg de profile foto toe aan je page query in je artist page template.
+### Voeg de profile foto toe aan je page query in je artist page template.
 
 Elk GraphQL `File`-object dat een afbeelding bevat, heeft een `childImageSharp`-veld dat je kan gebruiken om de afbeeldingsgegevens op te vragen. De exacte gegevensstructuur is afhankelijk van je gegevensbron, maar de syntax voor `gatsby-source-wordpress` is als volgt:
 
@@ -109,10 +109,9 @@ Je response ziet er als volgt uit:
 Als je het `gatsbyImageData`-object in het veld `profilePicture.localFile.childImageSharp` nader bekijkt, zul je zien dat het een heleboel informatie bevat over de profile foto voor die artiest: **afmetingen, bestandspaden voor de afbeeldingen in verschillende formaten, fallback-afbeeldingen naar gebruiken als placeholder terwijl de afbeelding wordt geladen.** Al deze gegevens worden tijdens het bouwen door `gatsby-plugin-sharp` verwerkt. Het `gatsbyImageData`-object in je antwoord heeft dezelfde structuur die de `GatsbyImage`-component nodig heeft om een afbeelding weer te geven.
 
 {% hint style="info" %}
-**Opmerking** 📣: je hebt misschien gemerkt dat het `gatsbyImageData`-veld in GraphiQL verschillende argumenten accepteert, zoals `aspectRatio`, `formats` of `width`. Je kan deze argumenten gebruiken om extra gegevens door te geven over hoe je wilt dat `gatsby-image-sharp` je geoptimaliseerde afbeeldingen bouwt.
+**Opmerking **📣: je hebt misschien gemerkt dat het `gatsbyImageData`-veld in GraphiQL verschillende argumenten accepteert, zoals `aspectRatio`, `formats` of `width`. Je kan deze argumenten gebruiken om extra gegevens door te geven over hoe je wilt dat `gatsby-image-sharp` je geoptimaliseerde afbeeldingen bouwt.
 
 Deze opties zijn gelijk aan degene die je zou doorgeven aan de `StaticImage`-component als `props`.
 
 Voor meer informatie, zie de [gatsby-plugin-image Documentatie](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/#image-options).
 {% endhint %}
-

@@ -6,9 +6,9 @@ description: >-
 
 # Building block component: Footer
 
-![Building block component: Footer](../../.gitbook/assets/image%20%28104%29.png)
+![Building block component: Footer](<../../.gitbook/assets/image (150).png>)
 
-## Taak: Maak een nieuwe Building Block component aan genaamd Footer
+### Taak: Maak een nieuwe Building Block component aan genaamd Footer
 
 Navigeer naar je `src/components` map en creëer een nieuw bestand met de naam `footer.js`.
 
@@ -47,6 +47,7 @@ const Footer = ({ siteTitle, companyInfo }) => {
 }
 
 export default Footer
+
 ```
 {% endcode %}
 
@@ -112,14 +113,14 @@ export default Layout
 ```
 {% endcode %}
 
-* importeer je `Footer` en definieer het helemaal vanonder in je component.
+*  importeer je `Footer` en definieer het helemaal vanonder in je component.
 
 {% code title="src/components/layout.js" %}
 ```jsx
   // Imports
-
+  
   const Layout = ({ children }) => {
-
+  
   // useStaticQuery hook
 
   return (
@@ -161,15 +162,19 @@ export default Layout
 ```
 {% endcode %}
 
-## Taak: Style je Footer component ✨
+### Taak: Style je Footer component ✨
 
 In je Footer component zal je een link moeten leggen met Facebook en Instagram. Voor beide is er een icoontje voorzien dat je hieronder kan downloaden. Voeg het toe aan de map `src/images`.
 
-{% file src="../../.gitbook/assets/facebook.svg" caption="Facebook Icoon" %}
+{% file src="../../.gitbook/assets/facebook.svg" %}
+Facebook Icoon
+{% endfile %}
 
-{% file src="../../.gitbook/assets/instagram.svg" caption="Instagram Icoon" %}
+{% file src="../../.gitbook/assets/instagram.svg" %}
+Instagram Icoon
+{% endfile %}
 
-![](../../.gitbook/assets/image%20%28154%29.png)
+![](<../../.gitbook/assets/image (148).png>)
 
 Je Footer is een building block component m.a.w. je kan er een module CSS file voor aanmaken. Navigeer naar je map `src/components` en maak een nieuwe file aan genaamd `footer.module.css`.
 
@@ -248,6 +253,7 @@ p {
 .facebook {
   background-image: url("../images/facebook.svg");
 }
+
 ```
 {% endcode %}
 
@@ -303,12 +309,12 @@ const Footer = ({ siteTitle, companyInfo }) => {
 }
 
 export default Footer
+
 ```
 {% endcode %}
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Footer eindresultaat](../../.gitbook/assets/image%20%2840%29.png)
+![Footer eindresultaat](<../../.gitbook/assets/image (149).png>)
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen! ✨
-
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen!  ✨

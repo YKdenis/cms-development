@@ -4,7 +4,7 @@ description: Bouw je artist template page query op met behulp van je GraphiQL ID
 
 # Opbouwen van de Artist query
 
-## Taak: Maak een query aan in GraphiQL voor je artist template page
+### Taak: Maak een query aan in GraphiQL voor je artist template page
 
 In je template page heb je al een query gedefinieerd voor één specifieke artist op te vragen met behulp van `wpArtist`. Kopieer deze query terug in je GraphiQL IDE zodat je het verder kan aanpassen.
 
@@ -50,7 +50,7 @@ Voor je `wpArtist` query heb je een **query variabele** nodig. Definieer een `ob
 Voor je artist moet je nog de `pictures` en de `roles` opvragen. Gebruik de GraphiQL Explorer en bouw je query verder op.
 
 {% hint style="info" %}
-**Pro tip 🧙‍♂️:** Probeer eerst zelf de query op te bouwen met behulp van de **Explorer** in je GraphiQL IDE vooraleer je de code hieronder bekijkt.
+**Pro tip 🧙‍♂️: **Probeer eerst zelf de query op te bouwen met behulp van de **Explorer** in je GraphiQL IDE vooraleer je de code hieronder bekijkt.
 {% endhint %}
 
 **Je query ziet er uit als volgt:**
@@ -111,9 +111,9 @@ query ($id: String) {
     }
   }
 }
+
 ```
 
 {% hint style="info" %}
-**Let op** 👀**:** Het kan zijn dat je het `childImageSharp`-veld niet ziet staan in de **Explorer** van je GraphiQLIDE en dat je GraphiQL het zal onderstrepen met een rode lijn wanneer je het toevoegt in de **Query Editor**.
+**Let op **👀**:** Het kan zijn dat je het `childImageSharp`-veld niet ziet staan in de **Explorer** van je GraphiQLIDE en dat je GraphiQL het zal onderstrepen met een rode lijn wanneer je het toevoegt in de **Query Editor**.
 {% endhint %}
-

@@ -8,7 +8,7 @@ description: >-
 
 ## Eindresultaat:
 
-![](../../.gitbook/assets/localhost_8000_-2-%20%281%29.png)
+![](<../../.gitbook/assets/localhost\_8000\_ (2) (1).png>)
 
 ### Push je aanpassingen naar GitHub
 
@@ -17,12 +17,11 @@ description: >-
 
 Implementeer voordat je verder gaat je wijzigingen op je GitHub Repo, zodat je je voortgang niet kwijtspeelt!
 
-Voer eerst de volgende opdrachten uit in een terminal om je wijzigingen naar je GitHub-repository te pushen. \(Zorg ervoor dat je zich in de directory op het hoogste niveau van je Gatsby-site bevindt!\)
+Voer eerst de volgende opdrachten uit in een terminal om je wijzigingen naar je GitHub-repository te pushen. (Zorg ervoor dat je zich in de directory op het hoogste niveau van je Gatsby-site bevindt!)
 {% endhint %}
 
-```text
+```
 git add .
 git commit -m "Home page: opmaak en styling"
 git push origin main
 ```
-

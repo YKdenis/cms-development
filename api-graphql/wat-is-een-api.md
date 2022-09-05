@@ -13,3 +13,4 @@ Je kunt een API zien als een barman. Je vraagt ​​de barman om iets te drinke
 
 Sinds de start van het moderne web is het bouwen van API's niet zo ingewikkeld geweest als er vaak wordt gezegd. Maar API's leren en begrijpen wel. Ontwikkelaars vormen de meerderheid van de mensen die een API zullen gebruiken om iets te bouwen of om gewoon gegevens te consumeren. Een API moet dus zo proper en intuïtief mogelijk zijn. Een goed ontworpen API is heel gemakkelijk te gebruiken en aan te leren.
 
+###

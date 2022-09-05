@@ -10,11 +10,11 @@
   * [Ontkoppelde CMS-architectuur](content-management-systemen/cms-architecturen/ontkoppelde-cms-architectuur.md)
   * [Headless CMS-architectuur](content-management-systemen/cms-architecturen/headless-cms-architectuur.md)
 
-## Headless WordPress <a href="headless-wordpress-1" id="headless-wordpress-1"></a>
+## Headless WordPress <a href="#headless-wordpress-1" id="headless-wordpress-1"></a>
 
 * [Headless WordPress](headless-wordpress-1/omschrijving.md)
 * [Headless WP vs Traditionele WP](headless-wordpress-1/waarom-headless.md)
-* [Waarom Headless WP?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/README.md)
+* [Waarom WP doen?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/README.md)
   * [Voordelen van een Headless approach](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/voordelen.md)
   * [Nadelen van een Headless approach](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/nadelen.md)
   * [Wat onderscheidt Headless precies?](headless-wordpress-1/wat-kan-je-met-headless-wordpress-doen/hoe-werkt-headless-precies.md)
@@ -25,7 +25,7 @@
 * [Lokaal ontwikkelen met Local By Flywheel](lokaal-ontwikkelen/local-by-flywheel/README.md)
   * [Installatie - Local](lokaal-ontwikkelen/local-by-flywheel/installatie.md)
 
-## Headless Wordpress Project <a href="wordpress-als-back-end" id="wordpress-als-back-end"></a>
+## Headless Wordpress Project <a href="#wordpress-als-back-end" id="wordpress-als-back-end"></a>
 
 * [Introductie](wordpress-als-back-end/omschrijving.md)
 * [Wat is een WordPress Child-thema?](wordpress-als-back-end/wordpress-child-thema/README.md)
@@ -37,7 +37,7 @@
 * [WP plugin 🔌: Advanced Custom Fields](wordpress-als-back-end/advanced-custom-fields/README.md)
   * [Installatie en gebruik van ACF](wordpress-als-back-end/advanced-custom-fields/installatie-en-gebruik-van-acf.md)
   * [Opdracht ACF - Artist Fields](wordpress-als-back-end/advanced-custom-fields/opdracht-acf.md)
-  * [Opdracht ACF - Page Fields](wordpress-als-back-end/advanced-custom-fields/opdracht-acf-pages.md)
+  * [Opdracht ACF - Pages](wordpress-als-back-end/advanced-custom-fields/opdracht-acf-pages.md)
 
 ## API - GraphQL
 
@@ -51,7 +51,7 @@
   * [De GraphiQL IDE - Breakdown](api-graphql/wpgraphql/graphiql-ide.md)
   * [Opdracht WPGraphQL](api-graphql/wpgraphql/opdracht-wpgraphql.md)
 
-## Gatsby Theorie <a href="gatsby-frontend" id="gatsby-frontend"></a>
+## Gatsby Theorie <a href="#gatsby-frontend" id="gatsby-frontend"></a>
 
 * [Wat is Gatsby?](gatsby-frontend/gatsby.md)
 * [Wat is een static site-generator?](gatsby-frontend/static-site-generator.md)
@@ -114,12 +114,6 @@
   * [Opbouwen Contact query](gatsby-project/contact-page-opmaak-en-styling/opbouwen-contact-query.md)
   * [Voeg JSX structuur toe en style je contact page](gatsby-project/contact-page-opmaak-en-styling/voeg-jsx-structuur-toe-en-style-je-contact-page.md)
   * [Deploy it 🚀](gatsby-project/contact-page-opmaak-en-styling/deploy-it.md)
-
-## Hosting & Automatisation
-
-* [Wat is Netlify?](hosting-and-automatisation/wat-is-netlify/README.md)
-  * [Wat is een CDN?](hosting-and-automatisation/wat-is-netlify/wat-is-een-cdn.md)
-* [Automatiseren van je Build Process met Netlify](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify.md)
 
 ## Sharepoint
 
