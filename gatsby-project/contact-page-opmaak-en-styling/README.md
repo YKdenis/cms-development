@@ -10,7 +10,7 @@ description: >-
 
 Navigeer in je IDE (VScode) naar de `src/pages` map en creëer een nieuwe file genaamd `contact.js`. Defineer een page component en importeer vervolgens de `GatsbyImage`, `getImage,` `graphql`-tag en je `Layout`-component.
 
-![](<../../.gitbook/assets/image (33) (1).png>)
+![](<../../.gitbook/assets/image (33).png>)
 
 {% hint style="info" %}
 Het kan zijn dat je nog een `page-2`.js dummy file in je project hebt zitten. Je mag deze verwijderen!

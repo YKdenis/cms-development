@@ -124,7 +124,7 @@ Voeg de volgende stijl regels toe onderaan je `page.module.css` file:
 
 Je formulier ziet er nu als volgt uit:
 
-<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) Deploy je formulier naar Netlify
 
@@ -136,7 +136,7 @@ Eenmaal als je website klaar is met builden, navigeer je naar de contact pagina 
 
 Druk op de verzend knop en indien je alles correct hebt ingesteld krijg je volgend scherm te zien.
 
-<figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
 
 Voila! :tada: Je inzending is verwerkt en kan geraadpleegd worden in je Netlify admin paneel.&#x20;
 

@@ -65,9 +65,9 @@ Voor deze opdracht mag je gebruik maken van de Query Composer in GraphIQL en de 
 Aan het einde van je resultaat in je return veld krijg je misschien een debug en/of tracing stack te zien. Je kan deze uitschakelen door naar de GraphQL Settings te navigeren en onderstaande velden uit te vinken. Vergeet niet je wijzigingen op te slaan!
 {% endhint %}
 
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../.gitbook/assets/image (50).png>)
 
-<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Vergeet je opdracht niet in te dienen op Digitap. Deze opdracht staat op punten!

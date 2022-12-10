@@ -48,7 +48,7 @@ in het voorbeeld hierboven is **users/:id** is het pad.
 | PUT en PATCH         | Deze twee verzoeken worden gebruikt om een bron op een server bij te werken. Als je een `PUT`- of `PATCH`-verzoek uitvoert, werkt de server een item in de database bij en vertelt je of de update is gelukt. Met andere woorden, een `PUT`- of `PATCH`-verzoek voert een `UPDATE`-bewerking uit. |
 | DELETE               | Dit verzoek wordt gebruikt om een bron van een server te verwijderen. Als je een `DELETE`-verzoek uitvoert, verwijdert de server een item in de database en vertelt je of het verwijderen is gelukt. Met andere woorden, een 'DELETE'-verzoek voert een 'DELETE'-bewerking uit.                   |
 
-<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 #### HTTP Status codes:
 

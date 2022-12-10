@@ -41,7 +41,7 @@ Ga in een webbrowser naar [localhost:8000/kevin-bismark](http://localhost:8000/k
 Je kan je URL bijwerken met de slugs van je andere artiesten om te controleren of er ook identieke pagina's voor zijn gemaakt.
 {% endhint %}
 
-![Artist Template Page](<../../.gitbook/assets/image (88).png>)
+![Artist Template Page](<../../.gitbook/assets/image (88) (1).png>)
 
 {% hint style="info" %}
 **Pro tip** 🧙‍♂️**:** Weet je niet zeker welke pagina's zijn gemaakt? Bekijk de **404-pagina** als je `gatsby develop` uitvoert. (Je kan er komen door te navigeren naar een URL van een pagina die niet bestaat.) **Onder aan de pagina staan de routes voor alle pagina's die Gatsby voor je site heeft gemaakt.**

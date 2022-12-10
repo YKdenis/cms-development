@@ -16,7 +16,7 @@ Als oplossing zal je de build lokaal op je computer uitvoeren en de geëxporteer
 
 Open je artist agentschap in Visual Studio Code en navigeer naar je `gatsby-config` file. Zorg er voor dat de waarde van je `url` field gelijk is aan de `/graphql` link van Local WP installatie.
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (72).png>)
 
 Vooralleer je begint met het builden van je website let er op dat je Local website aan het runnen is.
 
@@ -26,11 +26,11 @@ Open je terminal en navigeer via het `cd` commando naar de root map van je Gatsb
 Met `gatsby build` zal je de react applicatie omzetten tot statische files. Telkens wanneer je aanpassingen uitvoert in je code zal je de commando **gatsby build** opnieuw moeten uitvoeren vooraleer de verandering worden weergegeven in je statische files.
 {% endhint %}
 
-![](<../.gitbook/assets/image (143).png>)
+![](<../.gitbook/assets/image (148).png>)
 
 Als alles goed verlopen is zou je nu een folder `public` moeten zien staan onder je `node_modules` folder in je root folder.
 
-![](<../.gitbook/assets/image (70).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 {% hint style="info" %}
 Met `gatsby serve` kan je testen of je build wel degelijk is gelukt. Voer het commando uit en surf naar [https://localhost:9000](https://localhost:9000). Check of dat je website werkt naar behoren. Test alle links, bekijk of de styling klopt, errors in de console, etc.
@@ -48,20 +48,20 @@ Netlify website
 
 Eenmaal ingelogd navigeer je naar **Sites** in de navigatiebalk van boven.&#x20;
 
-![](<../.gitbook/assets/image (39).png>)
+![](<../.gitbook/assets/image (27).png>)
 
 Onderaan de pagina is er een upload zone. Sleep je `public` folder, dat je hebt aangemaakt in de vorige stap, naar de upload zone om je website online te zetten.
 
-![Upload zone Netlify - Sites](<../.gitbook/assets/image (36).png>)
+![Upload zone Netlify - Sites](<../.gitbook/assets/image (35).png>)
 
 Na een paar seconden zal je site online staan. Je zal een willekeurig gegenereerde link krijgen waarmee je naar je website kan navigeren.
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (96).png>)
 
 Proficiat je website staat online! :tada: Wat je nog kan doen is de willekeurig gegenereerde URL aanpassen naar de naam van je agentschap. Dat kan je doen door op de knop "**Domain Settings**" te klikken en vervolgens bij **Custom Domains,** bij de link van je website, op "**Options -> Edit site name**" te klikken.
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (44).png>)
 
-![](<../.gitbook/assets/image (77).png>)
+![](../.gitbook/assets/image.png)
 
-![](<../.gitbook/assets/image (89).png>)
+![](<../.gitbook/assets/image (7).png>)

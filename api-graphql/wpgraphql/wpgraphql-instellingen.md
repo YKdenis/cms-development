@@ -4,7 +4,7 @@ Wanneer de plugin geïnstalleerd en geactiveerd is, zal je een nieuwe item zien 
 
 Als je navigeert naar je GraphQL instellingen zal je zien dat je helemaal vanboven je graphQL endpoint kan instellen. Met deze link wordt de API vrijgegeven en hebben andere applicaties de mogelijkheid om data op te vragen aan de hand van GraphQL queries.
 
-<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
 Pas de GraphQL instelling niet aan. We zullen de standaard instellingen gebruiken voor onze artist agency met als endpoint `/graphql`_._
 

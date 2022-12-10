@@ -6,7 +6,7 @@ description: >-
 
 # Structureer en style de Home page header JSX
 
-![Header sectie van je home page](<../../.gitbook/assets/image (2) (2).png>)
+![Header sectie van je home page](<../../.gitbook/assets/image (2) (1).png>)
 
 ## Taak: Voeg de JSX structuur toe voor je Home Page Header
 
@@ -117,7 +117,7 @@ const IndexPage = ({
 
 ## Taak: Sprinkle wat CSS op je JSX  ✨
 
-![](<../../.gitbook/assets/image (13) (1).png>)
+![](<../../.gitbook/assets/image (13).png>)
 
 Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd om wat styling toe te voegen met behulp van **CSS modules**.
 
@@ -251,6 +251,6 @@ const IndexPage = ({
 
 * Start je ontwikkelingsserver met `gatsby develop` en navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1).png>)
 
 Super, je header sectie is af! 🥳 In het volgende deel zal je verder bouwen aan je home page en de Featured Artists sectie opmaken en stylen!

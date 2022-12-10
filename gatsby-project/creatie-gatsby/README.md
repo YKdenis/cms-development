@@ -34,8 +34,8 @@ Voor deze cursus zal je werken in Gatsby versie **4.23.0**.
 **Je package.json moet de volgende dependencies bevatten. Kijk na of je dezelfde versies hebt zoals hieronder weergegeven:**
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
 Open je VScode, of je IDE naar keuze, en navigeer naar je Gatsby project. Je zal zien dat de mappen structuur de exacte structuur van het gatsby-default-starter sjabloon volgt.
 
-<figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>

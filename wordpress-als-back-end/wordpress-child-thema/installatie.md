@@ -15,7 +15,7 @@ Open je WordPress installatie folder en navigeer naar het volgende pad `/app/pub
 Je kan gemakkelijk navigeren naar je WordPress directory via '**Go to site folder**' aangeduid in onderstaande foto!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
 Vervolgens maak je in `/app/public/wp-content/themes/` een nieuwe folder aan voor je child-thema met als naam `twentytwentytwo-child`. Het is een goede gewoonte om een ​​child-thema dezelfde naam te geven als de ouder, maar met -child aan het einde.
 
@@ -69,7 +69,7 @@ Dit zijn de minimumvereiste voor het maken van een child-thema. Je kunt nu naar 
 
 ![](<../../.gitbook/assets/image (4) (1).png>)
 
-<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
 ## style.css
 

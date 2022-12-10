@@ -23,8 +23,8 @@ Net zoals met de GraphiQL interface in je WordPress Applicatie kan je de gegeven
 **De GraphiQL IDE in Gatsby werkt hetzelfde als de GraphiQL IDE in WordPress**. Bekijk onderstaande link om je kennis op te frissen.
 {% endhint %}
 
-{% content-ref url="../../api-graphql/wpgraphql/graphiql-ide/" %}
-[graphiql-ide](../../api-graphql/wpgraphql/graphiql-ide/)
+{% content-ref url="../../api-graphql/wpgraphql/graphiql-ide.md" %}
+[graphiql-ide.md](../../api-graphql/wpgraphql/graphiql-ide.md)
 {% endcontent-ref %}
 
 **GraphiQL is een handig hulpmiddel voor het testen van je GraphQL-query's voordat je ze aan je code toevoegt**. Op die manier kan je ervoor zorgen dat je queries altijd de correcte gegevens retourneren.

@@ -92,7 +92,7 @@ Het uitvoeren van deze nieuwe query zou hetzelfde antwoord moeten opleveren als 
 Het onderstaande diagram laat zien hoe de query, query variabelen en respons allemaal in elkaar passen in de GraphiQL-interface:
 {% endhint %}
 
-![GraphiQL Interface met een query variabele](<../../.gitbook/assets/image (72).png>)
+![GraphiQL Interface met een query variabele](<../../.gitbook/assets/image (72) (1).png>)
 
 {% hint style="info" %}
 **Opmerking** 📣**:** In Gatsby kunnen query variabelen alleen binnen page query's worden gebruikt. (**Je kunt ze niet gebruiken met de useStaticQuery hook**.)
@@ -289,4 +289,4 @@ De waarde van `artist.description` is html code, M.a.w. we kunnen dit niet recht
 
 * Probeer de routes voor je andere artiesten te controleren om er zeker van te zijn dat al je pagina's de inhoud van de artiesten correct weergeven.
 
-![](<../../.gitbook/assets/image (44).png>)
+![](<../../.gitbook/assets/image (44) (1).png>)

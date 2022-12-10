@@ -10,5 +10,4 @@ description: >-
 
 In dit hoofdstuk zal je werken aan het hieronder weergegeven ontwerp. Zoals je kan zien wordt de Wordpress data, zowel tekst als foto's, ingeladen en in een esthetisch jasje gestoken.
 
-![](../../.gitbook/assets/about.png)
-
+![](<../../.gitbook/assets/about (1).png>)

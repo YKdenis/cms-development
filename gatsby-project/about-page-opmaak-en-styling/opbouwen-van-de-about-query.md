@@ -106,4 +106,4 @@ export const query = graphql`
 
 `console.log` je data en kijk na of alles correct wordt opgehaald in je developer tools!
 
-![Developer tools console.log](<../../.gitbook/assets/image (43) (1).png>)
+![Developer tools console.log](<../../.gitbook/assets/image (43).png>)

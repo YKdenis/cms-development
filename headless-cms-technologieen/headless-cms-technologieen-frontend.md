@@ -24,7 +24,7 @@ Bij het bouwen van frontends voor Headless CMS'en gebruiken ontwikkelaars versch
 
 ### 1. Gatsby
 
-<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
 Gatsby is een op [React.js](https://reactjs.org/) gebaseerde open-source framework dat is ontworpen om SEO-vriendelijke sites en applicaties te maken met behulp van uitgebreide React-bibliotheektools.&#x20;
 
@@ -34,7 +34,7 @@ Het uitgebreide plug-in- en sjabloonecosysteem van Gatsby kan je veel ontwikkeli
 
 ### 2. NuxtJS
 
-<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
 Nuxt.js is een op[ Vue.js](https://vuejs.org/) gebaseerd open-source framework dat tot doel heeft de ontwikkelervaring te vereenvoudigen bij het genereren van statische websites. Met dit framework hoef je geen dedicated server te bouwen. Hoewel dit van invloed kan zijn op SEO, geeft Nuxt.js alle inhoud en benodigde HTML vooraf weer voordat deze wordt geïmplementeerd. Dit kan helpen bij het oplossen van veel SEO-problemen die apps ervaren tijdens het renderen en omleiden van inhoud op WordPress, Laravel of andere platforms.&#x20;
 
@@ -42,7 +42,7 @@ Als je echter voor deze oplossing kiest, aangezien er geen server is, kan het be
 
 ### 3. NextJS
 
-<figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
 Next.js is in wezen Nuxt.js maar dan op steroïden. Het belangrijkste verschil is dat dit framework gebaseerd is op [React.js](https://reactjs.org/) en niet op Vue.js. Omdat het wordt aangedreven door React, wordt het geleverd met een groot aantal ingebouwde functies, met name serverrendering en incrementele statische regeneratie. Andere functies zijn onder meer TypeScript-ondersteuning, prefetching van routes, lui laden, configuratie van open grafieken en bundeling van inhoud.&#x20;
 

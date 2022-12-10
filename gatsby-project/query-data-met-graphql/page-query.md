@@ -127,7 +127,7 @@ module.exports = {
 
 Het bovenstaande codevoorbeeld laat zien hoe je je Headless WP koppelt aan je Gatsby a.d.h.v. de graphql endpoint van je WP applicatie. Je kan de URL terug vinden als je navigeert naar je **WP dashboard -> graphQL -> Settings - GraphQL Endpoint**.
 
-<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
 Met m.b.v. deze URL zal Gatsby je data vanuit Headless WP doorsluizen naar de Data Layer en beschikbaar stellen in je hele project.
 

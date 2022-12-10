@@ -203,7 +203,7 @@ Controleer je Home- en About-pagina's in een webbrowser om er zeker van te zijn 
 
 ![Home page with Layout component](<../../.gitbook/assets/image (101).png>)
 
-![About page with Layout component](<../../.gitbook/assets/image (39) (1).png>)
+![About page with Layout component](<../../.gitbook/assets/image (39).png>)
 
 {% hint style="warning" %}
 **Let op**: Je mag de file `header.js` in de components folder verwijderen.

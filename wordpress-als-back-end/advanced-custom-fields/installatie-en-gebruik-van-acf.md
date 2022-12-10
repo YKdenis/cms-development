@@ -18,7 +18,7 @@ Een Field Group is als een container van een set custom fields. Hiermee kan je m
 
 Klik op '**Custom Fields**' in je werkbalk. Je krijgt onderstaand scherm te zien.
 
-<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 ### Aanmaken van een Field Group
 
@@ -26,7 +26,7 @@ Laten we samen overlopen hoe je een field group met custom fields aanmaakt en de
 
 Op de volgende pagina kan je in het bovenstaande veld (**Add New Field Group**) de naam van je field group invullen. Vul hier **Sample Fields** in.
 
-<figure><img src="../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 Vervolgens zie je een tabel met rechtsonder een knop '**Add Field**'. In deze tabel kan je custom fields toevoegen maar vooraleer we ons hier verder in zullen verdiepen is het belangrijk om te weten hoe je deze field group koppelt aan de sample page.
 
@@ -36,13 +36,13 @@ In de Tabel er onder, met als titel **Settings**, onder de tab **Location Rules*
 
 We willen dat deze field group van toepassing is op het type '**Page**' en dat deze pagina de naam '**Sample Page**' moet hebben.
 
-<figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
 
 Indien je wilt dat deze field group ook van toepassing is op bijvoorbeeld alle posts dan kan je dat verwezenlijken door een extra conditionele regel toe te voegen.
 
 De werking is exact hetzelfde als de **&&** (AND) en **||** (OR) operatoren in programmeren. In het geval van ons voorbeeld willen we een OR. We drukken op de knop '**add rule group**' en voegen een conditionele regel toe waarvan de **Post Type** gelijk moet zijn aan **Post**.
 
-<figure><img src="../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 
 De field group zal nu worden toegewezen aan de Sample Page als zowel elke post die we hebben aangemaakt, en in de toekomst zullen maken.
 
@@ -76,11 +76,11 @@ ACF beschikt over heel een uitgebreide en duidelijke documentatie. Indien je mee
   * **Instructions:** Geef een korte beschrijving van de pagina.
   * **Required:** True
 
-<figure><img src="../../.gitbook/assets/image (184).png" alt=""><figcaption><p>General tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (188).png" alt=""><figcaption><p>General tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption><p>Validation tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption><p>Validation tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption><p>Presentation tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Presentation tab</p></figcaption></figure>
 
 * Image
   * **Field Label:** Banner Picture
@@ -91,11 +91,11 @@ ACF beschikt over heel een uitgebreide en duidelijke documentatie. Indien je mee
   * **Maximum File Size:** 1MB
   * **Allowed File Types:** jpg, jpeg, png
 
-<figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption><p>General tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption><p>General tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption><p>Validation tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption><p>Validation tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption><p>Presentation tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption><p>Presentation tab</p></figcaption></figure>
 
 {% hint style="info" %}
 Door een maximum file size op te geven zorg je ervoor dat gebruikers geen grote foto's uploaden. Hoe groter de file size van de foto hoe meer tijd de browser nodig heeft om deze in te laden. Het is nooit een goed idee om een foto groter dan 1 MB te gebruiken!
@@ -111,17 +111,17 @@ Met de laatste optie op de Presentation tab in de rechter zijbalk, '**Hide on sc
 
 De optie onder de **Group Settings** tab '**Active**' moet je aantikken om de field group te activeren. Hiermee kan je de field group aan- en uitschakelen zonder de field group volledig te moeten verwijderen of je conditionele regels aan te passen.
 
-<figure><img src="../../.gitbook/assets/image (147).png" alt=""><figcaption><p>Settings - Presentation tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Settings - Presentation tab</p></figcaption></figure>
 
 ### Publishen van de field group
 
 Eenmaal als je beide custom fields hebt toegevoegd mag je rechtsboven op '**Save Changes**' klikken.
 
-<figure><img src="../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 Als je field group is gepubliceerd en je hebt Active op true staan in je field group settings onder de **Group Settings** tab dan mag je navigeren naar je Sample Page onder pages in je WP werkbalk. Als je op het bewerkingsscherm van je Sample Page naar beneden scrollt zal je zien dat deze 2 nieuwe custom fields zijn toegevoegd.
 
-![](<../../.gitbook/assets/image (76) (1).png>)
+![](<../../.gitbook/assets/image (76).png>)
 
 op deze manier kan je gemakkelijk custom fields toevoegen aan eender welke soort post of pagina in WP. Het bespaart je een hele hoop tijd dan als je dit met de native functionaliteit van WP zou moeten oplossen.
 

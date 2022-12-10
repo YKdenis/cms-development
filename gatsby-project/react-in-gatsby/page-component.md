@@ -91,7 +91,7 @@ export default AboutPage
 
 Ga in een webbrowser naar **localhost:8000/about**. Wanneer je ontwikkelingsserver klaar is met het opnieuw opbouwen van je site, zou de pagina about er ongeveer zo uit moeten zien:
 
-![About us page Inghelbrecht Agency](<../../.gitbook/assets/image (26) (1).png>)
+![About us page Inghelbrecht Agency](<../../.gitbook/assets/image (26).png>)
 
 {% hint style="info" %}
 #### Key Gatsby-concept 💡

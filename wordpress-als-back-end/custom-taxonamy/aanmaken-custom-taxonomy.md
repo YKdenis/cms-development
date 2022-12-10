@@ -88,7 +88,7 @@ In dit voorbeeld maken we een taxonomy aan met de naam '`role`' als eerste argum
 
 Eenmaal als je de code hebt toegevoegd zou je bij je Artists een nieuwe kolom moeten zien met de naam **Role**. We kunnen vervolgens onder de **Artists** tab op het submenu '**Roles**' klikken en nieuwe rollen toevoegen.
 
-![](<../../.gitbook/assets/image (49) (1).png>)
+![](<../../.gitbook/assets/image (49).png>)
 
 Voeg een paar rollen toe zoals Actor, Model, Singer, ...
 

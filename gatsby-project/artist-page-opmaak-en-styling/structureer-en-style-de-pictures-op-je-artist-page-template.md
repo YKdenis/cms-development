@@ -4,7 +4,7 @@ description: Geef de artist pictures weer op je website en style deze volgens he
 
 # Structureer en style de pictures van je Artist page template
 
-![Pictures op je Artist template page](<../../.gitbook/assets/image (114).png>)
+![Pictures op je Artist template page](<../../.gitbook/assets/image (114) (1).png>)
 
 ## Taak: Voeg de JSX structuur toe voor je pictures op je Artist template page
 
@@ -187,6 +187,6 @@ const ArtistPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Artist template page pictures resultaat](<../../.gitbook/assets/image (114) (1).png>)
+![Artist template page pictures resultaat](<../../.gitbook/assets/image (114).png>)
 
 Super je bent klaar met het stylen van je Artist template page! 🏆Je hebt het einde van dit hoofdstuk bereikt! Je artist template page is volledig gestyled. In het volgende hoofdstuk zal je de About Us page herstructuren en stylen! ✨

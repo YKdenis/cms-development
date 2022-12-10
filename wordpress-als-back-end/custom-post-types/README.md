@@ -52,4 +52,4 @@ Alle post types worden opgeslagen in de databasetabel van posts en worden onders
 Met Local kan je gemakkelijk je WordPress database bekijken. Navigeer naar Database en klik op '**Open Adminer**'
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>

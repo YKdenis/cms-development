@@ -6,7 +6,7 @@ description: >-
 
 # Wat is Netlify?
 
-<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
 ## Wat is Netlify?
 

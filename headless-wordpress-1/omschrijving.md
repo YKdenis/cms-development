@@ -22,7 +22,7 @@ Aan de back-end komt het gedeelte "**beheer**" om de hoek kijken. In WordPress m
 
 Hopelijk herinner je het dashboard hieronder nog van vorig jaar!
 
-![Dashboard in WordPress (back-end)](<../.gitbook/assets/image (2).png>)
+![Dashboard in WordPress (back-end)](<../.gitbook/assets/image (54).png>)
 
 De front-end is wat mensen zien wanneer ze je website bezoeken. In WordPress verandert het uiterlijk van je website door achter de schermen pagina's, instellingen, je thema, etc aan te passen.
 

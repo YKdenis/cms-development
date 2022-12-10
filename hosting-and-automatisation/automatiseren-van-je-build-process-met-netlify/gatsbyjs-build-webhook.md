@@ -18,15 +18,15 @@ Hiervoor kan je een build webhook gebruiken. Build webhooks zijn unieke URLs die
 
 Begin met het aanmaken van een build webhook voor je artist-agency website op Netlify. Navigeer naar je artist agency site overview op Netlify en klik op **site settings**.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (48).png>)
 
 klik vervolgens op **build & deploy** in de aside aan de linkerkant van je scherm.
 
-![](<../../.gitbook/assets/image (46).png>)
+![](<../../.gitbook/assets/image (30).png>)
 
 Scroll naar beneden tot aan build hooks en druk op de knop **add build hook**. Geef de hook een naam, kies de correcte branch en klik op **Save**.
 
-![](<../../.gitbook/assets/image (106).png>)
+![](<../../.gitbook/assets/image (15).png>)
 
 Je build webhook is aangemaakt. In de volgende stap zal je deze toepassen in je WordPress applicatie en er voor zorgen dat het wordt aangeroepen bij elke aanpassing die jij of de klant maakt.
 
@@ -38,11 +38,11 @@ Ten slotte moet je de build hook toevoegen aan je WP applicatie. Dit kan je doen
 **Let op** :eyes::  Je gatsby front-end project is nu gekoppeld met je gehoste WordPress applicatie. Let er op dat je de build webhook toevoegt aan je gehoste WP applicatie en niet aan die in Local by Flywheel!
 {% endhint %}
 
-![](<../../.gitbook/assets/image (63).png>)
+![](<../../.gitbook/assets/image (2).png>)
 
 Het eerste veld op de GatsbyJS settings pagina is voor het instellen van een build webhook. Kopieer hier de build hook URL vanuit Netlify en klik vervolgens helemaal vanonder aan de pagina op **Save**.
 
-![](<../../.gitbook/assets/image (64).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 Proficiat je build webhook is correct ingesteld! :tada:
 
@@ -50,6 +50,6 @@ Proficiat je build webhook is correct ingesteld! :tada:
 
 Pas de data van een van je artiesten aan. Normaliter, na een aantal minuten, zal er een build worden geïnitialiseerd op Netlify.
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (65).png>)
 
 Zowel je Github repo als je WP applicatie zijn nu automatisch gekoppeld aan je Netlify hosting. Aanpassingen op beide platformen worden automatisch gereflecteerd op je gehoste website te Netlify!

@@ -27,7 +27,7 @@ Je site is nog steeds zichtbaar voor iedereen zodra je deze implementeert met Ga
 
 Laat de selectievakjes voor de initialisatie uitgeschakeld.
 
-<figure><img src="../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
 3\) Om je bestaande code van je computer naar je nieuwe GitHub-repository te pushen, voer je de onderstaande opdrachten in de command line in. Zorg ervoor dat je `YOUR_GITHUB_USERNAME` verwisselt met je GitHub gebruikersnaam en `YOUR_GITHUB_REPO_NAME` met de naam die je aan je GitHub-repo hebt gegeven (zoals artist-agency-2021).
 
@@ -42,7 +42,7 @@ git push -u origin main
 
 Als je bovenstaande commands hebt uitgevoerd dan zal je de code zien verschijnen in je GitHub repo.
 
-<figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
 
 Super! Je Github repo is geïnitialiseerd! 🎉 Je kan nu al je aanpassingen pushen naar je repo. **Zorg er voor dat je dit regelmatig doet en vermijdt dat je code kwijt speelt!**
 

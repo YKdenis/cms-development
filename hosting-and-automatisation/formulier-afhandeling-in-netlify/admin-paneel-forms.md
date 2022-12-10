@@ -16,17 +16,17 @@ Verander **inghelbrecht-agency** met de naam van jou agentschap.
 
 Vervolgens klik je in de navigatie vanboven op '**Forms**'
 
-<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 Normaliter krijg je het volgende scherm te zien:
 
-<figure><img src="../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
 ### Settings en usage
 
 De bovenste sectie geeft meer informatie omtrent de instellingen van je formulieren en het gebruik er van. Als je op de knop '**Settings and usage**' klikt wordt je doorverwezen naar het volgende scherm:
 
-<figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
 Je account heeft een level van 0. Wat wilt zeggen dat het een **gratis** account is. Met andere woorden het gebruik van Netlify formulieren is beperkt tot 100 inzendingen en, indien de gebruikers files zouden uploaden, 10 MB per maand.&#x20;
 
@@ -46,13 +46,13 @@ Als je naar beneden scrollt kan je bij '**form notifications**' uitgaande notifi
 
 Als je terug gaat naar de vorige pagina en een beetje naar beneden scrollt zie je de sectie '**Active forms**' staan.
 
-<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
 Normaliter, als je de vorige stappen omtrent [formulier afhandeling in Netlify](./) hebt uitgevoerd, heb je daarin je '**contact**' formulier staan. Klik er op.
 
 Je krijgt het volgende scherm te zien:
 
-<figure><img src="../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 Onderaan, bij '**Verified submissions**', zullen alle inzending van het formulier in kwestie worden weergegeven. In de bovenste sectie links, '**Submissions from contact**' kan je de inzendingen downloaden als `.csv` bestand (excel) en indien nodig het formulier verwijderen. De sectie bovenaan rechts geeft meer informatie omtrent het filteren van spam berichten.
 

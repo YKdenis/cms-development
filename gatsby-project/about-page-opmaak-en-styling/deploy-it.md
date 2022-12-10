@@ -8,7 +8,7 @@ description: >-
 
 ## Eindresultaat:
 
-![](<../../.gitbook/assets/about (1).png>)
+![](../../.gitbook/assets/about.png)
 
 ### Push je aanpassingen naar GitHub
 

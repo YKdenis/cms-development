@@ -1,7 +1,7 @@
 ---
 description: >-
-  "Gatsby is een gratis en open source framework gebaseerd op React dat
-  ontwikkelaars helpt om supersnelle websites en apps te bouwen."
+  Gatsby is een gratis en open source framework gebaseerd op React dat
+  ontwikkelaars helpt om supersnelle websites en apps te bouwen.
 ---
 
 # Wat is Gatsby?

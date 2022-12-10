@@ -24,7 +24,7 @@ Open de applicatie en accepteer de gebruiksvoorwaarden. Je krijgt een popup met 
 
 Samen zullen we het proces van een lokale WordPress installatie voor een artiesten agentschap doorlopen. Klik op de knop '**CREATE A NEW SITE**'. Op het volgende scherm vink je nogmaals '**Create new site aan**' en klik op continue.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 Daarna vraagt Local achter de naam van je project. In mijn geval is dat Inghelbrecht Agency. Verander '**Inghelbrecht**' met bijvoorbeeld je achternaam.
 
@@ -36,7 +36,7 @@ Onder **advanced options** kan je de lokale domeinnaam van je website instellen 
 
 Eenmaal als je de naam van je project hebt ingevuld klik je op '**CONTINUE**'.
 
-<figure><img src="../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 ### Stap 4: Ontwikkelingsomgeving
 
@@ -56,7 +56,7 @@ Voor onze use-case kiezen we de '**Preferred**' optie. We hoeven ons niet druk t
 
 In de laatste stap moeten we onze user gegevens instellen die we later zullen gebruiken om in te loggen op het dashboard van onze WordPress site. Zorg ervoor dat je deze gegevens niet kwijtspeelt. Vul alle velden in en klik vervolgens op '**ADD SITE**'.
 
-<figure><img src="../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Het kan zijn dat je administrator toegang moet geven aan verschillende programma's, zoals Local, vooraleer je WordPress installatie gestart kan worden.&#x20;
@@ -64,7 +64,7 @@ Het kan zijn dat je administrator toegang moet geven aan verschillende programma
 
 De installatie duurt een paar seconden/minuten, eenmaal als het klaar is met installeren zou je dit scherm moeten zien.
 
-<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Als je meer wilt weten omtrent de gebruiksinterface van Local bekijk dan zeker eens de [documentatie](https://localwp.com/help-docs/).
@@ -80,4 +80,4 @@ Met de Admin-knop, '**WP ADMIN**', kan je gemakkelijk in loggen op je site en aa
 
 Om in te loggen op je WordPress site moet je de user gegevens gebruiken die we in stap 5 hebben ingevuld. Vervolgens word je doorverwezen naar het dashboard van WordPress en kan je beginnen met het bouwen van je website!
 
-<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>

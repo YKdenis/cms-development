@@ -6,7 +6,7 @@ description: >-
 
 # Structureer en style de Featured Artists JSX
 
-![Featured artists sectie](<../../.gitbook/assets/image (11) (2).png>)
+![Featured artists sectie](<../../.gitbook/assets/image (11).png>)
 
 ## Taak: Giet je featured artists data in een JSX structuur
 

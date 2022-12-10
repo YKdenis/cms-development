@@ -55,7 +55,7 @@
   * [GraphQL Resources](api-graphql/graphql/graphql-resources.md)
 * [WP Plugin 🔌: WPGraphQL](api-graphql/wpgraphql/README.md)
   * [WPGraphQL correct instellen](api-graphql/wpgraphql/wpgraphql-instellingen.md)
-  * [De GraphiQL IDE - Breakdown](api-graphql/wpgraphql/graphiql-ide/README.md)
+  * [De GraphiQL IDE - Breakdown](api-graphql/wpgraphql/graphiql-ide.md)
     * [Query Document](api-graphql/wpgraphql/graphiql-ide/query-document.md)
     * [Query Composer](api-graphql/wpgraphql/graphiql-ide/query-composer.md)
     * [Query Variabelen](api-graphql/wpgraphql/graphiql-ide/query-variabelen.md)
@@ -141,7 +141,7 @@
 
 * [Wat is Netlify?](hosting-and-automatisation/wat-is-netlify/README.md)
   * [Wat is een CDN?](hosting-and-automatisation/wat-is-netlify/wat-is-een-cdn.md)
-* [Automatiseren van je Build Process met Netlify](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify/README.md)
+* [Automatiseren van je Build Process met Netlify](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify.md)
   * [Netlify - Continuous Deployment](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify/netlify-continuous-deployment.md)
   * [GatsbyJS - Build Webhook](hosting-and-automatisation/automatiseren-van-je-build-process-met-netlify/gatsbyjs-build-webhook.md)
 * [Manueel deployen naar Netlify](hosting-and-automatisation/manueel-deployen-naar-netlify.md)

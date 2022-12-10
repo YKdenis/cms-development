@@ -109,4 +109,4 @@ export const query = graphql`
 
 `console.log` je `data` object dat je uit je props hebt gedestructereerd en kijk na of alles correct wordt opgehaald in je developer tools!
 
-![](<../../.gitbook/assets/image (34) (1).png>)
+![](<../../.gitbook/assets/image (34).png>)

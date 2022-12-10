@@ -305,6 +305,6 @@ export default Footer
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Footer eindresultaat](<../../.gitbook/assets/image (40).png>)
+![Footer eindresultaat](<../../.gitbook/assets/image (40) (1).png>)
 
 Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen! ✨

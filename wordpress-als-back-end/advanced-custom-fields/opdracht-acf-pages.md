@@ -20,7 +20,7 @@ Navigeer naar Pages in je WordPress werkbalk en voeg 4 nieuwe pagina's toe en ve
 
 ![](<../../.gitbook/assets/image (127).png>)
 
-![](<../../.gitbook/assets/image (87) (1).png>)
+![](<../../.gitbook/assets/image (87).png>)
 
 We hebben de Sample Page verwijderd terwijl er nog een field group aanhing. **Navigeer terug naar Custom fields en zet de Sample Page Fields op inactive onder de Group Settings tab.**
 

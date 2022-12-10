@@ -24,4 +24,4 @@ Hoe krijg je data van de bron in de **Data Layer**? Door een bepaald type plugin
 
 Je kan GraphQL-query's in je componenten schrijven om de gegevens eruit te halen die je op je site wilt gebruiken. Wanneer je de commando `gatsby develop` uitvoert, zal Gatsby alle GraphQL-query's in je componenten vinden, uitvoeren en de resulterende gegevens in je component plaatsen.
 
-![](<../../.gitbook/assets/image (42).png>)
+![](<../../.gitbook/assets/image (42) (1).png>)

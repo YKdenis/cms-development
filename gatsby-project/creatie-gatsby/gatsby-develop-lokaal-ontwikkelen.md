@@ -24,7 +24,7 @@ cd inghelbrecht-agency
 Je kan ook navigeren naar de **terminal in VScode** en via deze weg verder werken! Shortcut mac: `cntrl + shift +` \`
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
 2\) Dubbelcheck of je degelijk de laatste stabiele node versie **(v16.17.0 of hoger)** hebt met de opdracht `node -v`. Voer vervolgens de opdracht `npm i` uit om je `node_modules` te installeren.
 
@@ -58,7 +58,7 @@ success Writing page-data.json files to public directory - 0.498s - 3/6 12.06/s
 
 4\) Open je favoriete webbrowser en navigeer naar [http://localhost:8000](http://localhost:8000).
 
-<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
 je allereerste Gatsby-site! 🎉
 

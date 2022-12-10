@@ -132,6 +132,6 @@ export default AboutPage
 
 Klik in je webbrowser op elk van de links om te controleren of ze correct werken.
 
-![](<../../.gitbook/assets/image (47).png>)
+![](<../../.gitbook/assets/image (47) (1).png>)
 
 ![](<../../.gitbook/assets/image (83).png>)

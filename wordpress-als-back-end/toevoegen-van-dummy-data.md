@@ -29,11 +29,11 @@ Download bovenstaand .zip bestand met alle foto's.
 
 **Vergeet niet voor elke artiest rollen toe te voegen. Je kan dit doen in de sectie 'Rollen' omkaderd in het groen. Als Title van je custom post geef je de 'voornaam' + 'achternaam' op zoals in onderstaand voorbeeld weergegeven voor 'Joel Mott'.**
 
-<figure><img src="../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 **Elke foto moet een alt text hebben. Je kan een alt text toevoegen in de photo library van WordPress.**&#x20;
 
-<figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 Eenmaal als je vier artiesten hebt toegevoegd kan je vervolgens voor alle pagina's de metadata invullen. Gebruik hiervoor echte data of dummy data dat de grote van elk inputveld reflecteert. **4 woorden voor een description is niet voldoende!**
 
@@ -47,4 +47,4 @@ Download het `.zip` bestand hieronder. Het bevat foto's voor 4 dummy artiesten e
 
 **Let op: voor je home page onder Featured Artists > Artists voeg je 3 artiesten toe! Als de GUI je toelaat om maar één artiest toe te voegen, herwerk je Home Fields en zet 'Allow Multiple Values' op true in je FeaturedArtists > Artists field.**
 
-<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>

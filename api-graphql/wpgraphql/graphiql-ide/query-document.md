@@ -10,7 +10,7 @@ Bekijk de GraphQL documentatie, [Queries and Mutations](https://graphql.org/lear
 
 Je kan meerdere query's aan een **query document** toevoegen. Je kan bijvoorbeeld twee query operations in een query document plaatsen:
 
-![](<../../../.gitbook/assets/image (21).png>)
+![](<../../../.gitbook/assets/image (21) (1).png>)
 
 {% hint style="info" %}
 In dit voorbeeld wordt '**artistBy**' gebruikt in de query. Dit is een oud voorbeeld en `artistBy` is deprecated!
@@ -20,10 +20,10 @@ Als je meer dan één query in een query document hebt, moet je de query een ope
 
 Als je op de afspeelknop klikt, verschijnt er een vervolgkeuzelijst waarin je wordt gevraagd een van deze twee bewerkingen te selecteren.
 
-<figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
 Als je voor al deze gegevens één verzoek wilt verzenden, kan je ze allemaal in dezelfde query plaatsen:
 
-<figure><img src="../../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 ###

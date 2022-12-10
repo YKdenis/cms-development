@@ -89,7 +89,7 @@ Volg de onderstaande stappen om de `StaticImage`-component te gebruiken om een â
 
 **Aangezien we een starter template hebben gebruikt is `gatsby-plugin-image` al geÃ¯nstalleerd en staat het in onze `package.json`-file. Je hoeft het niet toe te voegen via de terminal.**
 
-<figure><img src="../../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
 De `StaticImage`-component vereist een paar extra plugins om te werken. Deze extra plugins worden `peer-dependencies` genoemd. Je moet ze samen met het `gatsby-plugin-image` package installeren:
 

@@ -6,4 +6,4 @@ Je kan de Query Composer raadplegen in de kolom helemaal links. Als je geen kolo
 
 Je kan op de dropdownmenu's doorklikken en je zal zien dat er automatisch een query gegenereerd wordt in het query document. **Je kan gemakkelijk het GraphQL schema dat WPGraphQL voor ons heeft opgezet verkennen.** Per niveau dat je dieper gaat in de Query Composer zal er een geneste query gegenereerd worden. De query hieronder is volledig opgesteld doormiddel van de Query Composer:
 
-<figure><img src="../../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>

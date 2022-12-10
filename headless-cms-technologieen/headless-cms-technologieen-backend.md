@@ -14,7 +14,7 @@ Headless content management systemen (CMS'en) worden gekarakteriseerd door drie 
 
 ### 1. Contentful
 
-<figure><img src="../.gitbook/assets/image (224).png" alt=""><figcaption><p><a href="https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/">https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption><p><a href="https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/">https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/</a></p></figcaption></figure>
 
 [Contentful](https://www.contentful.com/) is een API-first headless CMS dat 60% meer conversies en 400% snellere laadtijden belooft.
 
@@ -41,7 +41,7 @@ Het ondersteunt ook server-side talen zoals C#, .NET, Python, Ruby en PHP.
 
 ### 2. Strapi
 
-<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption><p><a href="https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/">https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (142).png" alt=""><figcaption><p><a href="https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/">https://www.stateofdigitalpublishing.com/digital-platform-tools/best-headless-cms/</a></p></figcaption></figure>
 
 [Strapi](https://strapi.io/) is een open-source, toonaangevend headless CMS dat volledig door JavaScript wordt ondersteund en als doel heeft webontwikkelaars op de eerste plaats te zetten.
 
@@ -66,7 +66,7 @@ Strapi is zelf-gehost en kan worden gehost op verschillende servers zoals 21YunB
 
 ### 3. Headless WordPress
 
-<figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption><p><a href="https://snipcart.com/blog/headless-wordpress">https://snipcart.com/blog/headless-wordpress</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption><p><a href="https://snipcart.com/blog/headless-wordpress">https://snipcart.com/blog/headless-wordpress</a></p></figcaption></figure>
 
 Een headless WordPress website gebruikt uitsluitend de backend (body) van een WordPress Applicatie en niet de frontend (head). Het is een API-first-systeem dat alle inhoud van WordPress ontkoppelt en vrijgeeft via een API. Het stelt ontwikkelaars in staat om te integreren met services van derden en inhoud te leveren aan verschillende kanalen en interfaces.
 

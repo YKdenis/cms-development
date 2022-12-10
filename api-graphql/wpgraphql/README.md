@@ -12,7 +12,7 @@ WPGraphQL is een WordPress-plug-in, om WPGraphQL met WordPress te gebruiken, moe
 
 Navigeer in je WordPress dashboard naar "**Plugins".** Vervolgens in het submenu daaronder klik je op "**Add New**". Zoek naar de plugin "**WPGraphQL**" en klik op de knop "**Install Now**". Eenmaal als de plugin is geïnstalleerd, zal er op de WPGraphQL tegel een knop "**Activate**" verschijnen. Klik deze aan om er voor te zorgen dat de plugin degelijk wordt gebruikt binnen je WordPress installatie!
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../.gitbook/assets/image (15) (1).png>)
 
 {% hint style="danger" %}
 **Let op:** voor deze cursus gebruik je WPgraphQL versie 1.12.x.
@@ -46,7 +46,7 @@ Upload de plugin, wacht even tot dat het installatie proces is afgerond en klik 
 
 Eenmaal als de plugin is geactiveerd moeten we onze Field Group beschikbaar stellen in het **WPGraphQL Schema**. Navigeer naar **Custom Fields** in je WP dashboard en klik op een Field Group. Scroll vervolgens naar beneden, onder de settings tab zou je een nieuwe sectie genaamd **GraphQL** moeten zien.
 
-<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 #### **Schakel** "Show in GraphQL'" **in en geef een** beschrijvende naam **in camelcase notatie aan je GraphQL Field Name**:
 

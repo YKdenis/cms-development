@@ -63,4 +63,4 @@ Eenmaal als je de code hebben opgeslagen, krijgen we een nieuwe tab in ons dashb
 
 Navigeer naar '**Add New**' onder '**Artists**' in je WP dashboard. Bij het aanmaken van een artiest krijg je de standaard velden van een post te zien, een titel en een HTML teksteditor. Dit is niet echt handig sinds we een artiest bv. ook een naam en geboortedatum willen geven. We zullen dit later aan de hand van de plugin **Advanced Custom Fields** kunnen toevoegen. We zullen velden zoals naam en geboortedatum toevoegen en de standaardvelden zoals de teksteditor verwijderen.
 
-<figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>

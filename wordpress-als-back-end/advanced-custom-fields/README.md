@@ -17,7 +17,7 @@ Wanneer je een nieuwe post, pagina of een ander inhoudstype schrijft, slaat Word
 **Metadata** omschrijft de karakteristieke gegevens van een bepaalde post of pagina binnen WordPress.
 {% endhint %}
 
-![Teksteditor van een WordPress pagina.](<../../.gitbook/assets/image (67).png>)
+![Teksteditor van een WordPress pagina.](<../../.gitbook/assets/image (67) (1).png>)
 
 ![De metadata van een WordPress pagina.](<../../.gitbook/assets/image (105).png>)
 
@@ -33,11 +33,11 @@ Dit zal een pop-up openen waarin je de optie ‘**Custom fields**’ onder panel
 
 ![](<../../.gitbook/assets/image (35) (1).png>)
 
-![](<../../.gitbook/assets/image (32).png>)
+![](<../../.gitbook/assets/image (32) (1).png>)
 
 De editor wordt opnieuw geladen en je kan het paneel met custom fields onder de inhoudseditor zien.
 
-![](<../../.gitbook/assets/image (53).png>)
+![](<../../.gitbook/assets/image (53) (1).png>)
 
 Custom fields kunnen worden gebruikt om informatie toe te voegen met betrekking tot de post, de pagina of elk ander soort inhoudstype.
 
