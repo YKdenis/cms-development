@@ -8,10 +8,17 @@ description: >-
 
 Tot nu toe heb je de File System Route API en GraphQL-query variabelen gebruikt om afzonderlijke pagina's te maken voor elk van je artiesten.
 
-### Voeg het `slug`-veld toe aan je page query en gebruik het om een link toe te voegen naar je artiesten.
+## Voeg het `slug`-veld toe aan je page query en gebruik het om een link toe te voegen naar je artiesten.
 
-Aangezien deze links tussen pagina's op je eigen site staan, kan je **Gatsby's Link-component** gebruiken om wat extra prestatievoordelen te krijgen. Als je absolute URL's gebruikt, moet je de extra `/artists/` **path parameter** toevoegen, aangezien het veld `slug` alleen het laatste deel van het pad bevat \(zoals `kevin-bismark`\).
+Aangezien deze links tussen pagina's op je eigen site staan, kan je **Gatsby's Link-component** gebruiken om wat extra prestatievoordelen te krijgen. Als je absolute URL's gebruikt, moet je de extra `/artists/` **path parameter** toevoegen, aangezien het veld `slug` alleen het laatste deel van het pad bevat (zoals `kevin-bismark`).
 
+Let op we gebruiken hier een **template literal**! Herbekijk de ES6 documentatie indien je niet meer weet wat het is of hoe je het gebruikt!
+
+{% content-ref url="../../ecmascript/template-literals.md" %}
+[template-literals.md](../../ecmascript/template-literals.md)
+{% endcontent-ref %}
+
+{% code title="src/pages/artists/index.js" %}
 ```jsx
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
@@ -26,7 +33,7 @@ const ArtistsPage = ({data: {allWpArtist: {edges}}}) => {
         return <Link to={`/artists/${slug}`}>
           <p key={item.node.id}>{artist.firstName} {artist.lastName}</p>
         </Link>
-        
+
       })}
     </Layout>
   )
@@ -42,7 +49,7 @@ export const query = graphql`
           lastName
           artistName
         }
-				id
+        id
         slug
       }
     }
@@ -53,10 +60,14 @@ export const query = graphql`
 
 export default ArtistsPage
 ```
+{% endcode %}
+
+{% hint style="warning" %}
+**Let op** :eyes:**:** de page query is aangepast! Het haalt nu ook de `slug` op **** van elke artiest.
+{% endhint %}
 
 Ga in een webbrowser naar[ localhost:8000/artists](http://localhost:8000/artists). Je Artists page zou nu links naar elk van je Artist pages moeten tonen.
 
-![](../../.gitbook/assets/image%20%2873%29.png)
+![](<../../.gitbook/assets/image (73).png>)
 
 Gefeliciteerd, je hebt nu een artiesten agentschap website met meerdere pagina's! 🎉 Probeer enkele nieuwe artiesten in WordPress toe te voegen. Ze zouden automatisch aan je website moeten worden toegevoegd wanneer je site opnieuw wordt opgebouwd!
-

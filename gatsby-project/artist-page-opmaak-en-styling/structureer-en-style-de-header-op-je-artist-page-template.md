@@ -4,20 +4,18 @@ description: >-
   ontwerp!
 ---
 
-# Structureer en style de header op je Artist page template
+# Structureer en style de header van je Artist page template
 
-![Eindresultaat Artist Page Template header](../../.gitbook/assets/image%20%2871%29.png)
+![Eindresultaat Artist Page Template header](<../../.gitbook/assets/image (71).png>)
 
-### Taak: Voeg de JSX structuur toe voor je header op je Artist template page
+## Taak: Voeg de JSX structuur toe voor je header op je Artist template page
 
 Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
-{% code title="src/pages/artists/{wpArtist.slug}.js" %}
-```jsx
-// imports
+<pre class="language-jsx" data-title="src/pages/artists/{wpArtist.slug}.js"><code class="lang-jsx">// imports
 
-const ArtistPage = ({
-  data: {
+<strong>const ArtistPage = ({
+</strong>  data: {
     wpArtist: {
       artistMeta: artist,
       roles: { nodes: roles },
@@ -27,40 +25,39 @@ const ArtistPage = ({
   const image = getImage(artist.profilePicture.localFile)
 
   return (
-    <Layout pageTitle="Artist Template">
-      <div>
-        <div>
-          {artist.artistName && <h3>{artist.artistName}</h3>}
-          <div>
+    &#x3C;Layout pageTitle="Artist Template">
+      &#x3C;section>
+        &#x3C;article>
+          {artist.artistName &#x26;&#x26; &#x3C;h3>{artist.artistName}&#x3C;/h3>}
+          &#x3C;div>
             {roles.map((role, i) => (
-              <span key={i}>
-                {role.name} {i + 1 < roles.length && "- "}
-              </span>
+              &#x3C;span key={i}>
+                {role.name} {i + 1 &#x3C; roles.length &#x26;&#x26; "- "}
+              &#x3C;/span>
             ))}
-          </div>
-          <h1>
+          &#x3C;/div>
+          &#x3C;h1>
             {artist.firstName} {artist.lastName}
-          </h1>
-          <div dangerouslySetInnerHTML={{ __html: artist.description }} />
-          <p><span>Email:</span> {artist.email}</p>
-          <p><span>Phone:</span> {artist.phoneNumber}</p>
-          <p><span>Height:</span> {artist.height}</p>
-          <p><span>Shirt Size:</span> {artist.shirtSize}</p>
-          <p><span>Shoe Size:</span> {artist.shoeSize}</p>
-          <p><span>Origin:</span> {artist.origin}</p>
-        </div>
-        <GatsbyImage image={image} alt={artist.profilePicture.altText} />
-      </div>
-    </Layout>
+          &#x3C;/h1>
+          &#x3C;div dangerouslySetInnerHTML={{ __html: artist.description }} />
+          &#x3C;p>&#x3C;span>Email:&#x3C;/span> {artist.email}&#x3C;/p>
+          &#x3C;p>&#x3C;span>Phone:&#x3C;/span> {artist.phoneNumber}&#x3C;/p>
+          &#x3C;p>&#x3C;span>Height:&#x3C;/span> {artist.height}&#x3C;/p>
+          &#x3C;p>&#x3C;span>Shirt Size:&#x3C;/span> {artist.shirtSize}&#x3C;/p>
+          &#x3C;p>&#x3C;span>Shoe Size:&#x3C;/span> {artist.shoeSize}&#x3C;/p>
+          &#x3C;p>&#x3C;span>Origin:&#x3C;/span> {artist.origin}&#x3C;/p>
+        &#x3C;/article>
+        &#x3C;GatsbyImage image={image} alt={artist.profilePicture.altText} />
+      &#x3C;/section>
+    &#x3C;/Layout>
   )
 }
 
 // Page Query
-```
-{% endcode %}
+</code></pre>
 
 {% hint style="info" %}
-**Pro tip 🧙‍♂️:** Als je een object of array deconstrueert kan je aan de hand van een `:`-operator kan je de variabele dat je er uithaalt een andere naam geven. 
+**Pro tip 🧙‍♂️:** Als je een object of array deconstrueert kan je aan de hand van een '`:`' operator de variabele dat je er uithaalt een andere naam geven.
 
 In de code hierboven heb je dit toegepast op het `nodes` object en heb je het de naam `roles` gegeven!
 {% endhint %}
@@ -78,24 +75,24 @@ const ArtistPage = ({
 ```
 
 {% hint style="info" %}
-Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND \(&&\) gebruiken zoals je hierboven hebt gedaan! 
+Pro tip: Aangezien je `artistName` niet required is, kan het zijn dat deze `null` teruggeeft voor een artiest. Je kan hieronder een logical AND (**&&**) gebruiken zoals je hierboven hebt gedaan!
 
-Als `artistName` niet gelijk is aan `null` dan wordt het `<h3>`-element met de `artistName` weergegeven in je HTML.
+Als `artistName` leeg is dan wordt er niets weergegeven. Als `artistName` is ingevuld dan wordt het `<h3>`-element met de `artistName` weergegeven.
 
-Meer info: [Logical AND operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+Meer info: [Logical AND operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template\_literals).
 {% endhint %}
 
 ```jsx
 {artist.artistName && <h3>{artist.artistName}</h3>}
 ```
 
-### Taak: Sprinkle wat CSS op je Artist page template header  ✨
+## Taak: Sprinkle wat CSS op je Artist page template header  ✨
 
 * Navigeer naar je page.module.css en voeg onderstaande CSS classes toe onderaan je file.
 
 {% code title="src/page.module.css" %}
 ```css
-// Artist page CSS
+/* Artist page CSS */
 
 .artist-name {
   font-size: 2rem;
@@ -169,8 +166,8 @@ const ArtistPage = ({
 
   return (
     <Layout pageTitle="Artist Template">
-      <div className={header}>
-        <div className={headerInfo}>
+      <section className={header}>
+        <article className={headerInfo}>
           {artist.artistName && (
             <h3 className={artistName}>{artist.artistName}</h3>
           )}
@@ -206,13 +203,13 @@ const ArtistPage = ({
           <p>
             <span className={artistInfo}>Origin:</span> {artist.origin}
           </p>
-        </div>
+        </article>
         <GatsbyImage
           className={headerPicture}
           image={image}
           alt={artist.profilePicture.altText}
         />
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -223,7 +220,6 @@ const ArtistPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Eindresultaat](../../.gitbook/assets/image%20%2871%29.png)
+![Eindresultaat](<../../.gitbook/assets/image (71) (1).png>)
 
 In het volgende onderdeel zal je een nieuwe sectie aanmaken en daaraan de pictures toevoegen!
-

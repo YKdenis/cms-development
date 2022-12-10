@@ -4,15 +4,15 @@ description: >-
   toe te voegen aan artist page template.
 ---
 
-# GraphQL-query's maken die afbeeldingen uit WordPress ophalen
+# WordPress afbeeldingen met GraphQL ophalen
 
-### Voeg de profile foto toe aan je page query in je artist page template.
+## Voeg de profile foto toe aan je page query in je artist page template.
 
 Elk GraphQL `File`-object dat een afbeelding bevat, heeft een `childImageSharp`-veld dat je kan gebruiken om de afbeeldingsgegevens op te vragen. De exacte gegevensstructuur is afhankelijk van je gegevensbron, maar de syntax voor `gatsby-source-wordpress` is als volgt:
 
 ```graphql
-query MyQuery($id: String) {
-  wpArtist(id: {eq: $id}) {
+query MyQuery($slug: String) {
+  wpArtist(slug: {eq: $slug}) {
     artistMeta {
       firstName
       lastName
@@ -115,4 +115,3 @@ Deze opties zijn gelijk aan degene die je zou doorgeven aan de `StaticImage`-com
 
 Voor meer informatie, zie de [gatsby-plugin-image Documentatie](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/#image-options).
 {% endhint %}
-

@@ -9,11 +9,11 @@ description: >-
 
 Om de `GatsbyImage`-component te gebruiken, moet je de plugin `gatsby-transformer-sharp` aan je site toevoegen.
 
-Wanneer Gatsby tijdens het bouwen nodes aan de Data Layer toevoegt, zoekt de plugin `gatsby-transformer-sharp` naar `File` nodes die eindigen op een afbeeldingsextensie \(zoals .png of .jpg\) en maakt een `ImageSharp`-node voor dat bestand.
+Wanneer Gatsby tijdens het bouwen nodes aan de Data Layer toevoegt, zoekt de plugin `gatsby-transformer-sharp` naar `File` nodes die eindigen op een afbeeldingsextensie (zoals .png of .jpg) en maakt een `ImageSharp`-node voor dat bestand.
 
 {% embed url="https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/" %}
 
-`gatsby-transformer-sharp` is al geïnstalleerd in je project aangezien het gebaseerd is op een starter template. Het enigste dat je moet doen is het toevoegen aan je `gatsby-config.js`-file zoals hieronder weergegeven:
+`gatsby-transformer-sharp` is al geïnstalleerd in je project aangezien het gebaseerd is op een starter template. Het enige dat je moet doen is het toevoegen aan je `gatsby-config.js`-file zoals hieronder weergegeven:
 
 {% code title="gatsby-config.js" %}
 ```yaml
@@ -44,4 +44,3 @@ module.exports = {
 {% endcode %}
 
 Aangezien je `gatsby-transformer-sharp` aan je site hebt toegevoegd, moet je je lokale ontwikkelingsserver opnieuw opstarten om de wijzigingen in GraphiQL te zien. In de volgende stap zal je in GraphiQL verder werken.
-

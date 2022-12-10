@@ -6,13 +6,13 @@ description: >-
 
 # Structureer en style de Home page header JSX
 
-![Header sectie van je home page](../../.gitbook/assets/image%20%282%29.png)
+![Header sectie van je home page](<../../.gitbook/assets/image (2) (2).png>)
 
-### Taak: Voeg de JSX structuur toe voor je Home Page Header
+## Taak: Voeg de JSX structuur toe voor je Home Page Header
 
-Momenteel wordt je page title nog toegevoegd in je `Layout` component. Je zal niet dezelfde JSX \(**HTML + Javascript**\) structuur hebben voor je page titel op je home page als op je artists page. Met andere woorden je kan je page title beter in de page component zelf definiëren en niet in de `Layout` component.
+Momenteel wordt je page title nog toegevoegd in je `Layout` component. Je zal niet dezelfde JSX (**HTML + Javascript**) structuur hebben voor je page titel op je home page als op je artists page. Met andere woorden je kan je page title beter in de page component zelf definiëren en niet in de `Layout` component.
 
-#### Pas je `Layout` component aan en verwijder de `pageTitle` prop:
+### Pas je `Layout` component aan en verwijder de `pageTitle` prop:
 
 {% code title="src/components/layout.js" %}
 ```jsx
@@ -68,66 +68,64 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
-
 ```
 {% endcode %}
 
-Importeer de `GatsbyImage` component en de `getImage` hulpfunctie. Voeg de onderstaande JSX toe aan de return waarde van je page component:
+Voeg de `GatsbyImage` component en de `getImage` hulpfunctie toe aan je `index.js` pagina. Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
-{% code title="src/pages/index.js" %}
-```jsx
-// imports
-
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
+<pre class="language-jsx" data-title="src/pages/index.js"><code class="lang-jsx">// imports
+<strong>import { GatsbyImage, getImage } from "gatsby-plugin-image"
+</strong>
 const IndexPage = ({
   data: {
-    wpPage: { homePage },
+    wpPage: { homeFields },
   },
 }) => {
-  const image = getImage(homePage.headerHome.picture.localFile)
-  
+  const image = getImage(homeFields.picture.localFile)
+
   return (
-    <Layout>
-      <div>
-        <div>
-          <h1>{homePage.headerHome.title}</h1>
-          <div
+    &#x3C;Layout>
+      &#x3C;section>
+        &#x3C;article>
+          &#x3C;h1>{homeFields.title}&#x3C;/h1>
+          &#x3C;div
             dangerouslySetInnerHTML={{
-              __html: homePage.headerHome.description,
+              __html: homeFields.description,
             }}
           />
-          <a target="__blank" href={homePage.callToAction.link}>
-            {homePage.callToAction.description}
-          </a>
-        </div>
-        <div>
-          <GatsbyImage
+          &#x3C;a target="__blank" href={homeFields.callToAction.url}>
+            {homeFields.callToAction.title}
+          &#x3C;/a>
+        &#x3C;/article>
+        &#x3C;div>
+          &#x3C;GatsbyImage
             image={image}
-            alt={homePage.headerHome.picture.altText}
+            alt={homeFields.picture.altText}
           />
-        </div>
-      </div>
-    </Layout>
+        &#x3C;/div>
+      &#x3C;/section>
+    &#x3C;/Layout>
   )
+}
 
 // Page Query
-```
-{% endcode %}
+</code></pre>
 
 {% hint style="info" %}
-**Let op** 👀**:** De `callToAction.link` linkt naar een externe pagina. Voor **externe links** gebruik je het `<a>`-element en voor **interne links**, links naar andere pagina's op de website, gebruik je het `Link`-component van Gatsby. 
+**Let op** 👀**:** De `callToAction.link` linkt naar een externe pagina. Voor **externe links** gebruik je het `<a>`-element en voor **interne links**, links naar andere pagina's op de website, gebruik je het `Link`-component van Gatsby.
 {% endhint %}
 
-### Taak: Sprinkle wat CSS op je JSX  ✨
+## Taak: Sprinkle wat CSS op je JSX  ✨
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](<../../.gitbook/assets/image (13) (1).png>)
 
-Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd om wat styling toe te voegen met behulp van **CSS modules**. 
+Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd om wat styling toe te voegen met behulp van **CSS modules**.
 
 **Opfrisser nodig?** Bekijk onderstaande link:
 
-{% page-ref page="../react-in-gatsby/style-components-css-modules.md" %}
+{% content-ref url="../react-in-gatsby/style-components-css-modules.md" %}
+[style-components-css-modules.md](../react-in-gatsby/style-components-css-modules.md)
+{% endcontent-ref %}
 
 * Maak een nieuwe CSS file aan in je `src` map genaamd `page.module.css`.
 * Voeg onderstaande CSS classes toe aan je `page.module.css` file.
@@ -146,7 +144,7 @@ Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd 
   justify-content: center;
   width: 50%;
   max-width: 500px;
-  margin-right: 30px;s
+  margin-right: 30px;
 }
 .header-picture {
   border-radius: 50%;
@@ -183,7 +181,6 @@ Je home page header werkt zoals het hoort maar ziet er momenteel niet uit! Tijd 
   background-color: #000;
   border: 1px solid #37ba83;
 }
-
 ```
 {% endcode %}
 
@@ -217,33 +214,33 @@ import {
 
 const IndexPage = ({
   data: {
-    wpPage: { homePage },
+    wpPage: { homeFields },
   },
 }) => {
-  const image = getImage(homePage.headerHome.picture.localFile)
+  const image = getImage(homeFields.picture.localFile)
 
   return (
     <Layout>
-      <div className={header}>
-        <div className={headerInfo}>
-          <h1 className={headerTitle}>{homePage.headerHome.title}</h1>
+      <section className={header}>
+        <article className={headerInfo}>
+          <h1 className={headerTitle}>{homeFields.title}</h1>
           <div
             dangerouslySetInnerHTML={{
-              __html: homePage.headerHome.description,
+              __html: homeFields.description,
             }}
           />
-          <a className={CTA} target="__blank" href={homePage.callToAction.link}>
-            {homePage.callToAction.description}
+          <a className={CTA} target="__blank" href={homeFields.callToAction.url}>
+            {homeFields.callToAction.title}
           </a>
-        </div>
+        </article>
         <div>
           <GatsbyImage
             image={image}
             className={headerPicture}
-            alt={homePage.headerHome.picture.altText}
+            alt={homeFields.picture.altText}
           />
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -254,7 +251,6 @@ const IndexPage = ({
 
 * Start je ontwikkelingsserver met `gatsby develop` en navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 Super, je header sectie is af! 🥳 In het volgende deel zal je verder bouwen aan je home page en de Featured Artists sectie opmaken en stylen!
-

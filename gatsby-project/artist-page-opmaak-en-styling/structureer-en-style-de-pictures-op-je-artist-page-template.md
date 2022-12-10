@@ -2,11 +2,11 @@
 description: Geef de artist pictures weer op je website en style deze volgens het ontwerp!
 ---
 
-# Structureer en style de pictures op je Artist page template
+# Structureer en style de pictures van je Artist page template
 
-![Pictures op je Artist template page](../../.gitbook/assets/image%20%28114%29.png)
+![Pictures op je Artist template page](<../../.gitbook/assets/image (114).png>)
 
-### Taak: Voeg de JSX structuur toe voor je pictures op je Artist template page
+## Taak: Voeg de JSX structuur toe voor je pictures op je Artist template page
 
 Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
@@ -23,18 +23,33 @@ const ArtistPage = ({
   },
 }) => {
   const image = getImage(artist.profilePicture.localFile)
-  const picture1 = getImage(artist.pictures.picture1.localFile)
-  const picture2 = getImage(artist.pictures.picture2.localFile)
-  const picture3 = getImage(artist.pictures.picture3.localFile)
-  
+  const picture1 = getImage(artist.picture1.localFile)
+  const picture2 = getImage(artist.picture2.localFile)
+  const picture3 = getImage(artist.picture3.localFile)
+
   return (
     <Layout pageTitle="Artist Template">
-      // artist header JSC
-      <div>
-        <GatsbyImage image={picture1} alt={artist.pictures.picture1.altText} />
-        <GatsbyImage image={picture2} alt={artist.pictures.picture2.altText} />
-        <GatsbyImage image={picture3} alt={artist.pictures.picture3.altText} />
-      </div>
+      // artist header JSX
+      <section>
+        {picture1 && (
+          <GatsbyImage
+            image={picture1}
+            alt={artist.picture1.altText}
+          />
+        )}
+        {picture2 && (
+          <GatsbyImage
+            image={picture2}
+            alt={artist.picture2.altText}
+          />
+        )}
+        {picture3 && (
+          <GatsbyImage
+            image={picture3}
+            alt={artist.picture3.altText}
+          />
+        )}
+      </section>
     </Layout>
   )
 }
@@ -43,7 +58,7 @@ const ArtistPage = ({
 ```
 {% endcode %}
 
-### Taak: Sprinkle wat CSS op je Artist page template pictures  ✨
+## Taak: Sprinkle wat CSS op je Artist page template pictures  ✨
 
 * Navigeer naar je page.module.css en voeg onderstaande CSS classes toe onderaan je file.
 
@@ -95,7 +110,7 @@ const ArtistPage = ({
 ```
 {% endcode %}
 
-* Importeer je `page.module.css` in je artist page template file. 
+* Importeer je `page.module.css` in je artist page template file.&#x20;
 
 {% code title="src/pages/artists/{wpArtist.slug}.js" %}
 ```jsx
@@ -139,23 +154,29 @@ const ArtistPage = ({
   return (
     <Layout pageTitle="Artist Template">
       // Header JSX
-      <div className={artistPictures}>
-        <GatsbyImage
-          className={artistPicture}
-          image={picture1}
-          alt={artist.pictures.picture1.altText}
-        />
-        <GatsbyImage
-          className={artistPicture}
-          image={picture2}
-          alt={artist.pictures.picture2.altText}
-        />
-        <GatsbyImage
-          className={artistPicture}
-          image={picture3}
-          alt={artist.pictures.picture3.altText}
-        />
-      </div>
+      <section className={artistPictures}>
+       {picture1 && (
+          <GatsbyImage
+            className={artistPicture}
+            image={picture1}
+            alt={artist.picture1.altText}
+          />
+        )}
+        {picture2 && (
+          <GatsbyImage
+            className={artistPicture}
+            image={picture2}
+            alt={artist.picture2.altText}
+          />
+        )}
+        {picture3 && (
+          <GatsbyImage
+            className={artistPicture}
+            image={picture3}
+            alt={artist.picture3.altText}
+          />
+        )}
+      </section>
     </Layout>
   )
 }
@@ -166,7 +187,6 @@ const ArtistPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Artist template page pictures resultaat](../../.gitbook/assets/image%20%28114%29.png)
+![Artist template page pictures resultaat](<../../.gitbook/assets/image (114) (1).png>)
 
-Super je bent klaar met het stylen van je Artist template page! 🏆Je hebt het einde van dit hoofdstuk bereikt! Je artist template page is volledig gestyled. In het volgende hoofdstuk zal je de About Us page herstructuren en stylen!  ✨
-
+Super je bent klaar met het stylen van je Artist template page! 🏆Je hebt het einde van dit hoofdstuk bereikt! Je artist template page is volledig gestyled. In het volgende hoofdstuk zal je de About Us page herstructuren en stylen! ✨

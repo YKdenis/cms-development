@@ -6,9 +6,9 @@ description: >-
 
 # Structureer en style de Artists page JSX
 
-### Taak: Voeg toe en pas de JSX structuur aan voor je Artists Page
+## Taak: Voeg toe en pas de JSX structuur aan voor je Artists Page
 
-Importeer de `GatsbyImage` component en de `getImage` hulpfunctie. Voeg de onderstaande JSX toe aan de return waarde van je page component:
+Importeer de `GatsbyImage` component, de `getImage` hulpfunctie en de `Artist` component. Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
 {% code title="src/pages/artists/index.js" %}
 ```jsx
@@ -18,30 +18,30 @@ import Artist from "../../components/artist"
 
 const ArtistsPage = ({
   data: {
-    allWpArtist: { edges: artistsInfo },
-    wpPage: { artistsPage },
+    allWpArtist: { edges },
+    wpPage: { artistsFields },
   },
 }) => {
-  const image = getImage(artistsPage.headerArtists.picture.localFile)
+  const image = getImage(artistsFields.picture.localFile)
   return (
     <Layout pageTitle="Artists of Inghelbrecht Agency">
       <GatsbyImage
         image={image}
-        alt={artistsPage.headerArtists.picture.altText}
+        alt={artistsFields.picture.altText}
       />
-      <div>
-        <h2>{artistsPage.headerArtists.title}</h2>
+      <section>
+        <h2>{artistsFields.title}</h2>
         <div
           dangerouslySetInnerHTML={{
-            __html: artistsPage.headerArtists.description,
+            __html: artistsFields.description,
           }}
         />
         <div>
-          {artistsInfo.map(({ node: artist }) => (
+          {edges.map(({ node: artist }) => (
             <Artist key={artist.id} slug={artist.slug} artist={artist} />
           ))}
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -50,13 +50,13 @@ const ArtistsPage = ({
 ```
 {% endcode %}
 
-Vergeet niet je `Artist` component te importeren! 
+Vergeet niet je `Artist` component te importeren!
 
 {% hint style="info" %}
-**Pro tip 🧙‍♂**: In de `map`-functie deconstrueer je elk element waarover je itereert. Je haalt er de `node` uit en geeft het een nieuwe naam namelijk `artist`. 
+**Pro tip 🧙‍♂**: In de `map`-functie deconstrueer je elk element waarover je itereert. Je haalt er de `node` uit en geeft het een nieuwe naam namelijk `artist`.
 {% endhint %}
 
-### Taak: Voeg CSS toe aan je Artists page JSX  ✨
+## Taak: Voeg CSS toe aan je Artists page JSX  ✨
 
 Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
@@ -65,7 +65,7 @@ Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
 {% code title="src/page.module.css" %}
 ```css
-// Page CSS
+/* Page CSS */
 
 .hero {
   width: 120vw;
@@ -117,32 +117,32 @@ import {
 
 const ArtistsPage = ({
   data: {
-    allWpArtist: { edges: artistsInfo },
-    wpPage: { artistsPage },
+    allWpArtist: { edges },
+    wpPage: { artistsFields },
   },
 }) => {
-  const image = getImage(artistsPage.headerArtists.picture.localFile)
+  const image = getImage(artistsFields.picture.localFile)
   return (
     <Layout pageTitle="Artists of Inghelbrecht Agency">
       <GatsbyImage
-        className={hero}
+      className={hero} 
         image={image}
-        alt={artistsPage.headerArtists.picture.altText}
+        alt={artistsFields.picture.altText}
       />
-      <div className={section}>
-        <h2 className={subtitle}>{artistsPage.headerArtists.title}</h2>
+      <section className={section}>
+        <h2 className={subtitle}>{artistsFields.title}</h2>
         <div
-          className={description}
+        className={description}
           dangerouslySetInnerHTML={{
-            __html: artistsPage.headerArtists.description,
+            __html: artistsFields.description,
           }}
         />
         <div className={artists}>
-          {artistsInfo.map(({ node: artist }) => (
+          {edges.map(({ node: artist }) => (
             <Artist key={artist.id} slug={artist.slug} artist={artist} />
           ))}
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -152,5 +152,4 @@ const ArtistsPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je artists page is volledig gestyled. In het volgende hoofdstuk zal je de individuele Artist page herstructuren en stylen!  ✨
-
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je artists page is volledig gestyled. In het volgende hoofdstuk zal je de individuele Artist page herstructuren en stylen! ✨

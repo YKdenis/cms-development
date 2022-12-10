@@ -6,11 +6,11 @@ description: >-
 
 # Structureer en style de Featured Artists JSX
 
-![Featured artists sectie](../../.gitbook/assets/image%20%2811%29.png)
+![Featured artists sectie](<../../.gitbook/assets/image (11) (2).png>)
 
-### Taak: Giet je featured artists data in een JSX structuur
+## Taak: Giet je featured artists data in een JSX structuur
 
-Je featured artists data bestaat uit een `title`, `description` en een array van artiesten genaamd `artists`. Itereer over je artiesten array met behulp van een `map`-functie. Voor elke artiest zal je een Gatsby `Link` component moeten terugsturen dat een link legt met de `{wpArtist.slug}.js` page template.
+Je featured artists data bestaat uit een array van artiesten genaamd `artists`. Itereer over je artiesten array met behulp van een `map`-functie. Voor elke artiest zal je een Gatsby `Link` component moeten terugsturen dat een link legt met de `{wpArtist.slug}.js` page template.
 
 {% code title="src/pages/index.js" %}
 ```jsx
@@ -19,54 +19,47 @@ Je featured artists data bestaat uit een `title`, `description` en een array van
 <Layout>
 
 // Home Page Header JSX
-  
-  <div>
-    <h2>{homePage.featuredArtists.title}</h2>
-    <p>{homePage.featuredArtists.description}</p>
-    <div>
-      {homePage.featuredArtists.artists.map(artist => {
-        const profile = getImage(artist.artistMeta.profilePicture.localFile)
-  
-        return (
-          <Link to={`artists/${artist.slug}`}>
-            <GatsbyImage
-              image={profile}
-              alt={artist.artistMeta.profilePicture.altText}
-            />
-            <div>
-              {artist.artistMeta.artistName && (
-                <p>{artist.artistMeta.artistName}</p>
-              )}
-              <p>
-                {artist.artistMeta.firstName} {artist.artistMeta.lastName}
-              </p>
-            </div>
-          </Link>
-          )
+
+<section>
+    <h2>Featured Artists</h2>
+    <p>
+      // description
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed doo eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    </p>
+    <article>
+      {homeFields.artists.map(artist => {
+        return 'hier komt een link component'
       })}
-    </div>
-  </div>
+    </article>
+  </section>
 </Layout>
 
 // Page Query
 ```
 {% endcode %}
 
-Het `Link`-component dat je hierboven hebt gedefinieerd zal je hergebruiken op de Artists page. In plaats van het te kopiëren, en zo dubbele code te hebben, kan je van het `Link`-component een **Building Block component** maken.
+Het `Link`-component dat je nodig hebt zal herbruikt worden op de Artists page. We kunnen hiervoor een aparte component (**Building Block component**) maken om dubbele code te vermijden.
 
-#### Maak een nieuwe file aan in je `src/components` map genaamd `artist.js`. 
+### Maak een nieuwe file aan in je `src/components` map genaamd `artist.js`.
 
-* Definieer een nieuw component met de naam `Artist` en plak de code binnen je `map`-functie in je featured artists sectie in het component.
-* Vergeet niet je `Link`-component, `GatsbyImage` en `getImage` te importeren!
-* Deconstrueer de `props` in je functiedefinitie en haal er de variabele `artist` en `slug` uit.
+* Definieer een nieuw component met de naam `Artist`;
+* Je Artist component zal props genaamd '`artist`' en '`slug`' ontvangen;
+* In het Artist component maak je gebruik van een `Link` component waarin je de volgende data weergeeft:
+  * firstName;
+  * lastName;
+  * artistName;
+  * profilePicture;
+* Vergeet niet je `Link`-component, `GatsbyImage` en `getImage` te importeren;
+* Destructereer de `props` in je functiedefinitie en haal er de variabele `artist` en `slug` uit;
 
-{% code title="src/components/artist.js" %}
+{% code title="src/components/artist.js" lineNumbers="true" %}
 ```jsx
 import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const Artist = ({ artist, slug }) => {
+const Artist = ({ artist, slug }) => {
   const profile = getImage(artist.artistMeta.profilePicture.localFile)
   return (
     <Link to={slug}>
@@ -74,12 +67,12 @@ export const Artist = ({ artist, slug }) => {
         image={profile}
         alt={artist.artistMeta.profilePicture.altText}
       />
-      <div>
+      <article>
         {artist.artistMeta.artistName && <p>{artist.artistMeta.artistName}</p>}
         <p>
           {artist.artistMeta.firstName} {artist.artistMeta.lastName}
         </p>
-      </div>
+      </article>
     </Link>
   )
 }
@@ -88,34 +81,53 @@ export default Artist;
 ```
 {% endcode %}
 
-**Je Artist component kan nu worden herbruikt!** Importeer Artist in je home page en vervang het `Link`-component met `<Artist key={artist.id} slug={slug} artist={artist} />`.
+{% hint style="info" %}
+**Let op:** codelijn 14 maakt gebruik van een **logical operator (&&)**. Herbekijk het hoofdstuk ECMAScript: Logical operators voor meer informatie!
+{% endhint %}
+
+{% content-ref url="../../ecmascript/logical-operators.md" %}
+[logical-operators.md](../../ecmascript/logical-operators.md)
+{% endcontent-ref %}
+
+**Je Artist component kan nu worden herbruikt!** Importeer Artist in je home page en vervang het `'hier komt een link component'` met:
+
+&#x20;``<Artist key={artist.id} slug={`artists/${artist.slug}`} artist={artist} />``
+
+**Vergeet zeker niet je `artist` object en een `slug` als props mee te geven!**
 
 {% code title="src/pages/index.js" %}
 ```jsx
-// IndexPage
+// imports
+import Artist from "../components/artist.js"
 
 <Layout>
 
 // Home Page Header JSX
-  
-  <div>
-    <h2>{homePage.featuredArtists.title}</h2>
-    <p>{homePage.featuredArtists.description}</p>
-    <div>
-      {homePage.featuredArtists.artists.map(artist => (
-            <Artist slug={`artists/${slug}`} key={artist.id} artist={artist} />
-          ))}
-    </div>
-  </div>
+
+    <section>
+      <h2>Featured Artists</h2>
+      <p>
+         // description
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+         sed doo eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
+      <div>
+        {homeFields.artists.map(artist => {
+          return <Artist slug={`artists/${artist.slug}`} key={artist.id} artist={artist} />
+        })}
+      </div>
+  </section>
 </Layout>
 
 // Page Query
 ```
 {% endcode %}
 
-### Taak: Sprinkle wat CSS op je Artist JSX  ✨
+## Taak: Sprinkle wat CSS op je Artist JSX  ✨
 
-De CSS voor de Featured Artists zal worden opgesplitst in twee bestanden. `src/components/artist.module.css` en `src/page.module.css`. Aangezien je `Artist.js`-bestand een Building Block component is kunnen we hiervoor een apart CSS-bestand voor voorzien. 
+De CSS voor de Featured Artists zal worden opgesplitst in twee bestanden. `src/components/artist.module.css` en `src/page.module.css`.&#x20;
+
+Je `Artist.js`-bestand is een **Building Block component**. Het is een goed idee om een apart CSS-bestand te voorzien waarin uitsluitend de CSS van je Artist component wordt beschreven.
 
 * Begin met het maken van een nieuw CSS-bestand in je `src/components` genaamd `artist.module.css`.
 * Voeg volgende CSS classes toe aan `artist.module.css`.
@@ -196,26 +208,21 @@ import {
 ```jsx
 // Imports
 
-export const Artist = ({ artist, slug }) => {
+const Artist = ({ artist, slug }) => {
   const profile = getImage(artist.artistMeta.profilePicture.localFile)
   return (
-    <Link
-      className={wrapper}
-      to={slug}
-    >
+    <Link className={wrapper} to={slug}>
       <GatsbyImage
-        className={image}
+       className={image}
         image={profile}
         alt={artist.artistMeta.profilePicture.altText}
       />
-      <div className={artistInfo}>
-        {artist.artistMeta.artistName && (
-          <p className={artistName}>{artist.artistMeta.artistName}</p>
-        )}
+      <article className={artistInfo}>
+        {artist.artistMeta.artistName && <p className={artistName}>{artist.artistMeta.artistName}</p>}
         <p className={fullName}>
           {artist.artistMeta.firstName} {artist.artistMeta.lastName}
         </p>
-      </div>
+      </article>
     </Link>
   )
 }
@@ -224,13 +231,17 @@ export default Artist
 ```
 {% endcode %}
 
-### Taak: Style je featured artists sectie  ✨
+## Taak: Style je featured artists sectie  ✨
 
 Vooraleer je begint met het stylen van je featured artists sectie moet je twee SVG-bestanden downloaden en toevoegen aan je `src/images` map.
 
-{% file src="../../.gitbook/assets/blob-1.svg" caption="Green Blob 1" %}
+{% file src="../../.gitbook/assets/blob-1.svg" %}
+Green Blob 1
+{% endfile %}
 
-{% file src="../../.gitbook/assets/blob-2.svg" caption="Green Blob 2" %}
+{% file src="../../.gitbook/assets/blob-2.svg" %}
+Green Blob 2
+{% endfile %}
 
 Deze twee blobs zal je gebruiken in je CSS voor de groene achtergrond te creëren in je featured artists sectie.
 
@@ -238,7 +249,7 @@ Deze twee blobs zal je gebruiken in je CSS voor de groene achtergrond te creëre
 
 {% code title="src/page.module.css" %}
 ```css
-// Home Page header CSS
+/* Home Page header CSS */
 
 .subtitle {
   font-size: 4rem;
@@ -284,7 +295,6 @@ Deze twee blobs zal je gebruiken in je CSS voor de groene achtergrond te creëre
   margin-top: 90px;
   flex-wrap: wrap;
 }
-
 ```
 {% endcode %}
 
@@ -320,19 +330,19 @@ import {
 
   // Home Page Header JSX
   
-  <div className={section}>
-    <h2 className={subtitle}>{homePage.featuredArtists.title}</h2>
-    <p>{homePage.featuredArtists.description}</p>
-    <div className={artists}>
-      {homePage.featuredArtists.artists.map(artist => (
-           <Artist
-              slug={`artists/${artist.slug}`}
-              key={artist.id}
-              artist={artist}
-            />
-      ))}
+    <section className={section}>
+      <h2 className={subtitle}>Featured Artists</h2>
+      <p>
+        // description
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed doo eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
+      <div className={artists}>
+        {homeFields.artists.map(artist => {
+        return <Artist slug={`artists/${artist.slug}`} key={artist.id} artist={artist} />
+      })}
     </div>
-  </div>
+  </section>
 </Layout>
 
 // Page Query
@@ -341,7 +351,6 @@ import {
 
 * Navigeer naar [localhost:8000](http://localhost:8000) in je browser.
 
-![Featured artists sectie](../../.gitbook/assets/image%20%2811%29.png)
+![Featured artists sectie](<../../.gitbook/assets/image (11) (1).png>)
 
 Voila, je featured artists sectie is af! 🥳 In het volgende deel zal je het laatste deel van je home page bouwen namelijk de `Footer`. **Dit zal net zoals je** `Artist` **component een Building block component zijn aangezien het op elke pagina zal worden herbruikt**!
-

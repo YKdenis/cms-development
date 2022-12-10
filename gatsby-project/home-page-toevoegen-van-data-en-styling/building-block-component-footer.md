@@ -6,9 +6,9 @@ description: >-
 
 # Building block component: Footer
 
-![Building block component: Footer](../../.gitbook/assets/image%20%28104%29.png)
+![Building block component: Footer](<../../.gitbook/assets/image (104).png>)
 
-### Taak: Maak een nieuwe Building Block component aan genaamd Footer
+## Taak: Maak een nieuwe Building Block component aan genaamd Footer
 
 Navigeer naar je `src/components` map en creëer een nieuw bestand met de naam `footer.js`.
 
@@ -20,57 +20,50 @@ import React from "react"
 
 const Footer = ({ siteTitle, companyInfo }) => {
   return (
-    <div>
-      <div>
+    <footer>
+      <section>
         <p>{siteTitle}</p>
         <p>Codobi</p>
         <p>All rights reserved.</p>
-      </div>
-      <div>
-        <p>{`${companyInfo.address}, ${companyInfo.postcode} ${companyInfo.city}`}</p>
-        <div className={socials}>
+      </section>
+      <section>
+        <p>{`${companyInfo.address}, ${companyInfo.zipCode} ${companyInfo.city}`}</p>
+        <div>
           Follow us:
           <a
-            className={instagram}
             target="__blank"
-            href={companyInfo.socials.instagram}
+            href={companyInfo.instagram}
           />
           <a
-            className={facebook}
             target="__blank"
-            href={companyInfo.socials.facebook}
+            href={companyInfo.facebook}
           />
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   )
 }
 
 export default Footer
-
 ```
 {% endcode %}
 
 {% hint style="info" %}
 **Opmerking 📣:** Je footer verwacht twee `props` namelijk: `siteTitle` en `companyInfo`. De `siteTitle` is gekend in je `Layout` component maar `companyInfo` nog niet!
 
-Je zal later de `companyInfo` binnenhalen vanuit GraphQL. De `companyInfo` is gekend in je WP contact page. Met behulp van de `useStaticQuery` zal je het op halen in je `Layout` component.
+Je zal later de `companyInfo` binnenhalen vanuit GraphQL. De `companyInfo` is gekend in je WP contact page. Je zal het ophalen met behulp van een `useStaticQuery` hook in je `Layout` component.
 {% endhint %}
 
-* Navigeer naar je GraphiQL interface in je browser en bouw de query op voor je `companyInfo` met behulp van je `contactPage` veld.
+* Navigeer naar je GraphiQL interface in je browser en bouw de query op voor je bedrijfsinformatie met behulp van je `contactPage` veld.
 
 ```graphql
 wpPage(slug: { eq: "contact-us" }) {
-        contactPage {
-          companyInformation {
+        contactUsFields {  
             address
             city
-            postcode
-            socials {
-              facebook
-              instagram
-            }
-          }
+            zipCode
+            facebook
+            instagram
         }
       }
 ```
@@ -90,16 +83,12 @@ const Layout = ({ children }) => {
         }
       }
       wpPage(slug: { eq: "contact-us" }) {
-        contactPage {
-          companyInformation {
+        contactUsFields {
             address
             city
-            postcode
-            socials {
-              facebook
-              instagram
-            }
-          }
+            zipCode
+            facebook
+            instagram
         }
       }
     }
@@ -113,14 +102,16 @@ export default Layout
 ```
 {% endcode %}
 
-*  importeer je `Footer` en definieer het helemaal vanonder in je component.
+* importeer je `Footer` en definieer het helemaal vanonder in je component.&#x20;
+
+Let op: `<> </>` is een [React fragment](https://reactjs.org/docs/fragments.html).
 
 {% code title="src/components/layout.js" %}
 ```jsx
   // Imports
-  
+
   const Layout = ({ children }) => {
-  
+
   // useStaticQuery hook
 
   return (
@@ -152,7 +143,7 @@ export default Layout
       </div>
       <Footer
         siteTitle={data.site.siteMetadata.title}
-        companyInfo={data.wpPage.contactPage.companyInformation}
+        companyInfo={data.wpPage.contactUsFields}
       />
     </>
   )
@@ -162,15 +153,19 @@ export default Layout
 ```
 {% endcode %}
 
-### Taak: Style je Footer component ✨
+## Taak: Style je Footer component ✨
 
 In je Footer component zal je een link moeten leggen met Facebook en Instagram. Voor beide is er een icoontje voorzien dat je hieronder kan downloaden. Voeg het toe aan de map `src/images`.
 
-{% file src="../../.gitbook/assets/facebook.svg" caption="Facebook Icoon" %}
+{% file src="../../.gitbook/assets/facebook.svg" %}
+Facebook Icoon
+{% endfile %}
 
-{% file src="../../.gitbook/assets/instagram.svg" caption="Instagram Icoon" %}
+{% file src="../../.gitbook/assets/instagram.svg" %}
+Instagram Icoon
+{% endfile %}
 
-![](../../.gitbook/assets/image%20%28154%29.png)
+![](<../../.gitbook/assets/image (154).png>)
 
 Je Footer is een building block component m.a.w. je kan er een module CSS file voor aanmaken. Navigeer naar je map `src/components` en maak een nieuwe file aan genaamd `footer.module.css`.
 
@@ -186,6 +181,7 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 120px;
+  gap: 30px;
   padding: 2rem 0;
   color: #e0e0e0;
 }
@@ -249,7 +245,6 @@ p {
 .facebook {
   background-image: url("../images/facebook.svg");
 }
-
 ```
 {% endcode %}
 
@@ -278,40 +273,38 @@ import {
 
 const Footer = ({ siteTitle, companyInfo }) => {
   return (
-    <div className={wrapper}>
-      <div>
+    <footer className={wrapper}>
+      <section>
         <p className={title}>{siteTitle}</p>
         <p>Codobi</p>
         <p>All rights reserved.</p>
-      </div>
-      <div>
-        <p>{`${companyInfo.address}, ${companyInfo.postcode} ${companyInfo.city}`}</p>
+      </section>
+      <section>
+        <p>{`${companyInfo.address}, ${companyInfo.zipCode} ${companyInfo.city}`}</p>
         <div className={socials}>
           Follow us:
           <a
             className={instagram}
             target="__blank"
-            href={companyInfo.socials.instagram}
+            href={companyInfo.instagram}
           />
           <a
             className={facebook}
             target="__blank"
-            href={companyInfo.socials.facebook}
+            href={companyInfo.facebook}
           />
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   )
 }
 
 export default Footer
-
 ```
 {% endcode %}
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-![Footer eindresultaat](../../.gitbook/assets/image%20%2840%29.png)
+![Footer eindresultaat](<../../.gitbook/assets/image (40).png>)
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen!  ✨
-
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofstuk! Je home page is volledig gestyled. In het volgende hoofdstuk gaan we de artists page herstructuren en stylen! ✨

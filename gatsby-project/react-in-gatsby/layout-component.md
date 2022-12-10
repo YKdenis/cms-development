@@ -8,16 +8,16 @@ description: >-
 
 ## Een herbruikbare Layout component maken
 
-Je kan elementen zoals je `sitetitel` afzonderlijk naar elke pagina van je site kopiëren. Maar stel je voor dat je site tientallen \(of zelfs duizenden\) pagina's had. Als je de structuur van je `navigatiemenu` wilt wijzigen, moet je elk van die bestanden afzonderlijk bijwerken.
+Je kan elementen zoals je `sitetitel` afzonderlijk naar elke pagina van je site kopiëren. Maar stel je voor dat je site tientallen (of zelfs duizenden) pagina's had. Als je de structuur van je navigatiemenu wilt wijzigen, moet je elk van die bestanden afzonderlijk bijwerken.
 
-In plaats daarvan zou het beter zijn om **één gemeenschappelijke Layout component te maken** waarin alle gedeelde elementen worden gegroepeerd om ze op meerdere pagina's opnieuw te gebruiken. Op die manier kan je, wanneer je de layout moet bijwerken, de wijziging op één plaats aanbrengen en wordt deze automatisch toegepast op alle pagina's die dat onderdeel gebruiken.
+In plaats daarvan zou het beter zijn om **één gemeenschappelijke Layout component te maken** waarin alle gedeelde elementen worden gegroepeerd om ze op meerdere pagina's opnieuw te gebruiken. Op die manier kan je, wanneer je de layout moet bijwerken, de wijziging op één plaats aanbrengen en worden deze automatisch toegepast op alle pagina's die dat onderdeel gebruiken.
 
 In deze sectie maak je je eerste aangepaste Building block component: `Layout`. Om dat te doen, moet je een **speciale React-prop** gebruiken die `children` wordt genoemd.
 
 {% hint style="info" %}
-#### Key React Concept: Componenten met children
+### Key React Concept: Componenten met children
 
-Naast de props die je aan je componenten kunt toevoegen, maakt React ook automatisch bepaalde props voor je componenten aan.
+Naast de `props` die je aan je componenten kunt toevoegen, maakt React ook automatisch bepaalde props voor je componenten aan.
 
 > Dit is een voorbeeld oefening, je hoeft het niet uit te voeren!
 
@@ -36,10 +36,10 @@ Een zo'n prop wordt `children` genoemd. Wanneer je een component rendert, wordt 
 Zie je `Layout` component als een fotolijst. Een lijst heeft zijn eigen vorm en stijl, maar je kunt de inhoud ervan wisselen met wat je maar wilt. Je zou dezelfde fotolijst rond een foto van een huis of een standbeeld kunnen gebruiken. Je zou zelfs iets anders dan een foto kunnen plaatsen, zoals een schilderij of een borduursel.
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28140%29.png)
+![](<../../.gitbook/assets/image (140).png>)
 
 {% hint style="info" %}
-Hier is een voorbeeld van hoe de code voor dit scenario eruit zou kunnen zien. Ten eerste, wanneer de `<Frame>` component  wordt weergegeven, wordt de inhoud tussen de openings- en sluitingstag doorgegeven:
+Hier is een voorbeeld van hoe de code voor dit scenario eruit zou kunnen zien. Ten eerste, wanneer de `<Frame>` component wordt weergegeven, wordt de inhoud tussen de openings- en sluitingstag doorgegeven:
 {% endhint %}
 
 {% code title="src/pages/gallery.js" %}
@@ -54,7 +54,7 @@ const GalleryPage = () => {
   )
 }
 
-export const GalleryPage
+export default GalleryPage
 ```
 {% endcode %}
 
@@ -92,7 +92,7 @@ In de browser zien de daadwerkelijke DOM-elementen er ongeveer zo uit:
 
 Volg de onderstaande stappen om een `Layout` component te maken en deze toe te voegen aan je Home- en About-pagina's.
 
-Navigeer naar het bestand met de naam `src/components/layout.js`. Vervang de code met de code hieronder. **Deze component geeft een dynamische paginatitel en header weer** \(van de `paginatitel` prop\), **een lijst met navigatielinks en de inhoud die is doorgegeven met de** `children` **prop**. Om de toegankelijkheid te verbeteren, is er ook een `<main>`-element dat de paginaspecifieke elementen omhult \(de `<h1>`-header en de inhoud van `children`\).
+Navigeer naar het bestand met de naam `src/components/layout.js`. Vervang de code met de code hieronder. **Deze component geeft een dynamische paginatitel en header weer** (van de `paginatitel` prop), **een lijst met navigatielinks en de inhoud die is doorgegeven met de** `children` **prop**. Om de toegankelijkheid te verbeteren, is er ook een `<main>`-element dat de paginaspecifieke elementen omhult (de `<h1>`-header en de inhoud van `children`).
 
 {% code title="src/components/layout.js" %}
 ```jsx
@@ -122,7 +122,7 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Syntaxistip:** Het is je misschien opgevallen dat de `Layout` component een iets andere syntaxis gebruikt voor zijn props.
+**Syntax tip:** Het is je misschien opgevallen dat de `Layout` component een iets andere syntax gebruikt voor zijn props.
 
 Nu in plaats van er zo uit te zien:
 {% endhint %}
@@ -144,7 +144,7 @@ const Layout = ({ pageTitle, children }) => {
 ```
 
 {% hint style="info" %}
-**Dit is een JavaScript-techniek die destructuring wordt genoemd**. Het is eigenlijk een shortcut voor het definiëren van variabelen op basis van de eigenschappen van een object. Het is hetzelfde als zeggen: "Neem het object dat aan deze functie wordt doorgegeven en pak de eigenschappen `pageTitle` en `children` uit in hun eigen variabelen."
+**Dit is een JavaScript-techniek dat destructuring wordt genoemd**. Het is een shortcut voor het definiëren van variabelen op basis van de eigenschappen van een object. Het is hetzelfde als zeggen: "Neem het object dat aan deze functie wordt doorgegeven en pak de eigenschappen `pageTitle` en `children` uit in hun eigen variabelen."
 
 Met andere woorden, het is een kortere manier om het volgende te doen
 {% endhint %}
@@ -157,6 +157,10 @@ const Layout = (props) => {
 }
 ```
 
+{% content-ref url="../../ecmascript/object-destructering.md" %}
+[object-destructering.md](../../ecmascript/object-destructering.md)
+{% endcontent-ref %}
+
 Werk je `IndexPage`-component bij om de `Layout` component te gebruiken in plaats van de hardcoded `Link`-component die je in de vorige sectie hebt toegevoegd.
 
 {% code title="src/pages/index.js" %}
@@ -166,11 +170,9 @@ import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <main>
       <Layout pageTitle="Welcome to Inghelbrecht Agency!">
       <p>Lorem ipsum</p>
       </Layout>
-    </main>
   )
 }
 
@@ -199,7 +201,10 @@ export default AboutPage
 
 Controleer je Home- en About-pagina's in een webbrowser om er zeker van te zijn dat je nieuwe `Layout` component werkt:
 
-![Home page with Layout component](../../.gitbook/assets/image%20%28101%29.png)
+![Home page with Layout component](<../../.gitbook/assets/image (101).png>)
 
-![About page with Layout component](../../.gitbook/assets/image%20%2839%29.png)
+![About page with Layout component](<../../.gitbook/assets/image (39) (1).png>)
 
+{% hint style="warning" %}
+**Let op**: Je mag de file `header.js` in de components folder verwijderen.
+{% endhint %}

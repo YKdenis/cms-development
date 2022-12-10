@@ -4,64 +4,63 @@ description: >-
   het ontwerp!
 ---
 
-# Herschrijf de HTML van je about page en style het
+# Herschrijf de JSX van je about page en voeg styling toe
 
-### Taak: Voeg toe en pas de JSX structuur aan voor je About Page
+## Taak: Voeg toe en pas de JSX structuur aan voor je About Page
 
 Importeer de `GatsbyImage` component en de `getImage` hulpfunctie. Voeg de onderstaande JSX toe aan de return waarde van je page component:
 
 {% code title="src/pages/about.js" %}
 ```jsx
 // imports
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
 const AboutPage = ({
   data: {
     wpPage: {
-      aboutPage: { headerAboutUs, mission },
+      aboutUsFields,
     },
   },
 }) => {
-  const imageHeader = getImage(headerAboutUs.picture.localFile)
-  const imageMission = getImage(mission.bannerPicture.localFile)
+  const goalPicture = getImage(aboutUsFields.goalPicture.localFile)
+  const missionPicture = getImage(aboutUsFields.missionPicture.localFile)
 
   return (
     <Layout pageTitle="About Us">
-      <div>
-        <div>
-          <h2>{headerAboutUs.title}</h2>
+      <section>
+        <article>
+          <h2>{aboutUsFields.goalTitle}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: headerAboutUs.description,
+              __html: aboutUsFields.goalDescription,
             }}
           />
-        </div>
-        <GatsbyImage image={imageHeader} alt={headerAboutUs.picture.altText} />
-      </div>
-      <div>
-        <div>
-          <GatsbyImage
-            image={imageMission}
-            alt={mission.bannerPicture.altText}
-          />
-
-          <h2>{mission.title}</h2>
+        </article>
+        <GatsbyImage image={goalPicture} alt={aboutUsFields.goalPicture.altText} />
+      </section>
+      <section>
+        <GatsbyImage
+          image={missionPicture}
+          alt={aboutUsFields.missionPicture.altText}
+        />
+        <article>
+          <h2>{aboutUsFields.missionTitle}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: mission.description,
+              __html: aboutUsFields.missionDescription,
             }}
           />
-        </div>
-      </div>
+        </article>
+      </section>
     </Layout>
   )
 }
+
+export default AboutPage
 
 // Page Query
 ```
 {% endcode %}
 
-### Taak: Voeg CSS toe aan je About page JSX  ✨
+## Taak: Voeg CSS toe aan je About page JSX  ✨
 
 Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
@@ -70,7 +69,7 @@ Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
 {% code title="src/page.module.css" %}
 ```css
-// Page CSS
+/* Page CSS */
 
 .mission-section {
   display: flex;
@@ -118,46 +117,44 @@ import {
 
 const AboutPage = ({
   data: {
-    wpPage: {
-      aboutPage: { headerAboutUs, mission },
-    },
+    wpPage: { aboutUsFields },
   },
 }) => {
-  const imageHeader = getImage(headerAboutUs.picture.localFile)
-  const imageMission = getImage(mission.bannerPicture.localFile)
+  const goalPicture = getImage(aboutUsFields.goalPicture.localFile)
+  const missionPicture = getImage(aboutUsFields.missionPicture.localFile)
 
   return (
     <Layout pageTitle="About Us">
-      <div className={header}>
-        <div className={headerInfo}>
-          <h2 className={subtitle}>{headerAboutUs.title}</h2>
+      <section className={header}>
+        <article className={headerInfo}>
+          <h2 className={subtitle}>{aboutUsFields.goalTitle}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: headerAboutUs.description,
+              __html: aboutUsFields.goalDescription,
             }}
           />
-        </div>
+        </article>
         <GatsbyImage
           className={headerPicture}
-          image={imageHeader}
-          alt={headerAboutUs.picture.altText}
+          image={goalPicture}
+          alt={aboutUsFields.goalPicture.altText}
         />
-      </div>
-      <div className={missionSection}>
+      </section>
+      <section className={missionSection}>
         <GatsbyImage
           className={headerPicture}
-          image={imageMission}
-          alt={mission.bannerPicture.altText}
+          image={missionPicture}
+          alt={aboutUsFields.missionPicture.altText}
         />
-        <div className={missionInfo}>
-          <h2 className={subtitle}>{mission.title}</h2>
+        <article className={missionInfo}>
+          <h2 className={subtitle}>{aboutUsFields.missionTitle}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: mission.description,
+              __html: aboutUsFields.missionDescription,
             }}
           />
-        </div>
-      </div>
+        </article>
+      </section>
     </Layout>
   )
 }
@@ -168,5 +165,4 @@ const AboutPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je about page is volledig gestyled. In het volgende hoofdstuk zal je de laatste pagina stylen, namelijk de contact pagina.  ✨
-
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je about page is volledig gestyled. In het volgende hoofdstuk zal je de laatste pagina stylen, namelijk de contact pagina. ✨

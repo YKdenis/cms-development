@@ -8,17 +8,19 @@ description: >-
 
 ## Style Components met CSS-modules
 
-Gatsby is niet strikt over welke CSS benadering je gebruikt. Je kan het systeem kiezen waarbij je je het beste voelt het voelt.
+Gatsby is niet strikt over welke CSS benadering je gebruikt. Je kan een systeem kiezen waarbij je goed voelt.
 
 In deze zelfstudie zal je gebruik maken van **CSS-modules** om je componenten op te maken. Dit betekent dat stijlen binnen het bereik van componenten vallen, wat helpt om botsingen met **klassenaamgeving** tussen componenten te voorkomen. Gatsby is automatisch geconfigureerd om CSS-modules te verwerken - geen extra configuratie nodig!
 
 {% hint style="info" %}
-#### Key Styling Concept: CSS-modules 
+### Key Styling Concept: CSS-modules
 
 Om stijlen te definiëren met behulp van CSS-modules, plaatst je je CSS in een bestand dat eindigt op de bestandsextensie .module.css. Dit vertelt Gatsby dat dit CSS-bestand moet worden verwerkt als een CSS-module in plaats van als gewone CSS.
 
-Maak in je CSS-bestand afzonderlijke CSS-klassen voor elk element dat je wilt opmaken. Bijvoorbeeld:
+Maak in je CSS-bestand afzonderlijke CSS-klassen voor elk element dat je wilt opmaken.&#x20;
 {% endhint %}
+
+Onderstaande code is een voorbeeld oefening!
 
 {% code title="src/components/my-component.module.css" %}
 ```css
@@ -49,20 +51,20 @@ export default MyComponent
 {% endcode %}
 
 {% hint style="info" %}
-Als je de ontwikkelaarsconsole in je webbrowser opent en het `<h1>`-element inspecteert, zal je zien dat het een lange klassenaam heeft, zoals `my-component-module---title---2lRF7`. **Dat is de klassenaam die wordt gegenereerd door CSS-modules. Het is gegarandeerd uniek voor je hele site**, zelfs als je een ander onderdeel hebt dat ook een `title-`klasse in het `.module.css`-bestand heeft. 
+Als je de ontwikkelaarsconsole in je webbrowser opent en het `<h1>`-element inspecteert, zal je zien dat het een lange klassenaam heeft, zoals `my-component-module---title---2lRF7`. **Dat is de klassenaam die wordt gegenereerd door CSS-modules. Het is gegarandeerd uniek voor je hele site**, zelfs als je een ander onderdeel hebt dat ook een `title-`klasse in het `.module.css`-bestand heeft.
 
 Dat is een van de redenen waarom **CSS-modules** een populaire CSS benadering is: ze laten je CSS schrijven die is afgestemd op je componenten, zodat je je geen zorgen hoeft te maken over botsingen tussen klasse namen van componenten.
 {% endhint %}
 
 Volg de onderstaande stappen om je `Layout` component op te maken met behulp van CSS-modules.
 
-Maak een nieuw bestand: `src/components/layout.module.css`. 
+Maak een nieuw bestand: `src/components/layout.module.css`.
 
 {% hint style="info" %}
 Het `.module.css`-gedeelte aan het einde is belangrijk! Dat vertelt Gatsby dat deze stijlen CSS-modules gebruiken.
 {% endhint %}
 
-Begin met het toevoegen van een enkele `.container`-klasse:
+Begin met het toevoegen van een simpele `.container`-klasse:
 
 {% code title="src/components/layout.module.css" %}
 ```css
@@ -106,14 +108,14 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Syntax tip**: Om klassen toe te passen op React-componenten, gebruik je de prop `className`. \(Dit is nog een voorbeeld van een ingebouwde prop die React automatisch weet te hanteren.\)
+**Syntax tip**: Om klassen toe te passen op React-componenten, gebruik je de prop `className`. (Dit is nog een voorbeeld van een ingebouwde prop die React automatisch weet te hanteren.)
 
 Dit kan verwarrend zijn als je gewend bent om het `class` attribuut op HTML-elementen te gebruiken. Doe je best om ze niet door elkaar te halen!
 {% endhint %}
 
-Wanneer je je lokale site in een webbrowser opent, zou je nu moeten zien dat het lettertype is gewijzigd en dat de inhoud meer op de pagina is gecentreerd.
+Wanneer je de lokale site in een webbrowser opent, zou je moeten zien dat het lettertype is gewijzigd en dat de inhoud meer op de pagina is gecentreerd.
 
-![Home page Artist Agency](../../.gitbook/assets/image%20%28119%29.png)
+![Home page Artist Agency](<../../.gitbook/assets/image (119).png>)
 
 Nu je hebt gezien hoe je een enkel element voor je component kunt opmaken, voeg je wat meer stijlen toe om vervolgens toe te passen op de andere elementen in je `Layout`-component. Je kan ook de `html` en `body` tag stylen in je css-bestand.
 
@@ -220,12 +222,15 @@ export default Layout
 {% endcode %}
 
 {% hint style="info" %}
-**Syntax tip**: In CSS is de conventie om klassen een naam te geven met behulp van kebab-case \(zoals `.nav-links`\). Maar in JavaScript is de conventie om variabelen een naam te geven met behulp van camel case \(zoals `navLinks`\).
+**Syntax tip**: In CSS is de conventie om klassen een naam te geven met behulp van kebab-case (zoals `.nav-links`). Maar in JavaScript is de conventie om variabelen een naam te geven met behulp van camel-case (zoals `navLinks`).
 
 Gelukkig, als je CSS-modules met Gatsby gebruikt, kan je beide hebben! De klassennamen van je kebab-case in je `.modules.css`-bestanden worden automatisch geconverteerd naar camel-case-variabelen die je in je .`js`-bestanden kunt importeren.
 {% endhint %}
 
 Zodra je ontwikkelingsserver klaar is met het opnieuw opbouwen van je site, zou je je nieuwe stijlen moeten zien in je webbrowser:
 
-![Home Page met nieuwe stijlen](../../.gitbook/assets/image%20%28139%29.png)
+![Home Page met nieuwe stijlen](<../../.gitbook/assets/image (139).png>)
 
+{% hint style="warning" %}
+**Let op:** Je mag de files `layout.css` en `index.module.css` verwijderen uit de components folder.
+{% endhint %}

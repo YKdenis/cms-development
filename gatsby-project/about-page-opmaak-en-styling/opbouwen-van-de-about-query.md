@@ -6,7 +6,7 @@ description: >-
 
 # Opbouwen van de About query
 
-### Taak: Maak een query aan in GraphiQL voor je About page
+## Taak: Maak een query aan in GraphiQL voor je About page
 
 In je About page heb je nog geen query gedefinieerd voor de data van WP op te vragen. Open je GraphiQL in je browser en gebruik de Explorer om je query vorm te geven.
 
@@ -19,26 +19,24 @@ In je About page heb je nog geen query gedefinieerd voor de data van WP op te vr
 ```graphql
 query {
   wpPage(slug: {eq: "about-us"}) {
-    aboutPage {
-      headerAboutUs {
-        title
-        description
-        picture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(quality: 100)
-            }
+    aboutUsFields {
+      goalDescription
+      goalTitle
+      goalPicture {
+        altText
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
           }
         }
       }
-      mission {
-        title
-        description
-        bannerPicture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(quality: 100)
-            }
+      missionTitle
+      missionDescription
+      missionPicture {
+        altText
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
           }
         }
       }
@@ -48,12 +46,6 @@ query {
 ```
 
 Voor je `wpPage` query heb je een **query parameter** nodig. Je mag deze hardcoded op `wpPage(slug: {eq: "about-us"})` zetten.
-
-{% hint style="info" %}
-**Opmerking** 📣: Je hebt de slug '**about-us**' gedefinieerd in je WP applicatie onder je About us page. 
-
-De slug van je About us pagina op je Gatsby website is niet hetzelfde als de slug van je About page op je WP applicatie!
-{% endhint %}
 
 {% hint style="info" %}
 **Let op** 👀**:** Het kan zijn dat je het `childImageSharp`-veld niet ziet staan in de **Explorer** van je GraphiQLIDE en dat je GraphiQL het zal onderstrepen met een rode lijn wanneer je het toevoegt in de **Query Editor**.
@@ -84,37 +76,34 @@ export default AboutPage
 
 export const query = graphql`
   query {
-    wpPage(slug: { eq: "about-us" }) {
-      aboutPage {
-        headerAboutUs {
-          title
-          description
-          picture {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(quality: 100)
-              }
-            }
+  wpPage(slug: {eq: "about-us"}) {
+    aboutUsFields {
+      goalDescription
+      goalTitle
+      goalPicture {
+        altText
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
           }
         }
-        mission {
-          title
-          description
-          bannerPicture {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(quality: 100)
-              }
-            }
+      }
+      missionTitle
+      missionDescription
+      missionPicture {
+        altText
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
           }
         }
       }
     }
   }
+}
 `
 ```
 
 `console.log` je data en kijk na of alles correct wordt opgehaald in je developer tools!
 
-![Developer tools console.log](../../.gitbook/assets/image%20%2843%29.png)
-
+![Developer tools console.log](<../../.gitbook/assets/image (43) (1).png>)

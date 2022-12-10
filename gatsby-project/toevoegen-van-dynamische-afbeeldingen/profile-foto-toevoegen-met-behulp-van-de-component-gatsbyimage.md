@@ -4,13 +4,21 @@ description: >-
   template bestand.
 ---
 
-# Profile foto toevoegen met behulp van de component GatsbyImage
+# Component GatsbyImage
 
-## Taak: Profile foto toevoegen met behulp van de component GatsbyImage 
+## Taak: Profile foto toevoegen met behulp van de component GatsbyImage
 
 Zodra je je GraphQL-query hebt ingesteld, kan je deze toevoegen aan je artist page template, `{wpArtist.slug}.js`.
 
 Vervang je bestaande page query door de query die je in GraphiQL hebt gebouwd en die de `profilePicture` met `localFile` and `childImageSharp` bevat.
+
+{% hint style="info" %}
+**Let op:** de `props` van artistPage worden gedestructured. Bekijk onderstaande link voor meer informatie omtrent destructering van objecten.
+{% endhint %}
+
+{% content-ref url="../../ecmascript/object-destructering.md" %}
+[object-destructering.md](../../ecmascript/object-destructering.md)
+{% endcontent-ref %}
 
 {% code title="src/pages/{wpArtist.slug}.js" %}
 ```jsx
@@ -43,8 +51,8 @@ const ArtistPage = ({
 }
 
 export const query = graphql`
-  query MyQuery($id: String) {
-    wpArtist(id: { eq: $id }) {
+  query MyQuery($slug: String) {
+    wpArtist(slug: { eq: $slug }) {
       artistMeta {
         firstName
         lastName
@@ -70,7 +78,6 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 
@@ -112,7 +119,7 @@ const ArtistPage = (
 {% hint style="info" %}
 **Opmerking** 📣: `getImage` is een hulpfunctie die een `File`-node of een `ImageSharp`-node opneemt en het `gatsbyImageData`-object voor die node retourneert. Je kan het gebruiken om je code een beetje properder en leesbaar te houden.
 
-Zonder de `getImage`-helperfunctie zou je `artist.profilePicture.localFile.childImageSharp.gatsbyImageData` moeten typen \(wat langer is, maar je dezelfde gegevens teruggeeft\).
+Zonder de `getImage`-helperfunctie zou je `artist.profilePicture.localFile.childImageSharp.gatsbyImageData` moeten typen (wat langer is, maar je dezelfde gegevens teruggeeft).
 {% endhint %}
 
 Gebruik de component `GatsbyImage` van `gatsby-plugin-image` om de `profilePicture` gegevens weer te geven. Je moet aan `GatsbyImage` twee props doorgeven:
@@ -155,8 +162,8 @@ const ArtistPage = ({
 }
 
 export const query = graphql`
-  query MyQuery($id: String) {
-    wpArtist(id: { eq: $id }) {
+  query MyQuery($slug: String) {
+    wpArtist(slug: { eq: $slug }) {
       artistMeta {
         firstName
         lastName
@@ -182,13 +189,18 @@ export const query = graphql`
 `
 
 export default ArtistPage
-
 ```
 {% endcode %}
 
 Wanneer je nu elk van je artist pagina's bezoekt, zou je de bijbehorende profile foto boven de naam van je artist moeten zien!
 
-![Kevin Bismark - /artists/kevin-bismark](../../.gitbook/assets/image%20%28124%29.png)
+![Kevin Bismark - /artists/kevin-bismark](<../../.gitbook/assets/image (124).png>)
 
-![Anne Woznak - /artists/anne-woznak](../../.gitbook/assets/image%20%28155%29.png)
+![Anne Woznak - /artists/anne-woznak](<../../.gitbook/assets/image (155).png>)
 
+{% hint style="warning" %}
+* Weergeven van een foto met behulp van **een relatief pad (lokale foto) of een url (externe foto)** doe je met het `StaticImage` component;
+* Weergeven van een **dynamische** foto (**opgehaald uit een query**) doe je met het `GatsbyImage` component;
+
+
+{% endhint %}

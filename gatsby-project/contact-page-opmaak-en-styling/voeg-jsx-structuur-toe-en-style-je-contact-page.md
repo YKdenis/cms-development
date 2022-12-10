@@ -4,9 +4,9 @@ description: >-
   het ontwerp!
 ---
 
-# Voeg JSX structuur toe en style je contact page
+# Voeg de JSX structuur toe en style je contact page
 
-### Taak: Voeg toe en pas de JSX structuur aan voor je Contact Page
+## Taak: Voeg toe en pas de JSX structuur aan voor je Contact Page
 
 Voeg de onderstaande JSX toe aan de return waarde van je page component. Vergeet niet je imports toe te voegen voor `GatsbyImage` en `getImage`!
 
@@ -16,40 +16,42 @@ Voeg de onderstaande JSX toe aan de return waarde van je page component. Vergeet
 
 const ContactPage = ({
   data: {
-    wpPage: {
-      contactPage: { companyInformation, headerContact },
-    },
+    wpPage: { contactUsFields },
   },
 }) => {
-  const image = getImage(headerContact.picture.localFile)
+  const image = getImage(contactUsFields.picture.localFile)
 
   return (
     <Layout>
-      <div>
-        <div>
-          <h2>{headerContact.title}</h2>
+      <section>
+        <article>
+          <h2>{contactUsFields.title}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: headerContact.description,
+              __html: contactUsFields.description,
             }}
           />
           <div>
-            <p>{companyInformation.email}</p>
-            <p>{companyInformation.phoneNumber}</p>
-            <p>{`${companyInformation.address}, ${companyInformation.postcode} ${companyInformation.city}`}</p>
+            <a href={`mailto:${contactUsFields.email}`}>
+              {contactUsFields.email}
+            </a>
+            <a href={`tel:${contactUsFields.phoneNumber}`}>
+              {contactUsFields.phoneNumber}
+            </a>
+            <p>{`${contactUsFields.address}, ${contactUsFields.zipCode} ${contactUsFields.city}`}</p>
             <div>
               Follow us:
-              <a target="__blank" href={companyInformation.socials.instagram}>
+              <a target="__blank" href={contactUsFields.instagram}>
                 {" "}
               </a>
-              <a target="__blank" href={companyInformation.socials.facebook}>
+              <a target="__blank" href={contactUsFields.facebook}>
                 {" "}
               </a>
             </div>
           </div>
-        </div>
-        <GatsbyImage image={image} alt={headerContact.picture.altText} />
-      </div>
+        </article>
+        <GatsbyImage image={image} alt={contactUsFields.picture.altText} />
+      </section>
     </Layout>
   )
 }
@@ -58,7 +60,7 @@ const ContactPage = ({
 ```
 {% endcode %}
 
-### Taak: Voeg CSS toe aan je Contact page JSX  ✨
+## Taak: Voeg CSS toe aan je Contact page JSX  ✨
 
 Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
@@ -67,7 +69,7 @@ Verschillende CSS classes uit je `page.module.css` kan je hergebruiken.
 
 {% code title="src/page.module.css" %}
 ```css
-// Page CSS
+/* Contact Page CSS */
 
 .company-info {
   margin-top: 60px;
@@ -130,7 +132,7 @@ import {
   socials,
   facebook,
   instagram,
-  link,
+  link
 } from "../page.module.css"
 
 // Contact Page Component
@@ -145,56 +147,54 @@ import {
 
 const ContactPage = ({
   data: {
-    wpPage: {
-      contactPage: { companyInformation, headerContact },
-    },
+    wpPage: { contactUsFields },
   },
 }) => {
-  const image = getImage(headerContact.picture.localFile)
+  const image = getImage(contactUsFields.picture.localFile)
 
   return (
     <Layout>
-      <div className={header}>
-        <div className={headerInfo}>
-          <h2 className={subtitle}>{headerContact.title}</h2>
+      <section className={header}>
+        <article className={headerInfo}>
+          <h2 className={subtitle}>{contactUsFields.title}</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: headerContact.description,
+              __html: contactUsFields.description,
             }}
           />
           <div className={companyInfo}>
-            <a className={link} href={`mailto:${companyInformation.email}`}>
-              {companyInformation.email}
+            <a className={link} href={`mailto:${contactUsFields.email}`}>
+              {contactUsFields.email}
             </a>
-            <a className={link} href={`tel:${companyInformation.phoneNumber}`}>
-              {companyInformation.phoneNumber}
+            <a className={link} href={`tel:${contactUsFields.phoneNumber}`}>
+              {contactUsFields.phoneNumber}
             </a>
-            <p>{`${companyInformation.address}, ${companyInformation.postcode} ${companyInformation.city}`}</p>
+            <p>{`${contactUsFields.address}, ${contactUsFields.zipCode} ${contactUsFields.city}`}</p>
             <div className={socials}>
               Follow us:
               <a
-                target="__blank"
                 className={instagram}
-                href={companyInformation.socials.instagram}
+                target="__blank"
+                href={contactUsFields.instagram}
               >
                 {" "}
               </a>
               <a
-                target="__blank"
                 className={facebook}
-                href={companyInformation.socials.facebook}
+                target="__blank"
+                href={contactUsFields.facebook}
               >
                 {" "}
               </a>
             </div>
           </div>
-        </div>
+        </article>
         <GatsbyImage
           className={headerPicture}
           image={image}
-          alt={headerContact.picture.altText}
+          alt={contactUsFields.picture.altText}
         />
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -205,7 +205,6 @@ const ContactPage = ({
 
 * Open je browser en navigeer naar je [localhost:8000](http://localhost:8000).
 
-Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je contact page is volledig gestyled. M.a.w. je volledige website is af en klaar om gedeployed te worden!
+Proficiat! 🏆Je hebt het einde bereikt van dit hoofdstuk! Je contact page is volledig gestyled. **M.a.w. je volledige website is af en klaar om gedeployed te worden!**
 
-In het volgende hoofdstuk zal je leren hoe je met Netlify je website kan deployen en hoe je Continuous Deployment toevoegt via GitHub!
-
+In het volgende hoofdstuk zal je leren hoe je met Netlify je website kan deployen en hoe je **Continuous Deployment** toevoegt via GitHub!
