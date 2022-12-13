@@ -150,6 +150,7 @@
 
 ## Severless Functions
 
-* [Wat zijn Serverless Functions](severless-functions/wat-zijn-serverless-functions.md)
+* [Wat zijn Serverless Functions](severless-functions/wat-zijn-serverless-functions/README.md)
+  * [Voordelen](severless-functions/wat-zijn-serverless-functions/voordelen.md)
 * [Gatsby Functions](severless-functions/gatsby-functions.md)
 * [Chiddy de AI Chatbot](severless-functions/chiddy-de-ai-chatbot.md)
