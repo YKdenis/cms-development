@@ -62,6 +62,6 @@ Proficiat je website staat online! :tada: Wat je nog kan doen is de willekeurig 
 
 ![](<../.gitbook/assets/image (44).png>)
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)
 
 ![](<../.gitbook/assets/image (7).png>)

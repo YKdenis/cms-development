@@ -147,3 +147,9 @@
 * [Manueel deployen naar Netlify](hosting-and-automatisation/manueel-deployen-naar-netlify.md)
 * [🗒 Formulier afhandeling in Netlify](hosting-and-automatisation/formulier-afhandeling-in-netlify/README.md)
   * [Admin paneel - Forms](hosting-and-automatisation/formulier-afhandeling-in-netlify/admin-paneel-forms.md)
+
+## Severless Functions
+
+* [Wat zijn Serverless Functions](severless-functions/wat-zijn-serverless-functions.md)
+* [Gatsby Functions](severless-functions/gatsby-functions.md)
+* [Chiddy de AI Chatbot](severless-functions/chiddy-de-ai-chatbot.md)
